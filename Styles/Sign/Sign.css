@@ -153,8 +153,8 @@
         position: absolute;
         width: 60%;
         height: 50%;
-        top: 25%;
-        bottom: 25%;
+        top: 10%;
+        bottom: 40%;
         left: 20%;
         right: 20%;
         min-height: 480px;
@@ -167,8 +167,8 @@
         position: absolute;
         width: 60%;
         height: 50%;
-        top: 25%;
-        bottom: 25%;
+        top: 10%;
+        bottom: 40%;
         left: 20%;
         right: 20%;
         background-color:  rgba(250, 250, 250, 0.445);
@@ -186,8 +186,8 @@
        left: 2.5%;
        right: 2.5%;
        top: 2.5%;
-       height: 55%;
-       bottom: 42.5%;
+       height: 60%;
+       bottom: 37.5%;
        min-height: 0px;
     }
 
@@ -197,7 +197,7 @@
         left: 2.5%;
         right: 2.5%;
         top: 2.5%;
-        height: 60%;
+        height: 65%;
         bottom: 37.5%;
         min-height: 0px;
     }
@@ -231,7 +231,7 @@
         position: relative;
         border-width: 0px;
         background-color: rgb(219, 219, 219);
-        height: 16%;
+        height: 15%;
         margin-bottom: 5%;
         border-radius:10px; 
     }
@@ -239,7 +239,7 @@
     .UP_BTN{
         position: relative;
         width: 100%;
-        height: 16%;
+        height: 15%;
         margin-bottom: 5%;
         border-radius:10px; 
         background-color: rgb(127, 69, 179);
