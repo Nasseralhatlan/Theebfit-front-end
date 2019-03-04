@@ -63,6 +63,7 @@
     }
 
     .IN_INPUT{
+        font-family: 'Raleway', sans-serif;
         position: relative;
         border-width: 0px;
         background-color: rgb(219, 219, 219);
@@ -76,6 +77,7 @@
     }
 
     .IN_INPUT::placeholder{
+        font-family: 'Raleway', sans-serif;
         color: rgb(0, 0, 0);
     }
 
@@ -83,7 +85,7 @@
     .IN_BTN{
         position: relative;
         width: 100%;
-        height: 10%;
+        height: 15%;
         margin-bottom: 5%;
         border-radius:10px; 
         background-color: rgb(127, 69, 179);
@@ -97,10 +99,11 @@
 
 
     .UP_INPUT{
+        font-family: 'Raleway', sans-serif;
         position: relative;
         border-width: 0px;
         background-color: rgb(219, 219, 219);
-        height: 15%;
+        height: 13%;
         margin-bottom: 5%;
         border-radius:10px; 
     }
@@ -110,6 +113,7 @@
     }
 
     .UP_INPUT::placeholder{
+        font-family: 'Raleway', sans-serif;
         color: rgb(0, 0, 0);
     }
 
@@ -117,7 +121,7 @@
     .UP_BTN{
         position: relative;
         width: 100%;
-        height: 10%;
+        height: 13%;
         margin-bottom: 5%;
         border-radius:10px; 
         background-color: rgb(127, 69, 179);
