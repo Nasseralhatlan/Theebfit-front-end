@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/Sign/Sign.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
                 $(document).ready(function(){
-                    $("#SIGNIN").click(function(){
-                        $("#SIGNIN").hide();
-                        $("#SIGNUP").show();
-                    });
-                   
+
+                   $("#SIGNUP_DIV").hide();
 
                     $("#SIGNUP").click(function(){
-                        $("#SIGNUP").hide();
-                        $("#SIGNIN").show();
+                        $("#SIGNIN_DIV").hide();
+                        $("#SIGNUP_DIV").show();
+                    });
+
+                    $("#SIGNIN").click(function(){
+                        $("#SIGNUP_DIV").hide();
+                        $("#SIGNIN_DIV").show();
                     });
                 });
     </script>
@@ -34,20 +36,49 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-      <div id="SIGNIN" class="SIGNIN_DIV SHADOW">
+      <div id="SIGNIN_DIV" class="SIGNIN_DIV SHADOW">
 
                       
           <form class="FORM"action="">
             <h1 class="TITLE">Sign in</h1>
+
+           
+                <input type="text" class="form-control INPUT" placeholder="email or username">
+ 
+
+             
+                <input type="password" class="form-control INPUT"placeholder="password">
+   
+        
+              <button type="submit" class="btn BTN">Sign in</button>
+          
+
+              <h5 class="NOA">if you dont have an account   <div id="SIGNUP"class="SIGNUP_LINK btn">Sing up</div></h5>
           </form>
             
       </div>
 
 
 
-      <div id="SIGNUP" class="SIGNUP_DIV SHADOW">
+      <div id="SIGNUP_DIV" class="SIGNUP_DIV SHADOW">
 
+        <form class="FORM"action="">
+          <h1 class="TITLE">Sign in</h1>
 
+         
+              <input type="text" class="form-control INPUT" placeholder="username">
+
+              <input type="email" class="form-control INPUT" placeholder="email">
+
+           
+              <input type="password" class="form-control INPUT"placeholder="password">
+ 
+      
+            <button type="submit" class="btn BTN">Sign in</button>
+        
+
+            <h5 class="NOA">if you have an account   <div id="SIGNIN"class="SIGNUP_LINK btn">Sing in</div></h5>
+        </form>
 
 
      </div>
