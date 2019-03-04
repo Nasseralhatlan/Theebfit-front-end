@@ -7,13 +7,13 @@
 /* Desktop  And Global*/
 
 body,html{
-    background-color: #232323;
-    font-family: 'Montserrat', sans-serif;
+    background-color:rgb(255, 255, 255);  
+    font-family: 'Open Sans', sans-serif;
     -webkit-tap-highlight-color:  rgb(50, 19, 71); 
 }
 
 .NAV{
-    background-color: #313131 !important; 
+    background-color: #919191a1 !important; 
 }
 
 .menuIcon{
@@ -32,6 +32,10 @@ body,html{
 .SHADOW{
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.233),
     5px 5px 30px 5px rgba(0, 0, 0, 0.233);  
+
+
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
+    5px 5px 30px 5px rgba(0, 0, 0,0.090);
 }
 
 
@@ -40,7 +44,7 @@ body,html{
     height: 100%;
     width: 20%;
     left: -25%;
-    background-color: #313131 !important;
+    background-color: #d8d8d8 !important;
     transition: 0.3s;
     z-index: 3;
 }

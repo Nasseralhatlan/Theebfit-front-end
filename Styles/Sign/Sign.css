@@ -31,8 +31,9 @@
         left: 60%;
         right: 5%;
         min-height: 480px;
-        background-color:  rgba(250, 250, 250, 0.445);
+        background-color:  rgba(99, 99, 99, 0.445);
         border-radius: 5px;
+        color: white;
     }
 
 
@@ -44,7 +45,7 @@
         bottom: 10%;
         left: 60%;
         right: 5%;
-        background-color:  rgba(250, 250, 250, 0.445);
+        background-color:  rgba(99, 99, 99, 0.445);
         border-radius: 5px;
         min-height: 585px;
     }
@@ -54,6 +55,7 @@
         width: 100%;
         height: 100%;
         padding: 20px;
+        color: white;
     }
 
     .TITLE{
@@ -171,8 +173,9 @@
         left: 35%;
         right: 35%;
         min-height: 480px;
-        background-color:  rgba(250, 250, 250, 0.445);
+        background-color:  rgba(99, 99, 99, 0.445);
         border-radius: 5px;
+        color: white;
     }
 
 
@@ -184,9 +187,10 @@
         bottom: 10%;
         left: 35%;
         right: 35%;
-        background-color:  rgba(250, 250, 250, 0.445);
+        background-color:  rgba(99, 99, 99, 0.445);
         border-radius: 5px;
         min-height: 585px;
+        color: white;
     }
 
    
@@ -203,8 +207,9 @@
         left: 20%;
         right: 20%;
         min-height: 480px;
-        background-color:  rgba(250, 250, 250, 0.445);
+        background-color:  rgba(99, 99, 99, 0.445);
         border-radius: 5px;
+        color: white;
     }
 
 
@@ -216,9 +221,10 @@
         bottom: 40%;
         left: 20%;
         right: 20%;
-        background-color:  rgba(250, 250, 250, 0.445);
+        background-color:  rgba(99, 99, 99, 0.445);
         border-radius: 5px;
         min-height: 585px;
+        color: white;
     }
     
     .BRAND{
@@ -246,6 +252,8 @@
        height: 70%;
        bottom: 27.5%;
        min-height: 0px;
+       color: white;
+
     }
 
 
@@ -257,6 +265,7 @@
         height: 75%;
         bottom: 22.5%;
         min-height: 0px;
+        color: white;
     }
     .TITLE{
        padding: 2px;
