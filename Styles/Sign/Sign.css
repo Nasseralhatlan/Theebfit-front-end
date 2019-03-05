@@ -243,8 +243,7 @@
         text-align: center;
        }
 }
-
-
+/*  Phone  */
 @media (max-width:720px) and (min-width:320px){
 
     .SIGNIN_DIV{
