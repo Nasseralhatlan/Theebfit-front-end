@@ -15,6 +15,15 @@
     <script type="text/javascript">
         $(document).ready(function(){
           
+
+          $("#Food").hide();
+          $("#Workout").hide();
+          $("#Weight").hide();
+          $("#Calc").hide();
+          $("#Settings").hide();
+
+
+
           $("img").click(function(){
            
            $("#SIDE_NAV").toggleClass("side-nav-active");
@@ -28,6 +37,173 @@
            $("#overlay").toggleClass("overlay-active");
           });
 
+
+          $("#Home-btn").click(function(){
+            $("#Home").show();
+            $("#Home-btn").removeClass("active");
+            $("#Home-btn").addClass("active");
+        
+            $("#Food").hide();
+            $("#Food-btn").removeClass("active");
+
+            $("#Workout").hide();
+            $("#Workout-btn").removeClass("active");
+
+            $("#Weight").hide();
+            $("#Weight-btn").removeClass("active");
+
+            $("#Calc").hide();
+            $("#Calc-btn").removeClass("active");
+
+            $("#Settings").hide();
+            $("#Settings-btn").removeClass("active");
+
+
+
+            $("#SIDE_NAV").toggleClass("side-nav-active");
+           $("#overlay").toggleClass("overlay-active");
+
+          });
+
+
+          $("#Food-btn").click(function(){
+            $("#Food").show();
+            $("#Food-btn").addClass("active");
+        
+
+            $("#Home").hide();
+            $("#Home-btn").removeClass("active");
+
+            $("#Workout").hide();
+            $("#Workout-btn").removeClass("active");
+
+            $("#Weight").hide();
+            $("#Weight-btn").removeClass("active");
+
+            $("#Calc").hide();
+            $("#Calc-btn").removeClass("active");
+
+            $("#Settings").hide();
+            $("#Settings-btn").removeClass("active");
+
+
+
+            $("#SIDE_NAV").toggleClass("side-nav-active");
+           $("#overlay").toggleClass("overlay-active");
+
+          });
+
+
+          $("#Workout-btn").click(function(){
+            $("#Workout").show();
+            $("#Workout-btn").addClass("active");
+        
+
+            $("#Home").hide();
+            $("#Home-btn").removeClass("active");
+
+            $("#Food").hide();
+            $("#Food-btn").removeClass("active");
+
+            $("#Weight").hide();
+            $("#Weight-btn").removeClass("active");
+
+            $("#Calc").hide();
+            $("#Calc-btn").removeClass("active");
+
+            $("#Settings").hide();
+            $("#Settings-btn").removeClass("active");
+
+
+
+            $("#SIDE_NAV").toggleClass("side-nav-active");
+           $("#overlay").toggleClass("overlay-active");
+
+          });
+
+
+          $("#Weight-btn").click(function(){
+            $("#Weight").show();
+            $("#Weight-btn").addClass("active");
+        
+
+            $("#Home").hide();
+            $("#Home-btn").removeClass("active");
+
+            $("#Workout").hide();
+            $("#Workout-btn").removeClass("active");
+
+            $("#Food").hide();
+            $("#Food-btn").removeClass("active");
+
+            $("#Calc").hide();
+            $("#Calc-btn").removeClass("active");
+
+            $("#Settings").hide();
+            $("#Settings-btn").removeClass("active");
+
+
+
+            $("#SIDE_NAV").toggleClass("side-nav-active");
+           $("#overlay").toggleClass("overlay-active");
+
+          });
+
+          $("#Calc-btn").click(function(){
+            $("#Calc").show();
+            $("#Calc-btn").addClass("active");
+        
+
+            $("#Home").hide();
+            $("#Home-btn").removeClass("active");
+
+            $("#Workout").hide();
+            $("#Workout-btn").removeClass("active");
+
+            $("#Weight").hide();
+            $("#Weight-btn").removeClass("active");
+
+            $("#Food").hide();
+            $("#Food-btn").removeClass("active");
+
+            $("#Settings").hide();
+            $("#Settings-btn").removeClass("active");
+
+
+
+            $("#SIDE_NAV").toggleClass("side-nav-active");
+           $("#overlay").toggleClass("overlay-active");
+
+          });
+
+
+          $("#Settings-btn").click(function(){
+            $("#Settings").show();
+            $("#Settings-btn").addClass("active");
+        
+
+            $("#Home").hide();
+            $("#Home-btn").removeClass("active");
+
+            $("#Workout").hide();
+            $("#Workout-btn").removeClass("active");
+
+            $("#Weight").hide();
+            $("#Weight-btn").removeClass("active");
+
+            $("#Calc").hide();
+            $("#Calc-btn").removeClass("active");
+
+            $("#Food").hide();
+            $("#Food-btn").removeClass("active");
+
+
+
+            $("#SIDE_NAV").toggleClass("side-nav-active");
+           $("#overlay").toggleClass("overlay-active");
+
+          });
+
         });
         </script>
 
@@ -38,41 +214,81 @@
    
 
 
-    
+  
+
+
+   
 
     <div id="SIDE_NAV" class="side-nav SHADOW">
-        <ul>
-            <li class="active">Home <img class="icon"src="../Img/home-icon.png" alt=""></li>
-            <li>Food<img class="icon" src="../Img/food-icon.png" alt=""></li>
-            <li>Workout<img class="icon" src="../Img/workout-icon.png" alt=""></li>
-            <li>Weight</li>
-            <li>Macros Calculater</li>
-            <li>Settings</li>
+      <ul>
+          <li id="Home-btn" class="active">Home <img class="icon"src="../Img/home-icon.png" alt=""></li>
+          <li id="Food-btn">Food<img class="icon" src="../Img/food-icon.png" alt=""></li>
+          <li id="Workout-btn">Workout<img class="icon" src="../Img/workout-icon.svg" alt=""></li>
+          <li id="Weight-btn">Weight<img class="icon" src="../Img/weight-icon.svg" alt=""></li>
+          <li id="Calc-btn">Macros Calculater<img class="icon" src="../Img/calc-icon.png" alt=""></li>
+          <li id="Settings-btn">Settings<img class="icon" src="../Img/settings-icon.png" alt=""></li>
 
 
-        </ul>
-        <div><a class="btn btn-danger BTN" href="Sign.html" role="button">Sign out</a></div>
+      </ul>
+      <div><a class="btn btn-danger BTN" href="Sign.html" role="button">Sign out</a></div>
 
+
+  </div>
+
+  <div id="overlay" class="overlay"></div>
+
+ 
+
+
+
+    <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
+      <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
+        <a style="color:black;"class="navbar-brand BRAND" href="Sign.html">T H E E B</a>
+
+
+     
+  
+    </nav> 
+
+
+
+   <!-- ============================== Body start here ==============================   -->
+    <div class="BODY">
+
+      <div style="width: 100% ;height: 100%;" id="Home" >
+
+            home
+      </div>
+
+
+      <div style="width: 100% ;height: 100%;"  style="width: 100% ;height: 100%;" id="Food"> 
+
+            food
+      </div>
+
+
+      <div style="width: 100% ;height: 100%;"  id="Workout"> 
+
+        workout
+  </div>
+
+  <div style="width: 100% ;height: 100%;"  id="Weight"> 
+
+    weight
+</div>
+
+<div style="width: 100% ;height: 100%;"  id="Calc"> 
+
+  calc
+</div>
+
+<div style="width: 100% ;height: 100%;"  id="Settings"> 
+
+  setting
+</div>
 
     </div>
 
-    <div id="overlay" class="overlay"></div>
-
-
-
- 
-
- 
-
-
-<nav class="navbar navbar-dark bg-dark NAV SHADOW">
-  <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-    <a style="color:black;"class="navbar-brand BRAND" href="Sign.html">T H E E B</a>
-</nav> 
-
-
-
-  
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

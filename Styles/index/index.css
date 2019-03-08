@@ -11,14 +11,28 @@ body,html{
     font-family: 'Open Sans', sans-serif;
 }
 
+.BODY{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    top: 56px;
+    height: 93%;  
+    background-color:rgba(255, 255, 255, 0);  
+}
+
+
 .NAV{
     background-color: rgb(250, 250, 250) !important;
     color: black;
+    z-index: 2 !important;
 }
 
 .BRAND{
     color: #702bbc !important;
 }
+
 .menuIcon{
     position: relative;
     top: 10%;
@@ -33,48 +47,45 @@ body,html{
 }
 
 .SHADOW{
-
-
-    
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
     5px 5px 30px 5px rgba(0, 0, 0,0.090);
-
 }
 
 
 .side-nav{
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 20%;
     left: -25%;
+    z-index: 4;
     background-color: rgb(250, 250, 250) !important;
     transition: 0.3s;
-    z-index: 3;
 }
 
 .side-nav-active{
     left: 0px;
+    z-index: 4;
     visibility: visible; 
     transition: 0.3s;
 }
 
 .overlay{
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    display: none;
     background-color: rgba(0, 0, 0, 0);
     transition: 0.2s;
-    visibility: hidden;
 }
-
 
 .overlay-active{
-    background-color: rgba(0, 0, 0, 0.137);
-    z-index: 2;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
     transition: 0.2s;
-    visibility: visible;
-}
+    display: inline-block;
+} 
+
+
 
 .side-nav ul{
 position: relative;
@@ -115,7 +126,7 @@ height: 50%;
 
 .icon{
     position: relative;
-    width: 6%;
+    width: 10%;
     height: auto;
     float: right;
 }
