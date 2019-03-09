@@ -26,8 +26,8 @@
       <ul>
           <li id="Home-btn" class="active">Home<img class="icon"src="../Img/home-icon.png" alt=""></li>
           <li id="Food-btn">Food<img class="icon" src="../Img/food-icon.png" alt=""></li>
-          <li id="Workout-btn">Workout</li>
-          <li id="Weight-btn">Weight</li>
+          <li id="Workout-btn">Workout<img class="icon" src="../Img/workout-icon.svg" alt=""></li>
+          <li id="Weight-btn">Weight<img class="icon" src="../Img/weight-icon.svg" alt=""></li>
           <li id="Calc-btn">Macros Calculater<img class="icon" src="../Img/calc-icon.png" alt=""></li>
           <li id="Settings-btn">Settings<img class="icon" src="../Img/settings-icon.png" alt=""></li>
 
@@ -105,192 +105,93 @@
         $(document).ready(function(){
           
 
+          function RemoveAllClasses(){
+            $("#Home-btn").removeClass("active");
+            $("#Food-btn").removeClass("active");
+            $("#Workout-btn").removeClass("active");
+            $("#Weight-btn").removeClass("active");
+            $("#Calc-btn").removeClass("active");
+            $("#Settings-btn").removeClass("active");
+          }
+
+
+          function HideAll(){
+          $("#Home").hide();
           $("#Food").hide();
           $("#Workout").hide();
           $("#Weight").hide();
           $("#Calc").hide();
           $("#Settings").hide();
+          }
+
+       
 
 
+          function toggleSideNav(){
+            $("#SIDE_NAV").toggleClass("side-nav-active");
+            $("#overlay").toggleClass("overlay-active");
+          }
 
           $("img").click(function(){
-           
-           $("#SIDE_NAV").toggleClass("side-nav-active");
-           $("#overlay").toggleClass("overlay-active");
+            toggleSideNav();
             });
-
-          $("#overlay").click(function(){
-
-
-            $("#SIDE_NAV").toggleClass("side-nav-active");
-           $("#overlay").toggleClass("overlay-active");
+        
+            $("#overlay").click(function(){
+              toggleSideNav();
           });
 
 
+
           $("#Home-btn").click(function(){
+            RemoveAllClasses();
+            HideAll();
+            toggleSideNav();
             $("#Home").show();
-            $("#Home-btn").removeClass("active");
             $("#Home-btn").addClass("active");
-        
-            $("#Food").hide();
-            $("#Food-btn").removeClass("active");
-
-            $("#Workout").hide();
-            $("#Workout-btn").removeClass("active");
-
-            $("#Weight").hide();
-            $("#Weight-btn").removeClass("active");
-
-            $("#Calc").hide();
-            $("#Calc-btn").removeClass("active");
-
-            $("#Settings").hide();
-            $("#Settings-btn").removeClass("active");
-
-
-
-            $("#SIDE_NAV").toggleClass("side-nav-active");
-           $("#overlay").toggleClass("overlay-active");
-
           });
 
 
           $("#Food-btn").click(function(){
+           RemoveAllClasses();
+            HideAll();
+            toggleSideNav();
             $("#Food").show();
             $("#Food-btn").addClass("active");
-        
-
-            $("#Home").hide();
-            $("#Home-btn").removeClass("active");
-
-            $("#Workout").hide();
-            $("#Workout-btn").removeClass("active");
-
-            $("#Weight").hide();
-            $("#Weight-btn").removeClass("active");
-
-            $("#Calc").hide();
-            $("#Calc-btn").removeClass("active");
-
-            $("#Settings").hide();
-            $("#Settings-btn").removeClass("active");
-
-
-
-            $("#SIDE_NAV").toggleClass("side-nav-active");
-           $("#overlay").toggleClass("overlay-active");
-
           });
 
 
           $("#Workout-btn").click(function(){
+            RemoveAllClasses();
+            HideAll();
+            toggleSideNav();
             $("#Workout").show();
             $("#Workout-btn").addClass("active");
-        
-
-            $("#Home").hide();
-            $("#Home-btn").removeClass("active");
-
-            $("#Food").hide();
-            $("#Food-btn").removeClass("active");
-
-            $("#Weight").hide();
-            $("#Weight-btn").removeClass("active");
-
-            $("#Calc").hide();
-            $("#Calc-btn").removeClass("active");
-
-            $("#Settings").hide();
-            $("#Settings-btn").removeClass("active");
-
-
-
-            $("#SIDE_NAV").toggleClass("side-nav-active");
-           $("#overlay").toggleClass("overlay-active");
-
           });
 
 
           $("#Weight-btn").click(function(){
+            RemoveAllClasses();
+            HideAll();
+            toggleSideNav();
             $("#Weight").show();
             $("#Weight-btn").addClass("active");
-        
-
-            $("#Home").hide();
-            $("#Home-btn").removeClass("active");
-
-            $("#Workout").hide();
-            $("#Workout-btn").removeClass("active");
-
-            $("#Food").hide();
-            $("#Food-btn").removeClass("active");
-
-            $("#Calc").hide();
-            $("#Calc-btn").removeClass("active");
-
-            $("#Settings").hide();
-            $("#Settings-btn").removeClass("active");
-
-
-
-            $("#SIDE_NAV").toggleClass("side-nav-active");
-           $("#overlay").toggleClass("overlay-active");
-
           });
 
           $("#Calc-btn").click(function(){
+            RemoveAllClasses();
+            HideAll();
+            toggleSideNav();
             $("#Calc").show();
             $("#Calc-btn").addClass("active");
-        
-
-            $("#Home").hide();
-            $("#Home-btn").removeClass("active");
-
-            $("#Workout").hide();
-            $("#Workout-btn").removeClass("active");
-
-            $("#Weight").hide();
-            $("#Weight-btn").removeClass("active");
-
-            $("#Food").hide();
-            $("#Food-btn").removeClass("active");
-
-            $("#Settings").hide();
-            $("#Settings-btn").removeClass("active");
-
-
-
-            $("#SIDE_NAV").toggleClass("side-nav-active");
-           $("#overlay").toggleClass("overlay-active");
-
           });
 
 
           $("#Settings-btn").click(function(){
+            RemoveAllClasses();
+            HideAll();
+            toggleSideNav();
             $("#Settings").show();
             $("#Settings-btn").addClass("active");
-        
-
-            $("#Home").hide();
-            $("#Home-btn").removeClass("active");
-
-            $("#Workout").hide();
-            $("#Workout-btn").removeClass("active");
-
-            $("#Weight").hide();
-            $("#Weight-btn").removeClass("active");
-
-            $("#Calc").hide();
-            $("#Calc-btn").removeClass("active");
-
-            $("#Food").hide();
-            $("#Food-btn").removeClass("active");
-
-
-
-            $("#SIDE_NAV").toggleClass("side-nav-active");
-           $("#overlay").toggleClass("overlay-active");
-
           });
 
         });
