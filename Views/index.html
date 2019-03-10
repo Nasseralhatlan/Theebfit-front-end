@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../Styles/index/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
-    <title>T H E E B</title>
+    <title>Theeb fit</title>
   </head>
   <body  ontouchstart="" onmouseover="">
    
@@ -46,7 +46,7 @@
 
     <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
       <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-        <a style="color:black;"class="navbar-brand BRAND" href="Sign.html">T H E E BB</a>
+        <a style="color:black;"class="navbar-brand BRAND" href="Sign.html">Theeb fit</a>
 
 
      
@@ -56,7 +56,6 @@
 
 
    <!-- ============================== Body start here ==============================   -->
-    <div class="BODY">
 
 
 
@@ -64,7 +63,7 @@
 
          <!-- ============================== Home Section ==============================   -->
 
-      <div style="width: 100% ;height: 100%;" id="Home" >
+      <div id="Home" >
 
             
        Home
@@ -86,7 +85,7 @@
 
       <!-- ============================== food Section ==============================   -->
 
-      <div style="width: 100% ;height: 100%;"  style="width: 100% ;height: 100%;" id="Food"> 
+      <div  style="width: 100% ;height: 100%;" id="Food"> 
 
 
 
@@ -108,7 +107,7 @@
 
       <!-- ==============================  workout Section ==============================   -->
 
-      <div style="width: 100% ;height: 100%;"  id="Workout"> 
+      <div  id="Workout"> 
 
         workout
      
@@ -129,7 +128,7 @@
 
       <!-- ==============================  weight Section ==============================   -->
 
-     <div style="width: 100% ;height: 100%;"  id="Weight"> 
+     <div  id="Weight"> 
 
       weight
     
@@ -150,16 +149,14 @@
       
       <!-- ==============================  calc Section ==============================   -->
 
-      <div style="width: 100% ;height: 100%;"  id="Calc"> 
 
 
-        <div class="CALC-DIV SHADOW">
+        <div id="Calc" class="CALC-DIV SHADOW">
 
               <div id="res" class="CALC-RESULT-DIV">
 
-                             2,589 
-                 
-              </div>
+  0 cal 
+             </div>
 
 
               <div class="CALC-BODY-DIV"> 
@@ -179,16 +176,18 @@
 
                 <input id="CALC-Height-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Height">
 
-                <select class="custom-select CALC-INPUT" id="inputGroupSelect01" aria-placeholder="Activity level">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <label class="CALC-ACT">Activity level</label>
+                <select id="Act" class="custom-select CALC-INPUT" id="inputGroupSelect01" aria-placeholder="Activity level">
+                    <option selected value="1">little or no exercise, desk job</option>
+                    <option value="2">light exercise/ sports 1-3 days/week</option>
+                    <option value="3">moderate exercise/ sports 6-7 days/week</option>
+                    <option value="4">hard exercise every day, or exercising 2 xs/day</option>
+                    <option value="5">hard exercise 2 or more times per day, or training formarathon, or triathlon</option>
+
                   </select>
                   
                 <input id="CALC-BTN" value="Caclulate" type="submit" class="btn form-control CALC-BTN" placeholder="Height">
-                
-             </div>
+               </div>
 
       <!-- ============================== end calc Section ==============================   -->
 
@@ -215,7 +214,6 @@
         setting
       </div>
 
-    </div>
 
 
 
@@ -245,7 +243,9 @@
           $("#Settings").hide();
           }
 
-       
+          HideAll();
+
+          $("#Home").show();
 
 
           function toggleSideNav(){
@@ -322,6 +322,40 @@
          var Weight = 0 ;
          var HeightType = "Cm";
          var Height = 0;
+         var age = 0 ;
+      
+
+
+             function getMetrics(){
+
+                  if(WeightType == "Kg"){
+
+                       Weight = Weight ; 
+
+                  }else if (WeightType=="Lb"){
+
+                        Weight = Weight / 2.2 ; 
+                        WeightType = "Kg"
+                  }
+
+                  
+                  if(HeightType == "Cm"){
+                    Height = Height ;
+
+                  }else if(HeightType = "Feet"){
+
+                    Height = ( Height * 0.3048 ) * 100 ; 
+                    HeightType = "Cm";
+                 }
+
+
+                 
+            }
+
+            
+
+
+          
 
           $("#Gender-Male").click(function(){
 
@@ -398,6 +432,68 @@
 
         });
 
+        $("#CALC-Age-Input").keyup(function(){
+          age = $(this).val();
+        })
+
+
+        $("#CALC-BTN").click(function(){
+         var Act = $("select#Act option").filter(":selected").val();
+         var BMR = 0 ;
+         getMetrics();
+         
+         if(gender == "f"){
+
+
+           BMR  = 10 * (Weight) + 6.25 * (Height) - 5 * age - 161;
+  
+
+
+
+         }else if(gender == "m"){
+
+          BMR  = 10 * (Weight) + 6.25 * (Height) - 5 * age + 5 ;
+
+         }
+
+         var cal  =  0 ;
+
+         if(Act == "1"){
+
+          cal = BMR * 1.2 ; 
+         }else if(Act == "2"){
+          cal = BMR * 1.375 ; 
+
+         }else if(Act == "3"){
+          cal = BMR * 1.55 ; 
+
+         }else if(Act == "4"){
+          cal = BMR * 1.725 ; 
+
+          }else if(Act == "5"){
+            cal = BMR * 1.9 ; 
+
+          }
+
+        
+
+         console.log("Gender is"+gender);
+         console.log("Age is"+age);
+         console.log("Weight type is"+WeightType);
+         console.log("Weight is"+Weight);
+         console.log("Height type is"+HeightType);
+         console.log("Height is"+Height);
+         console.log("Act is"+Act);
+         
+
+          $("#res").empty();
+          $("#res").append(cal+" cal");
+
+  
+       
+
+        });
+        
 // -------------------------- end calc functions --------------------------------------/
         });
         </script>

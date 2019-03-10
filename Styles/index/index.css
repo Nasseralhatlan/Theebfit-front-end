@@ -1,28 +1,12 @@
 
-
-
-
-
-
 /* Desktop  And Global*/
 
 body,html{
     background-color:rgb(245, 245, 245);  
     font-family: 'Open Sans', sans-serif;
-}
-
-.BODY{
-    z-index: 1;
-    position: fixed;
-    overflow: auto;
+    height: 100%;
     width: 100%;
-    left: 0%;
-    right: 0%;
-    top: 56px;
-    height: 93%;  
-    background-color:rgba(255, 255, 255, 0);  
 }
-
 
 .NAV{
     background-color: rgb(250, 250, 250) !important;
@@ -148,29 +132,30 @@ height: 50%;
     5px 5px 30px 5px rgba(0, 0, 0, 0.233); 
 }
 
+   /******************************************************* Calculater styles **********************************************************/
 
-/******************************************************* Calculater styles **********************************************************/
 
-.CALC-DIV{
+
+   .CALC-DIV{
     position: relative;
-    background-color:rgb(245, 245, 245);  
-    width: 90%;
-    left: 5%;
-    right: 5%;
+    background-color:rgb(245, 245, 245); 
+    width: 50%;
+    left: 25%;
+    right: 25%;
     height: auto;
     min-height: 535.6px;
-    top: 2.5%;
-    bottom: 2.5%;
+    top: 80px;;
+    margin-bottom: 5px;
     border-radius: 6px;
 }
 
 .CALC-RESULT-DIV{
     position: relative;
     width: 100%;
-    height: 100px;;
+    height: 200px;;
     background-color:rgb(228, 228, 228);  
     color: #702bbc;
-    font-size: 20px;
+    font-size: 40px;
     padding-top: 10%;
     text-align: center;
     border-top-left-radius:6px; 
@@ -243,23 +228,42 @@ height: 50%;
     background-color: #4d1f7e;
     color: white;
 }
+
+.CALC-ACT{
+    position: relative;
+    border-width: 0px;
+    width: 95%;
+    height: auto;
+    margin: 2.5%;
+}
 /******************************************************* end Calculater styles **********************************************************/
+
 
 /*Ultra wide*/
 
 @media (min-width:1950px){
 
-
+    .CALC-DIV{ 
+        width: 30%;
+        left: 35%;
+        right: 35%;
+        top: 100px;;
+    }
     
-
+   
+    
 }
 
 
 /* Ipad */
 @media (max-width:1024px) and (min-width:720px){
 
-
-     
+    .CALC-DIV{ 
+        width: 60%;
+        left: 20%;
+        right: 20%;
+        top: 120px;;
+    }
 }
 
 
@@ -273,5 +277,23 @@ height: 50%;
     .side-nav-active{
         transform: translateX(0px);
     }
+/******************************************************* Calculater styles **********************************************************/
+
+
+.CALC-DIV{ 
+    width: 90%;
+    left: 5%;
+    right: 5%;
+}
+
+.CALC-RESULT-DIV{
+    height: 100px;;
+    font-size: 20px;
+}
+
+
+
+/******************************************************* end Calculater styles **********************************************************/
+
     
 }
