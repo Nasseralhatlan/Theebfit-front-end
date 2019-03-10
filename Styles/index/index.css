@@ -14,13 +14,13 @@ body,html{
 .BODY{
     z-index: 1;
     position: fixed;
+    overflow: auto;
     width: 100%;
     left: 0%;
     right: 0%;
     top: 56px;
     height: 93%;  
     background-color:rgba(255, 255, 255, 0);  
-    padding-left: 300px;
 }
 
 
@@ -148,6 +148,102 @@ height: 50%;
     5px 5px 30px 5px rgba(0, 0, 0, 0.233); 
 }
 
+
+/******************************************************* Calculater styles **********************************************************/
+
+.CALC-DIV{
+    position: relative;
+    background-color:rgb(245, 245, 245);  
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    height: auto;
+    min-height: 535.6px;
+    top: 2.5%;
+    bottom: 2.5%;
+    border-radius: 6px;
+}
+
+.CALC-RESULT-DIV{
+    position: relative;
+    width: 100%;
+    height: 100px;;
+    background-color:rgb(228, 228, 228);  
+    color: #702bbc;
+    font-size: 20px;
+    padding-top: 10%;
+    text-align: center;
+    border-top-left-radius:6px; 
+    border-top-right-radius:6px; 
+    margin-right:0px; 
+}
+
+.CALC-OP{
+ position: relative;
+ width: 45%;
+ font-size: 15px;
+ margin: 2.5%;
+ float: left;
+ text-align: center;
+ cursor: pointer;
+}
+
+.CALC-OP1{
+    border: 0px;
+    border-bottom: 3px solid #712bbc00;
+    height: 50px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.CALC-OP1-Active{
+    border-bottom: 3px solid #712bbc;
+    transition: 0.3s;
+}
+
+.CALC-OP2{
+    border: 0px;
+    border-bottom: 3px solid #712bbc00;
+    height: 50px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.CALC-OP2-Active{
+    border-bottom: 3px solid #FDF028;
+    transition: 0.3s;
+}
+
+.CALC-INPUT{
+    position: relative;
+    border-width: 0px;
+    width: 95%;
+    background-color: rgb(219, 219, 219);
+    height: 40px;
+    margin: 2.5%;
+}
+
+.CALC-INPUT:focus{
+    background-color: rgb(219, 219, 219);
+}
+
+.CALC-BTN{
+    position: relative;
+    border-width: 0px;
+    width: 95%;
+    background-color: #702bbc;
+    height: 40px;
+    margin: 2.5%;
+    color: white;
+}
+
+.CALC-BTN:hover{
+    background-color: #4d1f7e;
+    color: white;
+}
+/******************************************************* end Calculater styles **********************************************************/
 
 /*Ultra wide*/
 
