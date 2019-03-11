@@ -252,8 +252,7 @@ height: 50%;
         top: 100px;;
     }
     
-   
-    
+      
 }
 
 
@@ -286,6 +285,7 @@ height: 50%;
     width: 90%;
     left: 5%;
     right: 5%;
+    margin-bottom: 30px;
 }
 
 .CALC-RESULT-DIV{
