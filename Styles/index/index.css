@@ -241,6 +241,128 @@ height: 50%;
 /******************************************************* end Calculater styles **********************************************************/
 
 
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************* Food styles **********************************************************/
+.MAC-CARD{
+position: relative;
+width: 95%;
+left: 2.5%;
+right: 2.5%;
+height: 25%;
+min-height: 160px;
+top: 80px;
+border-radius: 6px; 
+float: left;
+}
+
+.CAL{
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 29%;
+    margin-bottom: 2%;
+    color: #702bbc;
+    padding: 3%;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.EDIT-CAL-BTN{
+    position: relative;
+    float: right;
+    width: 15%;
+    height: 80%;
+    right: 5%;
+    top: 10%;
+    bottom: 10%;
+    font-size: 12px;
+    background-color: #702bbc;
+    color: white;
+}
+.BAR{
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 20.5%;
+    margin-top: 1.25%;
+    margin-bottom:1.25%; 
+}
+
+.LABEL{
+    position: relative;
+    width: 20%;
+    font-size: 12px;
+    color: #702bbc;
+    float: left;
+    padding-left: 3px;
+}
+
+.MACROS{
+    position: relative;
+    width: 80%;
+    float: left;
+    padding-top: 3px;
+}
+
+
+.CUR-GRAMS{
+    position: relative;
+    width: 7.5%;
+    height: 12px;
+    font-size: 8px;
+    color: #702bbc;
+    float: left;
+}
+
+.PROGRESS{
+    position: relative;
+    width: 80%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    float: left;
+    height: 12px;
+}
+
+.PROGRESS-BAR{
+    height: 12px;
+}
+
+.GOAL-GRAMS{
+    position: relative;
+    width: 7.5%;
+    height: 12px;
+    font-size: 8px;
+    color: #702bbc;
+    float: left;
+}
+
+
+.FOOD{
+    position: relative;
+    float: left;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    height: 70px;
+    top: 15%;
+    min-height: 70px; 
+    border-radius: 6px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #702bbc;
+}
+/******************************************************* end Food styles **********************************************************/
+
 /*Ultra wide*/
 
 @media (min-width:1950px){
