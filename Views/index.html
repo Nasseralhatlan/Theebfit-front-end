@@ -155,7 +155,7 @@
 
               <div id="res" class="CALC-RESULT-DIV">
 
-  0 cal 
+                           0 cal 
              </div>
 
 
@@ -163,18 +163,18 @@
 
                 <div id="Gender-Female" class="CALC-OP1 CALC-OP CALC-OP1-Active" >Female</div>
                 <div id="Gender-Male"  class="CALC-OP2 CALC-OP">Male</div>
-                <input id="CALC-Age-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Age">
+                <input id="CALC-Age-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Enter Age">
 
 
                 <div id="Kg" class="CALC-OP1 CALC-OP CALC-OP1-Active" > Kg </div>
                 <div id="Lb"  class="CALC-OP2 CALC-OP"> lb</div>
 
-                <input id="CALC-Weight-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Weight">
+                <input id="CALC-Weight-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Enter Weight">
 
                 <div id="Cm" class="CALC-OP1 CALC-OP CALC-OP1-Active" > Cm </div>
                 <div id="Feet"  class="CALC-OP2 CALC-OP"> Feet </div>
 
-                <input id="CALC-Height-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Height">
+                <input id="CALC-Height-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Enter Height">
 
                 <label class="CALC-ACT">Activity level</label>
                 <select id="Act" class="custom-select CALC-INPUT" id="inputGroupSelect01" aria-placeholder="Activity level">
@@ -219,285 +219,9 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-          
-
-          function RemoveAllClasses(){
-            $("#Home-btn").removeClass("active");
-            $("#Food-btn").removeClass("active");
-            $("#Workout-btn").removeClass("active");
-            $("#Weight-btn").removeClass("active");
-            $("#Calc-btn").removeClass("active");
-            $("#Settings-btn").removeClass("active");
-          }
-
-
-          function HideAll(){
-          $("#Home").hide();
-          $("#Food").hide();
-          $("#Workout").hide();
-          $("#Weight").hide();
-          $("#Calc").hide();
-          $("#Settings").hide();
-          }
-
-          HideAll();
-
-          $("#Home").show();
-
-
-          function toggleSideNav(){
-            $("#SIDE_NAV").toggleClass("side-nav-active");
-            $("#overlay").toggleClass("overlay-active");
-          }
-
-          $("img").click(function(){
-            toggleSideNav();
-            });
-        
-            $("#overlay").click(function(){
-              toggleSideNav();
-          });
-
-
-
-          $("#Home-btn").click(function(){
-            RemoveAllClasses();
-            HideAll();
-            toggleSideNav();
-            $("#Home").show();
-            $("#Home-btn").addClass("active");
-          });
-
-
-          $("#Food-btn").click(function(){
-           RemoveAllClasses();
-            HideAll();
-            toggleSideNav();
-            $("#Food").show();
-            $("#Food-btn").addClass("active");
-          });
-
-
-          $("#Workout-btn").click(function(){
-            RemoveAllClasses();
-            HideAll();
-            toggleSideNav();
-            $("#Workout").show();
-            $("#Workout-btn").addClass("active");
-          });
-
-
-          $("#Weight-btn").click(function(){
-            RemoveAllClasses();
-            HideAll();
-            toggleSideNav();
-            $("#Weight").show();
-            $("#Weight-btn").addClass("active");
-          });
-
-          $("#Calc-btn").click(function(){
-            RemoveAllClasses();
-            HideAll();
-            toggleSideNav();
-            $("#Calc").show();
-            $("#Calc-btn").addClass("active");
-          });
-
-
-          $("#Settings-btn").click(function(){
-            RemoveAllClasses();
-            HideAll();
-            toggleSideNav();
-            $("#Settings").show();
-            $("#Settings-btn").addClass("active");
-          });
-
-
-// --------------------------------- Calc functions -------------------------------------------------------//
-         var gender = "f";
-         var WeightType = "Kg";
-         var Weight = 0 ;
-         var HeightType = "Cm";
-         var Height = 0;
-         var age = 0 ;
-      
-
-
-             function getMetrics(){
-
-                  if(WeightType == "Kg"){
-
-                       Weight = Weight ; 
-
-                  }else if (WeightType=="Lb"){
-
-                        Weight = Weight / 2.2 ; 
-                        WeightType = "Kg"
-                  }
-
-                  
-                  if(HeightType == "Cm"){
-                    Height = Height ;
-
-                  }else if(HeightType = "Feet"){
-
-                    Height = ( Height * 0.3048 ) * 100 ; 
-                    HeightType = "Cm";
-                 }
-
-
-                 
-            }
-
-            
-
-
-          
-
-          $("#Gender-Male").click(function(){
-
-            gender = "m" ;
-
-            $("#Gender-Female").removeClass("CALC-OP1-Active");
-            $("#Gender-Male").addClass("CALC-OP2-Active")
-           
-        });
-
-
-        $("#Gender-Female").click(function(){
-
-          gender = "f" ;
-
-          $("#Gender-Male").removeClass("CALC-OP2-Active");
-          $("#Gender-Female").addClass("CALC-OP1-Active")
-
-       });  
-
-
-       $("#Kg").click(function(){
-
-        WeightType = "Kg" ;
-
-        $("#Lb").removeClass("CALC-OP2-Active");
-        $("#Kg").addClass("CALC-OP1-Active")
-
-        });
-
-
-        $("#Lb").click(function(){
-
-        WeightType = "Lb" ;
-
-        $("#Kg").removeClass("CALC-OP1-Active");
-        $("#Lb").addClass("CALC-OP2-Active")
-
-        });
-
-        
-        $("#CALC-Weight-Input").keyup(function(){
-          
-            Weight = $(this).val();
-
-        });
-
-
-
-
-        $("#Cm").click(function(){
-
-        HeightType = "Cm" ;
-
-        $("#Feet").removeClass("CALC-OP2-Active");
-        $("#Cm").addClass("CALC-OP1-Active")
-
-        });
-
-
-        $("#Feet").click(function(){
-
-        HeightType = "Feet" ;
-
-        $("#Cm").removeClass("CALC-OP1-Active");
-        $("#Feet").addClass("CALC-OP2-Active")
-
-        });
-
-
-        $("#CALC-Height-Input").keyup(function(){
-          
-            Height = $(this).val();
-
-        });
-
-        $("#CALC-Age-Input").keyup(function(){
-          age = $(this).val();
-        })
-
-
-        $("#CALC-BTN").click(function(){
-         var Act = $("select#Act option").filter(":selected").val();
-         var BMR = 0 ;
-         getMetrics();
-         
-         if(gender == "f"){
-
-
-           BMR  = 10 * (Weight) + 6.25 * (Height) - 5 * age - 161;
-  
-
-
-
-         }else if(gender == "m"){
-
-          BMR  = 10 * (Weight) + 6.25 * (Height) - 5 * age + 5 ;
-
-         }
-
-         var cal  =  0 ;
-
-         if(Act == "1"){
-
-          cal = BMR * 1.2 ; 
-         }else if(Act == "2"){
-          cal = BMR * 1.375 ; 
-
-         }else if(Act == "3"){
-          cal = BMR * 1.55 ; 
-
-         }else if(Act == "4"){
-          cal = BMR * 1.725 ; 
-
-          }else if(Act == "5"){
-            cal = BMR * 1.9 ; 
-
-          }
-
-        
-
-         console.log("Gender is"+gender);
-         console.log("Age is"+age);
-         console.log("Weight type is"+WeightType);
-         console.log("Weight is"+Weight);
-         console.log("Height type is"+HeightType);
-         console.log("Height is"+Height);
-         console.log("Act is"+Act);
-         
-
-          $("#res").empty();
-          $("#res").append(cal+" cal");
-
-  
-       
-
-        });
-        
-// -------------------------- end calc functions --------------------------------------/
-        });
-        </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../Js/Calc.js"></script>
+<script src="../Js/SideNav.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

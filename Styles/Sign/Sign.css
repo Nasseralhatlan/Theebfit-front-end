@@ -21,7 +21,7 @@
      width: 50%;
      top: 50%;
      font-size: 70px;
-    color: #9450dd;
+     color: #9450dd;
     }
 
 
@@ -170,7 +170,7 @@
 
     body,html{
         background-color:#999999;  
-        background-image: url("../../Img/bg4.jpg");
+        background-image: url("../../Img/bg.jpg");
         background-size: cover;
         background-position: 0 -350px; 
         background-repeat: no-repeat;
