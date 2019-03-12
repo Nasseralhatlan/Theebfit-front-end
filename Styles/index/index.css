@@ -270,12 +270,43 @@ float: left;
     width: 100%;
     float: left;
     height: 40%;
-    color: #702bbc;
-    padding-top: 12.5%;
-    text-align: center;
-    border-top-left-radius: 6px;
+    background-color:rgb(228, 228, 228);  
     border-top-right-radius: 6px;
-    background-color: rgb(240, 240, 240);
+    border-top-left-radius: 6px;
+}
+
+
+.CAL-LEFT{
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: left;
+  font-size: 25px;
+  text-align: center;
+  color: #702bbc;
+  padding-top: 10%;
+  border-top-left-radius: 6px;
+}
+
+
+.CAL-RIGHT{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-top-right-radius: 6px;
+}
+
+.CAL-BTN{
+position: relative;
+width: 50% ;
+left: 25%;
+right: 25%;
+top: 30%;
+height: 40%;
+bottom: 30%;
+box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.170),
+5px 5px 30px 5px rgba(0, 0, 0, 0.170); 
 }
 
 
@@ -285,12 +316,13 @@ float: left;
     float: left;
     height: 20%;
     padding-top: 5%;
+    background-color: rgb(255, 255, 255);
 }
 
 .LABEL{
     position: relative;
-    width: 20%;
-    font-size: 15px;
+    width: 17%;
+    font-size: 13px;
     color: #702bbc;
     float: left;
     padding-left: 3px;
@@ -298,8 +330,8 @@ float: left;
 
 .MACROS{
     position: relative;
-    width: 80%;
-    float: left;
+    width: 83%;
+    float: right;
     padding-top: 3px;
 }
 
@@ -315,22 +347,22 @@ float: left;
 
 .PROGRESS{
     position: relative;
-    width: 80%;
+    width: 79%;
     margin-left: 1.5%;
     margin-right: 1.5%;
     float: left;
-    height: 15px !important;
+    height: 13px !important;
 }
 
 .PROGRESS-BAR{
-    height: 15px !important;
+    height: 13px !important;
 }
 
 .GOAL-GRAMS{
     position: relative;
-    width: 7.5%;
+    width: 8.5%;
     height: 12px;
-    font-size: 8px;
+    font-size: 10px;
     color: #702bbc;
     float: left;
 }
@@ -357,7 +389,7 @@ float: left;
     width: 100%;
     height: 100px !important;
     padding-top: 15px;
-    background-color: rgb(240, 240, 240);
+    background-color:rgb(228, 228, 228);  
     font-size: 15px;
 }
 
