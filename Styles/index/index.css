@@ -258,7 +258,7 @@ position: relative;
 width: 95%;
 left: 2.5%;
 right: 2.5%;
-height: 35%;
+height: 40%;
 min-height: 160px;
 top: 80px;
 border-radius: 6px; 
@@ -271,10 +271,9 @@ float: left;
     width: 100%;
     float: left;
     height: 40%;
-    background-color:rgb(255, 255, 255);  
+    background-color:rgb(228, 228, 228);  
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
-    border-bottom: 5px solid rgb(228, 228, 228);  
     ;
     
 }
@@ -285,10 +284,10 @@ float: left;
   width: 60%;
   height: 100%;
   float: left;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   color: #702bbc;
-  padding-top: 9%;
+  padding-top: 10%;
   border-top-left-radius: 6px;
 }
 
@@ -303,7 +302,7 @@ float: left;
 
 .CAL-BTN{
 position: relative;
-width: 40% ;
+width: 50% ;
 left: 40%;
 right: 10%;
 top: 30%;
