@@ -264,10 +264,22 @@ height: 50%;
     border-radius: 6px;
 }
 
-
+.MACROS-DIV-CAL{
+    position: relative;
+    color: #702bbc;
+    background-color: rgba(228, 228, 228);
+    width: 100%;
+    height: 80px;;
+    text-align:center;
+    padding-top: 20px;
+   font-size: 25px;
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+}
 .MACROS-DIV-LABEL{
     position: relative;
     width: 100%;
+    margin-bottom: 10px
 }
 
 .MACROS-TYPE{
@@ -308,6 +320,7 @@ height: 50%;
 .MACROS-DIV-PROGRESS{
     position: relative;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 
@@ -316,6 +329,7 @@ height: 50%;
     float: left;
     width: 26%;
     left: 2%; 
+    color: #702bbc;
 }
 
 
@@ -344,21 +358,30 @@ height: 50%;
     font-size: 8px; 
 }
 
+.PRO{
+   background-color: #702bbc;
+}
 
+.CARB{
+    background-color: #702bbc;
+}
 
+.FAT{
+    background-color: #702bbc;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.EDIT-CAL-BTN{
+position: relative;
+ width: 96%;
+ left: 2%;
+ right: 2%;
+ color: white;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.150),
+ 5px 5px 30px 5px rgba(0, 0, 0, 0.150); 
+border-radius: 4px;
+}
 
 
 
