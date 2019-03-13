@@ -253,170 +253,117 @@ height: 50%;
 
 
 /******************************************************* Food styles **********************************************************/
-.MAC-CARD{
-position: relative;
-width: 95%;
-left: 2.5%;
-right: 2.5%;
-height: 40%;
-min-height: 160px;
-top: 80px;
-border-radius: 6px; 
-float: left;
 
-}
-
-.CAL{
+.MACROS-DIV{
     position: relative;
-    width: 100%;
-    float: left;
-    height: 40%;
-    background-color:rgb(228, 228, 228);  
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
-    ;
-    
-}
-
-
-.CAL-LEFT{
-  position: relative;
-  width: 60%;
-  height: 100%;
-  float: left;
-  font-size: 20px;
-  text-align: center;
-  color: #702bbc;
-  padding-top: 10%;
-  border-top-left-radius: 6px;
-}
-
-
-.CAL-RIGHT{
-    position: relative;
-    width: 40%;
-    height: 100%;
-    float: left;
-    border-top-right-radius: 6px;
-}
-
-.CAL-BTN{
-position: relative;
-width: 50% ;
-left: 40%;
-right: 10%;
-top: 30%;
-height: 40%;
-bottom: 30%;
-font-size: 12px;
-box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.123),
-5px 5px 30px 5px rgba(0, 0, 0, 0.123); 
-}
-
-
-.BAR{
-    position: relative;
-    width: 100%;
-    float: left;
-    height: 20%;
-    padding-top: 5%;
-    background-color: rgb(255, 255, 255);
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-}
-
-.LABEL{
-    position: relative;
-    width: 17%;
-    font-size: 13px;
-    color: #702bbc;
-    float: left;
-    padding-left: 3px;
-}
-
-.MACROS{
-    position: relative;
-    width: 83%;
-    float: right;
-    padding-top: 3px;
-}
-
-
-.CUR-GRAMS{
-    position: relative;
-    width: 7.5%;
-    height: 12px;
-    font-size: 10px;
-    color: #702bbc;
-    float: left;
-}
-
-.PROGRESS{
-    position: relative;
-    width: 79%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    float: left;
-    height: 13px !important;
-}
-
-.PROGRESS-BAR{
-    height: 13px !important;
-}
-
-.GOAL-GRAMS{
-    position: relative;
-    width: 8.5%;
-    height: 12px;
-    font-size: 10px;
-    color: #702bbc;
-    float: left;
-}
-
-
-.FOOD-LIST{
-    position: relative;
-    float: left;
     width: 95%;
     left: 2.5%;
     right: 2.5%;
+    top: 80px;
     height: auto;
-    min-height: 100px;
-    top: 15%;
-    border-radius: 6px; 
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: #702bbc;
     border-radius: 6px;
 }
 
-.FOOD-1{
+
+.MACROS-DIV-LABEL{
     position: relative;
     width: 100%;
-    height: 100px !important;
-    padding-top: 15px;
-    background-color:rgb(228, 228, 228);  
-    font-size: 15px;
 }
 
- .FIRST-FOOD{
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
- }
+.MACROS-TYPE{
+    position: relative;
+    width: 20%;
+    padding-left: 2%;
+    font-size: 10px;
+    float: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
 
- .LAST-FOOD{
-   border-bottom-left-radius: 6px;
-   border-bottom-right-radius: 6px;
- }
-.FOOD-2{
+
+.MACROS-TOTAL-GRAMS{
+    position: relative;
+    width: 60%;
+    padding-left:5%; 
+    float: left;
+    font-size: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+.MACROS-GOAL-GRAMS{
+    position: relative;
+    width: 18%;
+    right: 2%;
+    float: left;
+    text-align: right;
+    font-size: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+
+.MACROS-DIV-PROGRESS{
     position: relative;
     width: 100%;
-    height: 100px !important;
-    padding-top: 15px;
-    background-color: rgb(255, 255, 255);
-    font-size: 15px;
-
 }
+
+
+.MACROS-DIV-PROGRESS-ROW-TYPE{
+    position: relative;
+    float: left;
+    width: 26%;
+    left: 2%; 
+}
+
+
+.MACROS-DIV-PROGRESS-ROW-TOTAL{
+    position: relative;
+    float: left;
+    width: 6%;
+    margin-top: 6px;
+    font-size: 8px; 
+}
+
+.MACROS-DIV-PROGRESS-ROW-PROGRESS{
+    position: relative;
+    float: left;
+    width: 56%;
+    margin-top: 6px;
+}
+
+.MACROS-DIV-PROGRESS-ROW-GOAL{
+    position: relative;
+    float: left;
+    width: 8%;
+    margin-top: 6px;
+    text-align: right;
+    padding-left: 2px;
+    font-size: 8px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /******************************************************* end Food styles **********************************************************/
 
 /*Ultra wide*/
