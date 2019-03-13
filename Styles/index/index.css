@@ -276,12 +276,66 @@ height: 50%;
     background-color: rgba(228, 228, 228);
     width: 100%;
     height: 80px;;
-    text-align:center;
-    padding-top: 20px;
-   font-size: 25px;
-   border-top-left-radius: 6px;
-   border-top-right-radius: 6px;
+    padding-top: 15px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
+
+.MACROS-DIV-CAL-CAL{
+    position: relative;
+    width: 100%;
+    height: 50px;;
+    font-size: 25px;
+}
+
+.MACROS-DIV-CAL-LABEL{
+    position: relative;
+    width: 100%;
+    height: 10px;;
+    font-size: 8px;
+    color: black  !important;
+}
+
+.MACROS-DIV-CAL-GOAL{
+    position: relative;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+
+.MACROS-DIV-CAL-MIN{
+    position: relative;
+    width: 20%;
+    float: left;
+    text-align: center;
+
+}
+
+.MACROS-DIV-CAL-TOTAL{
+    position: relative;
+    width: 20%;
+    float: left;
+    text-align: center;
+
+}
+
+.MACROS-DIV-CAL-EQUAL{
+    position: relative;
+    width: 20%;
+    float: left;
+    text-align: center;
+
+}
+
+.MACROS-DIV-CAL-RES{
+    position: relative;
+    width: 20%;
+    float: left;
+    text-align: center
+
+}
+
 .MACROS-DIV-LABEL{
     position: relative;
     width: 100%;
@@ -382,7 +436,7 @@ height: 50%;
  width: 20%;
  left: 78%;
  right: 2%;
- height: 30px;;
+ height: 35px;;
  font-size: 12px;
  padding: 0;
  color: white;

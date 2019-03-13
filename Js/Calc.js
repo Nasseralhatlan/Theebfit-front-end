@@ -163,6 +163,10 @@ if(Act == "1"){
  
     cal = BMR * 1.375 ; 
 
+}else if(Act == "2.5"){
+  
+    cal = BMR * 1.45 ; 
+
 }else if(Act == "3"){
  
     cal = BMR * 1.55 ; 
