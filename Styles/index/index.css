@@ -501,12 +501,12 @@ float: left;
 .FOOD-DIV-HEAD{
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 40px;
     font-size: 12px;
     color: white;
     background-color: #702bbc;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -521,17 +521,17 @@ float: left;
 .FOOD{
     position: relative;
     width: 100%;
-    height: 80px;
+    height: 90px;
 }
 
 
 .FOOD-1{
-    color: rgb(255, 255, 255);
-    background-color: rgb(228, 228, 228)
+    color: #702bbc;
+    background-color: rgb(228, 228, 228);
 }
 
 .FOOD-2{
-    color: rgb(255, 255, 255);
+    color: #702bbc;
     background-color: rgb(255, 255, 255);
 }
 
@@ -545,6 +545,61 @@ float: left;
     background-color: rgb(111, 0, 131);
 } */
 
+.FOOD-LEFT{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-color: #ffffff00;
+    margin: 0px;
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.FOOD-NAME-DIV{
+    position: relative;
+    width: 100%;
+    height: 65%;
+    padding-top: 10px;
+    background-color: #ffffff00;
+}
+
+.FOOD-SERVING-DIV{
+    position: relative;
+    width: 100%;
+    height: 35%;
+    background-color: #ffffff00;
+    float: left;
+    font-size: 15px;
+    margin: 0px;
+}
+
+.FOOD-RIGHT{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    padding-top: 20px;
+    text-align: center;
+    background-color: #ffffff00;
+    margin: 0px;
+    float: left;
+}
+
+.ADD-FOOD-BTN-DIV{
+   position: relative;
+   width: 100%;
+   height: auto;
+   margin-bottom: 10px
+}
+
+.ADD-FOOD-BTN{
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    border-radius:0px; 
+    height: 60px;
+}
 /******************************************************* end Food styles **********************************************************/
 
 /*Ultra wide*/
