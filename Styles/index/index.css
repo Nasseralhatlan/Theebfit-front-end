@@ -34,7 +34,6 @@ body,html{
     5px 5px 30px 5px rgba(0, 0, 0,0.090);
 }
 
-
 .side-nav{
     position: fixed;
     height: 100%;
@@ -438,7 +437,7 @@ height: 50%;
  position: relative;
  background-color: #702bbc;
  width: 20%;
- left: 78%;
+ left: 36%;
  right: 2%;
  height: 35px;;
  font-size: 12px;
@@ -449,8 +448,31 @@ height: 50%;
  box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.150),
  5px 5px 30px 5px rgba(0, 0, 0, 0.150); 
 border-radius: 4px;
+float: left;
 }
 
+.ADD-FOOD-CAL-BTN{
+    position: relative;
+    background-color: #27a72d;
+    width: 40%;
+    left: 2%;
+    right: 2%;
+    height: 35px;;
+    font-size: 12px;
+    padding: 0;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.150),
+    5px 5px 30px 5px rgba(0, 0, 0, 0.150); 
+   border-radius: 4px;
+   float: left;
+}
+
+.ADD-FOOD-CAL-BTN:hover{
+    background-color: #1c7c21;
+    color: white;
+}
 
 .EDIT-CAL-BTN:hover{
   background-color: #4d217c;
@@ -491,27 +513,22 @@ border-radius: 4px;
 
 .FOOD{
     position: relative;
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
+    width: 100%;
     height: 80px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border-radius:3px; 
 }
 
 
 .FOOD-1{
     color: rgb(255, 255, 255);
-    background-color: rgb(48, 0, 56);
+    background-color: rgb(228, 228, 228)
 }
 
 .FOOD-2{
     color: rgb(255, 255, 255);
-    background-color: rgb(71, 2, 82);
+    background-color: rgb(255, 255, 255);
 }
 
-.FOOD-3{
+/* .FOOD-3{
     color: rgb(255, 255, 255);
     background-color: rgb(91, 0, 105);
 }
@@ -519,7 +536,7 @@ border-radius: 4px;
 .FOOD-4{
     color: rgb(255, 255, 255);
     background-color: rgb(111, 0, 131);
-}
+} */
 
 /******************************************************* end Food styles **********************************************************/
 

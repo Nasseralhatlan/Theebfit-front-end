@@ -124,9 +124,7 @@ if(HeightType == "Feet"){
 var Act = $("select#Act option").filter(":selected").val();
 var BMR = 0 ;
 
-console.log(Height);
-console.log(Weight);
-console.log(age);
+
 
 if(Height != 0 && Height != "0" && Weight != 0 && Weight != "0" && age != 0 && age != "0"){
             
@@ -147,7 +145,7 @@ if(Height != 0 && Height != "0" && Weight != 0 && Weight != "0" && age != 0 && a
     $("#res").empty();
     $("#res").append("Please fill the form");
     $("#res").removeClass("CALC-RESULT-DIV-GLOW");
-    $(window).scrollTop(0);
+    $("body,html").animate({scrollTop:0},500);
 
     return;
 }
@@ -187,7 +185,7 @@ if(Act == "1"){
  $("#res").empty();
  $("#res").append(Math.trunc(cal)+" cal");
  $("#res").addClass("CALC-RESULT-DIV-GLOW");
- $(window).scrollTop(0);
+ $("body,html").animate({scrollTop:0},500);
 
 
 });
