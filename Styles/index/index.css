@@ -2,7 +2,7 @@
 /* Desktop  And Global*/
 
 body,html{
-    background-color:rgb(250, 250, 250);  
+    background-color:rgb(255, 255, 255);  
     font-family: 'Open Sans', sans-serif;
     height: auto;
     min-height: 100%;
@@ -154,7 +154,7 @@ height: 50%;
     position: relative;
     width: 100%;
     height: 200px;;
-    background-color:rgb(228, 228, 228);  
+    background-color:rgb(208, 208, 208);  
     color: #702bbc;
     font-size: 40px;
     padding-top: 10%;
@@ -264,7 +264,7 @@ height: 50%;
     width: 95%;
     left: 2.5%;
     right: 2.5%;
-    top: 80px;
+    top: 90px;
     height: auto;
     border-radius: 6px;
 }
@@ -272,7 +272,7 @@ height: 50%;
 .MACROS-DIV-CAL{
     position: relative;
     color: #702bbc;
-    background-color: rgba(228, 228, 228);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 90px;;
     padding-top: 15px;
@@ -293,7 +293,7 @@ height: 50%;
     height: 10px;;
     font-size: 8px;
     color: black  !important;
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
 }
 
 .MACROS-DIV-CAL-GOAL{
@@ -422,15 +422,15 @@ height: 50%;
 }
 
 .PRO{
-   background-color: #31ad00;
+   background-color: #cc1d1d;
 }
 
 .CARB{
-    background-color: #1db6ca;
+    background-color: #e2c41a;
 }
 
 .FAT{
-    background-color: #ebc90b;
+    background-color: #0dc526;
 }
 
 .EDIT-CAL-BTN{
@@ -489,7 +489,7 @@ float: left;
 
 .FOOD-MAIN-DIV{
     position: relative;
-    top: 100px;
+    top: 130px;
     width: 95%;
     left: 2.5%;
     right: 2.5%;
@@ -527,7 +527,7 @@ float: left;
 
 .FOOD-1{
     color: #702bbc;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(208, 208, 208);
 }
 
 .FOOD-2{
