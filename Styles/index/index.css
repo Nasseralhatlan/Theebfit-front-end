@@ -285,7 +285,7 @@ height: 50%;
     position: relative;
     width: 100%;
     height: 50px;;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .MACROS-DIV-CAL-LABEL{
@@ -299,8 +299,9 @@ height: 50%;
 
 .MACROS-DIV-CAL-GOAL{
     position: relative;
-    width: 20%;
+    width: 30%;
     float: left;
+    padding-left: 5px;
     text-align: center;
     color: #702bbc;
 }
@@ -308,7 +309,7 @@ height: 50%;
 
 .MACROS-DIV-CAL-MIN{
     position: relative;
-    width: 20%;
+    width: 10%;
     float: left;
     text-align: center;
     color: black;
@@ -324,7 +325,7 @@ height: 50%;
 
 .MACROS-DIV-CAL-EQUAL{
     position: relative;
-    width: 20%;
+    width: 10%;
     float: left;
     text-align: center;
     color: black;
@@ -332,8 +333,9 @@ height: 50%;
 
 .MACROS-DIV-CAL-RES{
     position: relative;
-    width: 20%;
+    width: 30%;
     float: left;
+    padding-right: 5px;
     text-align: center;
     color: #702bbc;
 }
@@ -429,7 +431,7 @@ height: 50%;
 }
 
 .FAT{
-    background-color: #ffee05;
+    background-color: #ebc90b;
 }
 
 .EDIT-CAL-BTN{
@@ -455,6 +457,69 @@ border-radius: 4px;
   color: white;
 }
 
+
+.FOOD-MAIN-DIV{
+    position: relative;
+    top: 100px;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+}
+
+
+.FOOD-DIV-HEAD{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    color: white;
+    background-color: #702bbc;
+    text-align: center;
+    padding-top: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.FOOD-DIV-LIST{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+}
+
+.FOOD{
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius:3px; 
+}
+
+
+.FOOD-1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 0, 56);
+}
+
+.FOOD-2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(71, 2, 82);
+}
+
+.FOOD-3{
+    color: rgb(255, 255, 255);
+    background-color: rgb(91, 0, 105);
+}
+
+.FOOD-4{
+    color: rgb(255, 255, 255);
+    background-color: rgb(111, 0, 131);
+}
 
 /******************************************************* end Food styles **********************************************************/
 
