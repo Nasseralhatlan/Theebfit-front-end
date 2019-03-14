@@ -436,8 +436,8 @@ height: 50%;
 .EDIT-CAL-BTN{
  position: relative;
  background-color: #702bbc;
- width: 20%;
- left: 36%;
+ width: 12%;
+ left: 86%;
  right: 2%;
  height: 35px;;
  font-size: 12px;
@@ -451,7 +451,14 @@ border-radius: 4px;
 float: left;
 }
 
-.ADD-FOOD-CAL-BTN{
+.EDIT-ICON{
+    position: relative;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    color: white;
+}
+/* .ADD-FOOD-CAL-BTN{
     position: relative;
     background-color: #27a72d;
     width: 40%;
@@ -467,7 +474,7 @@ float: left;
     5px 5px 30px 5px rgba(0, 0, 0, 0.150); 
    border-radius: 4px;
    float: left;
-}
+} */
 
 .ADD-FOOD-CAL-BTN:hover{
     background-color: #1c7c21;

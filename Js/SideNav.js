@@ -33,7 +33,7 @@ $(document).ready(function(){
     }
 
 
-    $("img").click(function(){
+    $("#MENU").click(function(){
       toggleSideNav();
       });
   
