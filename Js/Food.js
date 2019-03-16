@@ -1,8 +1,13 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  function HideAllFood() {
+    $("#FOOD-MACROS-DIV").hide();
+    $("#FOOD-LIST-DIV").hide();
+    $("#ADD-FOOD-BTN").hide();
+  }
 
-    $("#ADD-FOOD-BTN").click(function(){
-
-        $("body,html").animate({scrollTop:0},500);
-    });
-
+  function ShowAll() {
+    $("#FOOD-MACROS-DIV").show();
+    $("#FOOD-LIST-DIV").show();
+    $("#ADD-FOOD-BTN").show();
+  }
 });

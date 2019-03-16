@@ -35,9 +35,9 @@ $(document).ready(function(){
 
     $("#MENU").click(function(){
       toggleSideNav();
-      });
+    });
   
-      $("#overlay").click(function(){
+    $("#overlay").click(function(){
         toggleSideNav();
     });
 
@@ -53,7 +53,7 @@ $(document).ready(function(){
 
 
     $("#Food-btn").click(function(){
-     RemoveAllClasses();
+      RemoveAllClasses();
       HideAll();
       toggleSideNav();
       $("#Food").show();
