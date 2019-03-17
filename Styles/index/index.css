@@ -422,49 +422,22 @@ height: 50%;
 }
 
 .PRO{
-        background-color: #0dc526;
-
+   background-color: #1d63cc;
 }
 
 .CARB{
-    background-color: #0057f8;
+    background-color: #1d63cc;
 }
 
 .FAT{
-    background-color: #ff9100;
-
+    background-color: #1d63cc;
 }
 
 .EDIT-CAL-BTN{
- position: relative;
- background-color: #702bbc;
- width: 12%;
- left: 86%;
- right: 2%;
- height: 35px;;
- font-size: 12px;
- padding: 0;
- color: white;
- margin-top: 10px;
- margin-bottom: 10px;
- box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.150),
- 5px 5px 30px 5px rgba(0, 0, 0, 0.150); 
-border-radius: 4px;
-float: left;
-}
-
-.EDIT-ICON{
     position: relative;
-    width: 20px;
-    height: auto;
-    text-align: center;
-    color: white;
-}
-/* .ADD-FOOD-CAL-BTN{
-    position: relative;
-    background-color: #27a72d;
-    width: 40%;
-    left: 2%;
+    background-color: #702bbc;
+    width: 12%;
+    left: 86%;
     right: 2%;
     height: 35px;;
     font-size: 12px;
@@ -476,7 +449,15 @@ float: left;
     5px 5px 30px 5px rgba(0, 0, 0, 0.150); 
    border-radius: 4px;
    float: left;
-} */
+   }
+   
+   .EDIT-ICON{
+       position: relative;
+       width: 20px;
+       height: auto;
+       text-align: center;
+       color: white;
+   }
 
 .ADD-FOOD-CAL-BTN:hover{
     background-color: #1c7c21;
@@ -528,24 +509,14 @@ float: left;
 
 
 .FOOD-1{
-    color: #702bbc;
+    color: #000000;
     background-color: rgb(208, 208, 208);
 }
 
 .FOOD-2{
-    color: #702bbc;
+    color: #000000;
     background-color: rgb(255, 255, 255);
 }
-
-/* .FOOD-3{
-    color: rgb(255, 255, 255);
-    background-color: rgb(91, 0, 105);
-}
-
-.FOOD-4{
-    color: rgb(255, 255, 255);
-    background-color: rgb(111, 0, 131);
-} */
 
 .FOOD-LEFT{
     position: relative;
@@ -588,33 +559,21 @@ float: left;
 }
 
 .ADD-FOOD-BTN-DIV{
-   position: fixed;
-   width: 17%;
-   left: 78%;
-   right: 5%;
-   height: auto;
-   top: 90%;
-   margin-bottom: 10px
-}
-
-.ADD-FOOD-BTN{
     position: relative;
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
-    border-radius: 50%; 
-    height: 65px;
-}
-
-.PLUS-ICON{
-    position: relative;
-    width: 80%;
-    left: 2%;
+    width: 100%;
     height: auto;
-}
-
-
-
+    margin-bottom: 10px
+ }
+ 
+ .ADD-FOOD-BTN{
+     position: relative;
+     width: 95%;
+     left: 2.5%;
+     right: 2.5%;
+     border-radius:0px; 
+     height: 60px;
+ }
+ 
 /******************************************************* end Food styles **********************************************************/
 
 /*Ultra wide*/
