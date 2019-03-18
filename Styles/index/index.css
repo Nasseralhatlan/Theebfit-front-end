@@ -422,15 +422,15 @@ height: 50%;
 }
 
 .PRO{
-   background-color: #1d63cc;
+   background-color: #d5eb0d;
 }
 
 .CARB{
-    background-color: #1d63cc;
+    background-color: #05cad8;
 }
 
 .FAT{
-    background-color: #1d63cc;
+    background-color: #f30166;
 }
 
 .EDIT-CAL-BTN{
@@ -572,6 +572,7 @@ height: 50%;
      right: 2.5%;
      border-radius:0px; 
      height: 60px;
+     margin-bottom: 10px;
  }
  
 /******************************************************* end Food styles **********************************************************/
