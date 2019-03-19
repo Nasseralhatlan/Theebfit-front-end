@@ -45,6 +45,7 @@ body,html{
 }
 
 .side-nav-active{
+    height: 100%;
     transform: translateX(0px);
     z-index: 4;
     transition: 0.3s;
@@ -575,6 +576,60 @@ height: 50%;
      margin-bottom: 10px;
  }
  
+
+ .SEARCH-FOOD-DIV{
+    position: absolute;
+    width: 100%;
+    /* left: 2.5%;
+    right: 2.5%; */
+    top: 80px;
+    height: auto;
+    border-radius: 0px;
+    background-color: #00000000;
+ }
+
+ .SEARCH-BAR-DIV{
+  position: relative;
+  height: auto;
+  width: 100%;  
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.SEARCH-BAR{
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    border-radius: 6px; 
+    background-color: rgb(208, 208, 208);
+    height: 50px;; 
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
+    5px 5px 30px 5px rgba(0, 0, 0,0.090);
+background-image:url("../../Img/search-icon.png"); 
+background-repeat: no-repeat; 
+background-position: 90% 12px;
+background-size: 20px;
+}
+
+.SEARCH-BAR:focus{
+    border: 0px;
+    box-shadow: 0px;
+    background-color: rgb(208, 208, 208);
+    background-image: none;
+}
+
+.SEARCH-RESLUT-DIV{
+    position: relative;
+    height: auto;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
+    5px 5px 30px 5px rgba(0, 0, 0,0.090);
+}
+
+
 /******************************************************* end Food styles **********************************************************/
 
 /*Ultra wide*/
