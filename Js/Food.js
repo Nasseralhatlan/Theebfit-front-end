@@ -18,8 +18,8 @@ $(document).ready(function() {
 
 $("#ADD-FOOD-BTN").click(function (){ 
     HideAllFood();
-    // $("body,html").animate({scrollTop:0},500);
-    $("#SEARCH-FOOD").slideDown();
+    $("body,html").animate({scrollTop:0},0);
+    $("#SEARCH-FOOD").show();
 });
 
 
