@@ -22,6 +22,13 @@ $("#ADD-FOOD-BTN").click(function (){
     $("#SEARCH-FOOD").slideDown();
 });
 
+
+
+$("#EDIT-CAL-BTN").click(function (){ 
+    HideAllFood();
+    // $("body,html").animate({scrollTop:0},500);
+    $("#SEARCH-FOOD").slideDown();
+});
  
 
 
