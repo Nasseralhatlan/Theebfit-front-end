@@ -582,11 +582,18 @@ height: 50%;
     width: 100%;
     /* left: 2.5%;
     right: 2.5%; */
+    transform: translateX(-200%);
     top: 80px;
     height: auto;
     border-radius: 0px;
     background-color: #00000000;
+    transition: 0.2s;
  }
+
+ .SEARCH-FOOD-DIV-ACTIVE{
+    transform: translateX(0px);
+ }
+
 
  .SEARCH-BAR-DIV{
   position: relative;

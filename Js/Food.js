@@ -4,7 +4,7 @@ $(document).ready(function() {
     function HideAllFood() {
      $("#FOOD-MACROS-DIV").hide();
      $("#FOOD-LIST-DIV").hide();
-     $("#SEARCH-FOOD").hide();
+     $("#SEARCH-FOOD").removeClass("SEARCH-FOOD-DIV-ACTIVE");
     }
 
 
@@ -18,18 +18,12 @@ $(document).ready(function() {
 
 $("#ADD-FOOD-BTN").click(function (){ 
     HideAllFood();
-    $("body,html").animate({scrollTop:0},0);
-    $("#SEARCH-FOOD").show();
+    $("body,html").animate({scrollTop:0},100);
+    $("#SEARCH-FOOD").addClass("SEARCH-FOOD-DIV-ACTIVE");
 });
 
 
 
-$("#EDIT-CAL-BTN").click(function (){ 
-    HideAllFood();
-    // $("body,html").animate({scrollTop:0},500);
-    $("#SEARCH-FOOD").slideDown();
-});
- 
 
 
 
