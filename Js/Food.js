@@ -2,15 +2,15 @@ $(document).ready(function() {
 
   
     function HideAllFood() {
-     $("#FOOD-MACROS-DIV").hide();
-     $("#FOOD-LIST-DIV").hide();
-     $("#SEARCH-FOOD").removeClass("SEARCH-FOOD-DIV-ACTIVE");
+     $("#FOOD-MACROS-DIV").addClass("HIDE");
+     $("#FOOD-LIST-DIV").addClass("HIDE");
+     $("#SEARCH-FOOD").addClass("HIDE");
     }
 
 
     HideAllFood();
-    $("#FOOD-MACROS-DIV").show();
-    $("#FOOD-LIST-DIV").show();
+    $("#FOOD-MACROS-DIV").removeClass("HIDE");
+    $("#FOOD-LIST-DIV").removeClass("HIDE");
   
 
 
@@ -18,10 +18,16 @@ $(document).ready(function() {
 
 $("#ADD-FOOD-BTN").click(function (){ 
     HideAllFood();
-    $("body,html").animate({scrollTop:0},100);
-    $("#SEARCH-FOOD").addClass("SEARCH-FOOD-DIV-ACTIVE");
+    $("body,html").animate({scrollTop:0},0);
+    $("#SEARCH-FOOD").removeClass("HIDE");
 });
 
+
+$("#SEARCH-BACBTN").click(function () { 
+    $("#SEARCH-FOOD").addClass("HIDE");
+    $("#FOOD-MACROS-DIV").removeClass("HIDE");
+    $("#FOOD-LIST-DIV").removeClass("HIDE");
+});
 
 
 
