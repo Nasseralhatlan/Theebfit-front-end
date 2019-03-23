@@ -298,7 +298,7 @@
 
     <div id="SEARCH-FOOD" class="SEARCH-FOOD-DIV">
 
-      <div id="cam">
+      <div id="cam" class="HIDE">
 
 
       </div>
@@ -636,6 +636,8 @@
     $("#FOOD-MACROS-DIV").addClass("HIDE");
      $("#FOOD-LIST-DIV").addClass("HIDE");
      $("#SEARCH-FOOD").addClass("HIDE");
+     $("#cam").removeClass("HIDE");
+
     Quagga.init({
       inputStream : {
         name : "Live",
