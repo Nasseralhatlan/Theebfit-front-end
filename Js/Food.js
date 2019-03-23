@@ -5,8 +5,7 @@ $(document).ready(function() {
      $("#FOOD-MACROS-DIV").addClass("HIDE");
      $("#FOOD-LIST-DIV").addClass("HIDE");
      $("#SEARCH-FOOD").addClass("HIDE");
-    }
-
+    } 
 
     HideAllFood();
     $("#FOOD-MACROS-DIV").removeClass("HIDE");

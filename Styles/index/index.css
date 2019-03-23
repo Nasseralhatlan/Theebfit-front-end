@@ -655,6 +655,19 @@ background-size: 20px;
     position: relative;
     width: 25px;
 }
+
+
+.CAM{
+    position: relative;
+    top: 70px;
+    width: 60%;
+    max-height: 700px;
+    left: 20%;
+    right: 20%;
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
+    5px 5px 30px 5px rgba(0, 0, 0,0.090);
+}
+
 /******************************************************* end Food styles **********************************************************/
 
 /*Ultra wide*/
@@ -670,6 +683,8 @@ background-size: 20px;
     
       
 }
+ 
+
 
 
 /* Ipad */
@@ -711,7 +726,11 @@ background-size: 20px;
 }
 
 
-
+.CAM{
+   left: 0%;
+   width: 100%;
+   right: 0%;
+}
 /******************************************************* end Calculater styles **********************************************************/
 
     

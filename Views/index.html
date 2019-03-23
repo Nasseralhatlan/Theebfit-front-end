@@ -84,6 +84,13 @@
 
   <div  id="Food">
  
+  
+
+    <div id="cam">
+
+
+    </div>
+
      <div id="FOOD-MACROS-DIV" class="card MACROS-DIV SHADOW">
 
       <div style="background-color: rgb(208, 208, 208)" class="MACROS-DIV-CAL">
@@ -298,10 +305,7 @@
 
     <div id="SEARCH-FOOD" class="SEARCH-FOOD-DIV">
 
-      <div id="cam">
-
-
-      </div>
+   
             <div class="SEARCH-BACKBTN-DIV">
                 <button id="SEARCH-BACBTN"type="button" class="btn btn-info SHADOW">Back</button>
 
@@ -639,7 +643,10 @@
         name : "Live",
         type : "LiveStream",
         target: document.querySelector('#cam')    // Or '#yourElement' (optional)
+
+        
       },
+    
       decoder : {
         readers : ["ean_reader"]
       //   [
@@ -650,6 +657,7 @@
       //   "upc_e_reader",
       // ]
       }
+      
     }, function(err) {
         if (err) {
             console.log(err);
@@ -657,6 +665,8 @@
         }
         console.log("Initialization finished. Ready to start");
           Quagga.start();
+          $("#SEARCH-FOOD").addClass("HIDE");
+          $("video").addClass("CAM");
           console.log("started");
   
   
@@ -668,7 +678,9 @@
           var text = data.codeResult.code ; 
           
           $("#SEARCH-INPUT").val(text);
+          $("video").removeClass("CAM");
           $("#cam").hide();
+          $("#SEARCH-FOOD").removeClass("HIDE");
 
           Quagga.stop();
 
@@ -678,7 +690,7 @@
         });
     });
   
-
+ 
 
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
