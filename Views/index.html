@@ -47,7 +47,7 @@
 
   <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
     <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.0</a>
+    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.1</a>
   </nav>
 
 
@@ -298,7 +298,7 @@
 
     <div id="SEARCH-FOOD" class="SEARCH-FOOD-DIV">
 
-      <div id="cam" class="HIDE">
+      <div id="cam">
 
 
       </div>
@@ -309,7 +309,7 @@
             </div>
 
              <div class="SEARCH-BAR-DIV">
-                <input style="text-indent:17px;" type="text" class="SEARCH-BAR form-control"  placeholder="Search food">
+                <input id="SEARCH-INPUT"style="text-indent:17px;" type="text" class="SEARCH-BAR form-control"  placeholder="Search food">
              </div> 
 
              <div class="SEARCH-RESLUT-DIV">
@@ -626,18 +626,14 @@
     setting
   </div>
   <script src="../Js/Jquery.js"></script>
-  <script src="../Js/quagga.js"></script>
+  <script src="../Js/quagga.min.js"></script>
   <script src="../Js/Food.js"></script>
   <script src="../Js/Calc.js"></script>
   <script src="../Js/SideNav.js"></script>
   <script>
   
   $("#SCAN-BARCODE-BTN").click(function(){ 
-    $("#FOOD-MACROS-DIV").addClass("HIDE");
-     $("#FOOD-LIST-DIV").addClass("HIDE");
-     $("#SEARCH-FOOD").addClass("HIDE");
-     $("#cam").removeClass("HIDE");
-
+    $("#cam").show();
     Quagga.init({
       inputStream : {
         name : "Live",
@@ -660,11 +656,12 @@
           Quagga.onDetected(function(data){
   
             console.log("Yes");
-          console.log(data);
+          console.log(data.codeResult.code);
         
           Quagga.stop();
 
-          $("#cam").addClass("HIDE");
+              $("SEARCH-INPUT").val(data.codeResult.code);
+             $("#cam").hide();
 
          });
   
