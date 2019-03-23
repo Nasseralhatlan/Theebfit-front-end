@@ -276,6 +276,7 @@ height: 50%;
     top: 90px;
     height: auto;
     border-radius: 6px;
+    transition: 0.3s;
 }
 
 .MACROS-DIV-CAL{
@@ -487,6 +488,8 @@ height: 50%;
     right: 2.5%;
     background-color: rgb(255, 255, 255);
     height: auto;
+    transition: 0.3s;
+
 }
 
 
@@ -648,7 +651,10 @@ background-size: 20px;
     5px 5px 30px 5px rgba(0, 0, 0,0.090);
 }
 
-
+.SCAN-BAR-CODE-ICON{
+    position: relative;
+    width: 25px;
+}
 /******************************************************* end Food styles **********************************************************/
 
 /*Ultra wide*/

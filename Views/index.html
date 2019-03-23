@@ -298,8 +298,14 @@
 
     <div id="SEARCH-FOOD" class="SEARCH-FOOD-DIV">
 
+      <div id="cam">
+
+
+      </div>
             <div class="SEARCH-BACKBTN-DIV">
                 <button id="SEARCH-BACBTN"type="button" class="btn btn-info SHADOW">Back</button>
+
+                <button id="SCAN-BARCODE-BTN"style="float: right;"id="BAR-CODE-BTN"type="button" class="btn btn-info SHADOW"> <img class="SCAN-BAR-CODE-ICON" src="../Img/scanBarcode-icon.png" alt="Scan barcode"></button>
             </div>
 
              <div class="SEARCH-BAR-DIV">
@@ -488,6 +494,8 @@
 
 
 
+  
+
   </div>
   <!-- ============================== end food Section ==============================   -->
 
@@ -621,6 +629,42 @@
   <script src="../Js/Food.js"></script>
   <script src="../Js/Calc.js"></script>
   <script src="../Js/SideNav.js"></script>
+  <script src="../Js/quagga.js"></script>
+  <script>
+  
+  $("#SCAN-BARCODE-BTN").click(function(){ 
+
+  Quagga.init({
+    inputStream : {
+      name : "Live",
+      type : "LiveStream",
+      target: document.querySelector('#cam')    // Or '#yourElement' (optional)
+    },
+    decoder : {
+      readers : ["code_128_reader"]
+    }
+  }, function(err) {
+      if (err) {
+          console.log(err);
+          return
+      }
+      console.log("Initialization finished. Ready to start");
+        Quagga.start();
+        console.log("started");
+
+
+        Quagga.onDetected(function(data){
+
+        console.log(data);
+      
+        Quagga.stop();
+       });
+
+      });
+  });
+
+
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
