@@ -47,7 +47,7 @@
 
   <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
     <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.5.1</a>
+    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.5.2</a>
   </nav>
 
 
@@ -663,7 +663,7 @@
             return
         }
         console.log("Initialization finished. Ready to start");
-         $("#SEARCH-FOOD").addClass("HIDE");
+         $("#SEARCH-FOOD").hide();
           Quagga.start();
           $("#cam").show();
           $("video").addClass("CAM");
@@ -680,7 +680,7 @@
           $("#SEARCH-INPUT").val(text);
           $("video").removeClass("CAM");
           $("#cam").hide();
-          $("#SEARCH-FOOD").removeClass("HIDE");
+          $("#SEARCH-FOOD").show();
 
           Quagga.stop();
 

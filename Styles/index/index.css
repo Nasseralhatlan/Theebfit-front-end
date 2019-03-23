@@ -661,7 +661,7 @@ background-size: 20px;
     position: relative;
     top: 70px;
     width: 60%;
-    max-height: 700px;
+    height: 100%;
     left: 20%;
     right: 20%;
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
