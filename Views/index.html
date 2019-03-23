@@ -626,42 +626,49 @@
     setting
   </div>
   <script src="../Js/Jquery.js"></script>
+  <script src="../Js/quagga.js"></script>
   <script src="../Js/Food.js"></script>
   <script src="../Js/Calc.js"></script>
   <script src="../Js/SideNav.js"></script>
-  <script src="../Js/quagga.js"></script>
   <script>
   
   $("#SCAN-BARCODE-BTN").click(function(){ 
-
-  Quagga.init({
-    inputStream : {
-      name : "Live",
-      type : "LiveStream",
-      target: document.querySelector('#cam')    // Or '#yourElement' (optional)
-    },
-    decoder : {
-      readers : ["code_128_reader"]
-    }
-  }, function(err) {
-      if (err) {
-          console.log(err);
-          return
+    $("#FOOD-MACROS-DIV").addClass("HIDE");
+     $("#FOOD-LIST-DIV").addClass("HIDE");
+     $("#SEARCH-FOOD").addClass("HIDE");
+    Quagga.init({
+      inputStream : {
+        name : "Live",
+        type : "LiveStream",
+        target: document.querySelector('#cam')    // Or '#yourElement' (optional)
+      },
+      decoder : {
+        readers : ["code_128_reader"]
       }
-      console.log("Initialization finished. Ready to start");
-        Quagga.start();
-        console.log("started");
+    }, function(err) {
+        if (err) {
+            console.log(err);
+            return
+        }
+        console.log("Initialization finished. Ready to start");
+          Quagga.start();
+          console.log("started");
+  
+  
+          Quagga.onDetected(function(data){
+  
+            console.log("Yes");
+          console.log(data);
+        
+          Quagga.stop();
 
+          $("#cam").addClass("HIDE");
 
-        Quagga.onDetected(function(data){
-
-        console.log(data);
-      
-        Quagga.stop();
-       });
-
-      });
-  });
+         });
+  
+        });
+    });
+  
 
 
   </script>
