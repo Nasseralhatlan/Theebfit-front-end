@@ -47,7 +47,7 @@
 
   <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
     <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.2</a>
+    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.3</a>
   </nav>
 
 
@@ -655,14 +655,17 @@
   
           Quagga.onDetected(function(data){
   
-            console.log("Yes");
           console.log(data.codeResult.code);
         
+           
+          var text = data.codeResult.code ; 
+          
+          $("#SEARCH-INPUT").val(text);
+          $("#cam").hide();
+
           Quagga.stop();
 
-              $("SEARCH-INPUT").text(data.codeResult.code);
-             $("#cam").hide();
-
+           
          });
   
         });
