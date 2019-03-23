@@ -47,7 +47,7 @@
 
   <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
     <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.4</a>
+    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.5.1</a>
   </nav>
 
 
@@ -641,14 +641,14 @@
         target: document.querySelector('#cam')    // Or '#yourElement' (optional)
       },
       decoder : {
-        readers : 
-        [
-        "code_128_reader",
-        "ean_reader",
-        "ean_8_reader",
-        "upc_reader",
-        "upc_e_reader",
-      ]
+        readers : ["ean_reader"]
+      //   [
+      //   "code_128_reader",
+      //   "ean_reader",
+      //   "ean_8_reader",
+      //   "upc_reader",
+      //   "upc_e_reader",
+      // ]
       }
     }, function(err) {
         if (err) {
