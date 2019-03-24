@@ -47,7 +47,7 @@
 
   <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
     <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.5.3</a>
+    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.5.4</a>
   </nav>
 
 
@@ -86,7 +86,7 @@
  
   
 
-    <div id="cam">
+    <div id="cam" class="CAM-DIV">
 
 
     </div>
@@ -637,6 +637,10 @@
   <script>
   
   $("#SCAN-BARCODE-BTN").click(function(){ 
+        $("#FOOD-MACROS-DIV").addClass("HIDE");
+        $("#FOOD-LIST-DIV").addClass("HIDE");
+        $("#SEARCH-FOOD").addClass("HIDE");  
+
     Quagga.init({
       inputStream : {
         name : "Live",
@@ -663,10 +667,8 @@
             return
         }
         console.log("Initialization finished. Ready to start");
-         $("#SEARCH-FOOD").hide();
+        $("#cam").show();
           Quagga.start();
-          $("#cam").show();
-          $("video").addClass("CAM");
           console.log("started");
   
   
@@ -678,9 +680,8 @@
           var text = data.codeResult.code ; 
           
           $("#SEARCH-INPUT").val(text);
-          $("video").removeClass("CAM");
           $("#cam").hide();
-          $("#SEARCH-FOOD").show();
+          $("#SEARCH-FOOD").removeClass("HIDE");
 
           Quagga.stop();
 

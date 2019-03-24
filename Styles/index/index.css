@@ -655,11 +655,14 @@ background-size: 20px;
     position: relative;
     width: 25px;
 }
-
+.CAM-DIV{
+  position: absolute ; 
+  width: 100%;
+  top: 56px;  
+}
 
 .CAM{
     position: relative;
-    top: 70px;
     width: 60%;
     height: 100%;
     left: 20%;
@@ -728,8 +731,9 @@ background-size: 20px;
 
 .CAM{
    left: 0%;
-   width: 100%;
+   width: 100% !important;
    right: 0%;
+   height: 100% !important;
 }
 /******************************************************* end Calculater styles **********************************************************/
 
