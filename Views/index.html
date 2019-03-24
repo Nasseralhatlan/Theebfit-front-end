@@ -637,10 +637,7 @@
   <script>
   
   $("#SCAN-BARCODE-BTN").click(function(){ 
-        $("#FOOD-MACROS-DIV").addClass("HIDE");
-        $("#FOOD-LIST-DIV").addClass("HIDE");
-        $("#SEARCH-FOOD").addClass("HIDE");  
-
+  
     Quagga.init({
       inputStream : {
         name : "Live",
@@ -666,14 +663,20 @@
             console.log(err);
             return
         }
+        $("#FOOD-MACROS-DIV").addClass("HIDE");
+        $("#FOOD-LIST-DIV").addClass("HIDE");
+        $("#SEARCH-FOOD").addClass("HIDE");  
+
         console.log("Initialization finished. Ready to start");
         $("#cam").show();
           Quagga.start();
+          $("video").attr("width","");
+          $("video").attr("height","");
+          $("video").addClass("CAM");
           console.log("started");
   
   
           Quagga.onDetected(function(data){
-  
           console.log(data.codeResult.code);
         
            
