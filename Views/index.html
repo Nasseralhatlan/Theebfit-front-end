@@ -47,7 +47,7 @@
 
   <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
     <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.5.5</a>
+    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.5.6</a>
   </nav>
 
 
@@ -89,7 +89,7 @@
     <div id="cam" class="CAM-DIV">
 
          <div class="CAM-BTN-DIV">
-          <button type="button" class="CAM-BTN btn btn-danger SHADOW">Cancel</button>             
+          <button id="CAM-CAN-BTN"type="button" class="CAM-BTN btn btn-danger SHADOW">Cancel</button>             
          </div>
     </div>
 
@@ -637,62 +637,6 @@
   <script src="../Js/Calc.js"></script>
   <script src="../Js/SideNav.js"></script>
   <script>
-  
-  $("#SCAN-BARCODE-BTN").click(function(){ 
-  
-    Quagga.init({
-      inputStream : {
-        name : "Live",
-        type : "LiveStream",
-        target: document.querySelector('#cam')    // Or '#yourElement' (optional)
-      },
-    
-      decoder : {
-        readers : ["ean_reader"]
-      //   [
-      //   "code_128_reader",
-      //   "ean_reader",
-      //   "ean_8_reader",
-      //   "upc_reader",
-      //   "upc_e_reader",
-      // ]
-      }
-      
-    }, function(err) {
-      
-        $("#FOOD-MACROS-DIV").addClass("HIDE");
-        $("#FOOD-LIST-DIV").addClass("HIDE");
-        $("#SEARCH-FOOD").addClass("HIDE");  
-
-        console.log("Initialization finished. Ready to start");
-        $("#cam").show();
-          Quagga.start();
-          $("video").attr("width","");
-          $("video").attr("height","");
-          $("canvas").hide();
-          $("br").hide();
-          $("video").addClass("CAM");
-          console.log("started");
-  
-  
-          Quagga.onDetected(function(data){
-          console.log(data.codeResult.code);
-        
-           
-          var text = data.codeResult.code ; 
-          
-          $("#SEARCH-INPUT").val(text);
-          $("#cam").hide();
-          $("#SEARCH-FOOD").removeClass("HIDE");
-
-          Quagga.stop();
-
-           
-         });
-  
-        });
-    });
-  
  
 
   </script>

@@ -755,12 +755,6 @@ background-size: 20px;
 }
 
 
-.CAM{
-   left: 0%;
-   width: 100% !important;
-   right: 0%;
-   height: 100% !important;
-}
 
 .MACROS-DIV{
     width: 95%;
@@ -783,7 +777,19 @@ background-size: 20px;
      right: 0%;
 }
 
+.CAM{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    margin-top: 0px;
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
+    5px 5px 30px 5px rgba(0, 0, 0,0.090);
+}
+
 .CAM-BTN-DIV{
+    position: absolute;
+    z-index: 1;
     width: 100%;
     left: 0%;
     right: 0%;
@@ -793,11 +799,12 @@ background-size: 20px;
 
 .CAM-BTN{
     position: relative;
-    width: 80%;
-    left: 10%;
-    right: 10%;
-    height: 100%;
-    margin-bottom: 20px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    height: 35%;
+    top: 32.5%;
+    bottom: 32.5%;
 }
 
 }
