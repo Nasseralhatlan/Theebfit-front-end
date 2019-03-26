@@ -79,7 +79,13 @@ if (err){
     $("video").attr("height","");
     $("canvas").hide();
     $("br").hide();
+    $("#FOOD-MACROS-DIV").hide();
+    $("#FOOD-LIST-DIV").hide();
+    $("#SEARCH-FOOD").hide();
     $("video").addClass("CAM");
+
+
+
     Quagga.start();
     console.log("started");
 
@@ -93,6 +99,9 @@ if (err){
 
     $("#SEARCH-INPUT").val(text);
     $("#cam").hide();
+    $("#FOOD-MACROS-DIV").show();
+    $("#FOOD-LIST-DIV").show();
+    $("#SEARCH-FOOD").show();
     $("#SEARCH-FOOD").removeClass("HIDE");
 
     Quagga.stop();
