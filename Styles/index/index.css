@@ -482,7 +482,46 @@ height: 50%;
   color: white;
 }
 
+.EDIT-MACROS-DIV{
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    top: 90px;
+    height: 280px;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-bottom: 50px;
+}
 
+.EDIT-MACROS-DIV-GOAL-CAL{
+position: relative;
+width: 100%;
+height: 90px;
+background-color: rgb(208, 208, 208);
+border-top-left-radius: 6px; 
+border-top-right-radius: 6px; 
+}
+
+
+.EDIT-CAL-INPUT{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(208, 208, 208);
+    border-top-left-radius: 6px; 
+    border-top-right-radius: 6px; 
+    text-align:center;
+    transition: 0.3s;
+    color: #712bbc;
+    font-size: 30px;
+}
+
+.EDIT-CAL-INPUT:focus{
+    background-color: rgb(150, 150, 150);
+    border: 0px;
+    color: #712bbc;
+}
 .FOOD-MAIN-DIV{
     position: relative;
     top: 130px;
