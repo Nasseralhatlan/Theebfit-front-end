@@ -39,6 +39,7 @@ $("#CAM-CAN-BTN").click(function () {
     $("#FOOD-MACROS-DIV").show();
     $("#FOOD-LIST-DIV").show();
     $("#SEARCH-FOOD").show();
+    $("body,html").animate({scrollTop:0},0);
     $("#SEARCH-FOOD").removeClass("HIDE");    
 });
 
@@ -105,6 +106,7 @@ if (err){
     $("#FOOD-MACROS-DIV").show();
     $("#FOOD-LIST-DIV").show();
     $("#SEARCH-FOOD").show();
+    $("body,html").animate({scrollTop:0},0);
     $("#SEARCH-FOOD").removeClass("HIDE");
 
     Quagga.stop();
