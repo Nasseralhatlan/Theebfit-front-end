@@ -36,6 +36,9 @@ $("#SEARCH-BACBTN").click(function () {
 $("#CAM-CAN-BTN").click(function () { 
     Quagga.stop();
     $("#cam").hide();
+    $("#FOOD-MACROS-DIV").show();
+    $("#FOOD-LIST-DIV").show();
+    $("#SEARCH-FOOD").show();
     $("#SEARCH-FOOD").removeClass("HIDE");    
 });
 
