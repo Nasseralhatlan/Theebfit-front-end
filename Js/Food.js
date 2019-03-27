@@ -6,8 +6,6 @@ $(document).ready(function() {
      $("#FOOD-LIST-DIV").addClass("HIDE");
      $("#SEARCH-FOOD").addClass("HIDE");
      $("#EDIT-MACROS-DIV").addClass("HIDE");
-     $("#EDIT-MACROS-DIV").hide();
-
      $("#cam").hide();
     } 
 
@@ -20,7 +18,6 @@ $(document).ready(function() {
 $("#EDIT-CAL-BTN").click(function () { 
   HideAllFood();
   $("body,html").animate({scrollTop:0},0);
-  $("#EDIT-MACROS-DIV").show();
   $("#EDIT-MACROS-DIV").removeClass("HIDE");
 });
 
@@ -45,7 +42,6 @@ $("#BACK-EDIT-MACROS-BTN").click(function () {
   $("body,html").animate({scrollTop:0},0);
   $("#FOOD-MACROS-DIV").removeClass("HIDE");
   $("#FOOD-LIST-DIV").removeClass("HIDE");
-  $("#EDIT-MACROS-DIV").hide();
 });
 
 $("#SAVE-EDIT-MACROS-BTN").click(function () { 
@@ -54,7 +50,6 @@ $("#SAVE-EDIT-MACROS-BTN").click(function () {
   $("body,html").animate({scrollTop:0},0);
   $("#FOOD-MACROS-DIV").removeClass("HIDE");
   $("#FOOD-LIST-DIV").removeClass("HIDE");
-  $("#EDIT-MACROS-DIV").hide();
 });
 
 
