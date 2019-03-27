@@ -47,7 +47,7 @@
 
   <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
     <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.5.9</a>
+    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb fit v1.5.10</a>
   </nav>
 
 
@@ -99,13 +99,59 @@
       <div class="EDIT-MACROS-DIV-GOAL-CAL">
 
         <input
-        type="text"
+        type="number"
         class="form-control EDIT-CAL-INPUT"
         placeholder="Enter Cal"
-      />      
+        value=3700
+        />      
     
     </div>
-            
+
+    <div class="EDIT-MACROS-DIV-NUT-LABEL">
+
+      <ul>
+        <li>Protein</li>
+        <li>Carbs</li>
+        <li>Fat</li>
+      </ul>
+      
+    </div>
+         
+    
+    <div class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
+      <ul>
+        <li> <input
+          type="number"
+          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+          placeholder="Protein %"
+          value=30
+          /> % </li>
+
+
+        <li> <input
+          type="number"
+          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+          placeholder="Carbs %"
+          value=50
+          />    % </li>
+
+
+
+        <li> <input
+          type="number"
+          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+          placeholder="Fat %"
+          value=20
+          />    % </li>
+      </ul>
+    </div>
+
+
+    <div class="EDIT-MACROS-DIV-BTNS">
+      <button id="BACK-EDIT-MACROS-BTN" type="button" style="float:left;"class="btn btn-info SHADOW">back</button>
+      <button id="SAVE-EDIT-MACROS-BTN" type="button" style="float:right" class="btn btn-success SHADOW">Save</button>
+
+    </div>
     </div>
 
      <div id="FOOD-MACROS-DIV" class="card MACROS-DIV SHADOW">

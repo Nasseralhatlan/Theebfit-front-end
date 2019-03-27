@@ -449,8 +449,8 @@ height: 50%;
 .EDIT-CAL-BTN{
     position: relative;
     background-color: #702bbc;
-    width: 12%;
-    left: 86%;
+    width: 20%;
+    left: 78%;
     right: 2%;
     height: 35px;;
     font-size: 12px;
@@ -488,7 +488,7 @@ height: 50%;
     left: 2.5%;
     right: 2.5%;
     top: 90px;
-    height: 280px;
+    height: auto;
     border-radius: 6px;
     transition: 0.3s;
     margin-bottom: 50px;
@@ -518,10 +518,97 @@ border-top-right-radius: 6px;
 }
 
 .EDIT-CAL-INPUT:focus{
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(170, 170, 170);
     border: 0px;
     color: #712bbc;
+    box-shadow: -1px -1px 5px 1px #712bbc,
+    1px 1px 5px 1px #712bbc;
 }
+
+
+.EDIT-MACROS-DIV-NUT-LABEL{
+position: relative;
+width: 100%;
+height: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.EDIT-MACROS-DIV-NUT-LABEL ul{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.EDIT-MACROS-DIV-NUT-LABEL ul li{
+position: relative;
+float: left;
+text-decoration: none;
+list-style: none;
+width: 33%;
+text-align: center;
+font-size: 17px;
+color: #712bbc;
+}
+
+
+.EDIT-MACROS-DIV-NUT-INPUT-DIV{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.EDIT-MACROS-DIV-NUT-INPUT-DIV ul{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.EDIT-MACROS-DIV-NUT-INPUT-DIV ul li{
+position: relative;
+float: left;
+text-decoration: none;
+list-style: none;
+width: 33%;
+text-align: right;
+font-size: 20px;
+color: #712bbc;
+}
+
+.EDIT-MACROS-DIV-NUT-INPUT{
+    position: relative;
+    width: 60%;
+    left: 20%;
+    float: left;
+    background-color: rgb(208, 208, 208);
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.096),
+    5px 5px 30px 5px rgba(0, 0, 0, 0.096); 
+}
+
+
+.EDIT-MACROS-DIV-NUT-INPUT:focus{
+    background-color: rgb(208, 208, 208);
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.096),
+    5px 5px 30px 5px rgba(0, 0, 0, 0.096); 
+}
+
+.EDIT-MACROS-DIV-BTNS{
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 .FOOD-MAIN-DIV{
     position: relative;
     top: 130px;
@@ -634,6 +721,9 @@ border-top-right-radius: 6px;
      margin-bottom: 10px;
  }
  
+ .ADD-FOOD-BTN:hover{
+  background-color: #1c7c21;
+}
 
  .SEARCH-FOOD-DIV{
     position: absolute;
@@ -685,6 +775,8 @@ background-size: 20px;
     box-shadow: 0px;
     background-color: rgb(208, 208, 208);
     background-image: none;
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
+    5px 5px 30px 5px rgba(0, 0, 0,0.090);
 }
 
 .SEARCH-RESLUT-DIV{

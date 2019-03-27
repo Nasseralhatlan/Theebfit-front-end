@@ -5,6 +5,9 @@ $(document).ready(function() {
      $("#FOOD-MACROS-DIV").addClass("HIDE");
      $("#FOOD-LIST-DIV").addClass("HIDE");
      $("#SEARCH-FOOD").addClass("HIDE");
+     $("#EDIT-MACROS-DIV").addClass("HIDE");
+     $("#EDIT-MACROS-DIV").hide();
+
      $("#cam").hide();
     } 
 
@@ -14,7 +17,12 @@ $(document).ready(function() {
   
 
 
-
+$("#EDIT-CAL-BTN").click(function () { 
+  HideAllFood();
+  $("body,html").animate({scrollTop:0},0);
+  $("#EDIT-MACROS-DIV").show();
+  $("#EDIT-MACROS-DIV").removeClass("HIDE");
+});
 
 $("#ADD-FOOD-BTN").click(function (){ 
     HideAllFood();
@@ -25,14 +33,31 @@ $("#ADD-FOOD-BTN").click(function (){
 
 $("#SEARCH-BACBTN").click(function () { 
     $("#SEARCH-FOOD").addClass("HIDE");
+    $("body,html").animate({scrollTop:0},0);
     $("#FOOD-MACROS-DIV").removeClass("HIDE");
     $("#FOOD-LIST-DIV").removeClass("HIDE");
 });
 
 
+$("#BACK-EDIT-MACROS-BTN").click(function () { 
+  $("#SEARCH-FOOD").addClass("HIDE");
+  $("#EDIT-MACROS-DIV").addClass("HIDE");
+  $("body,html").animate({scrollTop:0},0);
+  $("#FOOD-MACROS-DIV").removeClass("HIDE");
+  $("#FOOD-LIST-DIV").removeClass("HIDE");
+  $("#EDIT-MACROS-DIV").hide();
+});
+
+$("#SAVE-EDIT-MACROS-BTN").click(function () { 
+  $("#SEARCH-FOOD").addClass("HIDE");
+  $("#EDIT-MACROS-DIV").addClass("HIDE");
+  $("body,html").animate({scrollTop:0},0);
+  $("#FOOD-MACROS-DIV").removeClass("HIDE");
+  $("#FOOD-LIST-DIV").removeClass("HIDE");
+  $("#EDIT-MACROS-DIV").hide();
+});
 
 
- 
 $("#CAM-CAN-BTN").click(function () { 
     Quagga.stop();
     $("#cam").hide();
