@@ -483,14 +483,14 @@ height: 50%;
 }
 
 .EDIT-MACROS-DIV{
-    position: relative;
+    position: absolute;
     width: 95%;
     left: 2.5%;
     right: 2.5%;
     top: 90px;
     height: auto;
     border-radius: 6px;
-    transition: 0.4s;
+    transition: 0.3s;
     margin-bottom: 50px;
 }
 

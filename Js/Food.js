@@ -1,83 +1,85 @@
 $(document).ready(function() {
 
-  
-    function HideAllFood() {
-     $("#FOOD-MACROS-DIV").addClass("HIDE");
-     $("#FOOD-LIST-DIV").addClass("HIDE");
-     $("#SEARCH-FOOD").addClass("HIDE");
-     $("#EDIT-MACROS-DIV").addClass("HIDE");
-     $("#EDIT-MACROS-DIV").hide();
 
+    startFoodPoint();
+
+  
+    function HideAllFood(){
+     $("#FOOD-MACROS-DIV").hide();
+     $("#FOOD-LIST-DIV").hide();
+     $("#SEARCH-FOOD").hide();
+     $("#EDIT-MACROS-DIV").hide();
+     $("#EDIT-MACROS-DIV").hide();
      $("#cam").hide();
     } 
 
-    HideAllFood();
-    $("#FOOD-MACROS-DIV").removeClass("HIDE");
-    $("#FOOD-LIST-DIV").removeClass("HIDE");
+
+    function addClassHideAll(){
+      $("#FOOD-MACROS-DIV").addClass("HIDE");
+      $("#FOOD-LIST-DIV").addClass("HIDE");
+      $("#SEARCH-FOOD").addClass("HIDE");
+      $("#EDIT-MACROS-DIV").addClass("HIDE");
+    }
+
+
+    function ShowOne(id){
+      HideAllFood();
+      addClassHideAll();
+      $(id).show();
+      $(id).removeClass("HIDE");
+    }
+
+
+    function startFoodPoint(){
+      HideAllFood();
+      addClassHideAll();
+      $("body,html").animate({scrollTop:0},0);
+      $("#FOOD-MACROS-DIV").show();
+      $("#FOOD-MACROS-DIV").removeClass("HIDE");
+      $("#FOOD-LIST-DIV").show();
+      $("#FOOD-LIST-DIV").removeClass("HIDE");
+    }
+
+
+
   
 
-
 $("#EDIT-CAL-BTN").click(function () { 
-  HideAllFood();
-  $("#EDIT-MACROS-DIV").show();
-  $("#EDIT-MACROS-DIV").removeClass("HIDE");
+    ShowOne("#EDIT-MACROS-DIV");
 });
 
 $("#ADD-FOOD-BTN").click(function (){ 
-    HideAllFood();
-    $("body,html").animate({scrollTop:0},0);
-    $("#SEARCH-FOOD").removeClass("HIDE");
+   ShowOne("#SEARCH-FOOD");
 });
 
 
 $("#SEARCH-BACBTN").click(function () { 
-    $("#SEARCH-FOOD").addClass("HIDE");
-    $("body,html").animate({scrollTop:0},0);
-    $("#FOOD-MACROS-DIV").removeClass("HIDE");
-    $("#FOOD-LIST-DIV").removeClass("HIDE");
+  startFoodPoint();
 });
 
 
 $("#BACK-EDIT-MACROS-BTN").click(function () { 
-  $("#SEARCH-FOOD").addClass("HIDE");
-  $("#EDIT-MACROS-DIV").addClass("HIDE");
-  $("body,html").animate({scrollTop:0},0);
-  $("#FOOD-MACROS-DIV").removeClass("HIDE");
-  $("#FOOD-LIST-DIV").removeClass("HIDE");
-  $("#EDIT-MACROS-DIV").hide();
+  startFoodPoint();
 });
 
 $("#BACK-EDIT-MACROS-BTN").click(function () { 
-  $("#SEARCH-FOOD").addClass("HIDE");
-  $("#EDIT-MACROS-DIV").addClass("HIDE");
-  $("body,html").animate({scrollTop:0},0);
-  $("#FOOD-MACROS-DIV").removeClass("HIDE");
-  $("#FOOD-LIST-DIV").removeClass("HIDE");
-  $("#EDIT-MACROS-DIV").hide();
+  startFoodPoint();
 });
 
 $("#SAVE-EDIT-MACROS-BTN").click(function () { 
-  $("#SEARCH-FOOD").addClass("HIDE");
-  $("#EDIT-MACROS-DIV").addClass("HIDE");
-  $("body,html").animate({scrollTop:0},0);
-  $("#FOOD-MACROS-DIV").removeClass("HIDE");
-  $("#FOOD-LIST-DIV").removeClass("HIDE");
-  $("#EDIT-MACROS-DIV").hide();
+  startFoodPoint();
 });
 
 $("#CAM-CAN-BTN").click(function () { 
     Quagga.stop();
     $("#cam").hide();
-    $("#FOOD-MACROS-DIV").show();
-    $("#FOOD-LIST-DIV").show();
-    $("#SEARCH-FOOD").show();
-    $("body,html").animate({scrollTop:0},0);
-    $("#SEARCH-FOOD").removeClass("HIDE");    
+    ShowOne("#SEARCH-FOOD");    
 });
 
 $("#SCAN-BARCODE-BTN").click(function(){ 
 
-$("#SEARCH-FOOD").addClass("HIDE");
+  HideAllFood();
+  addClassHideAll();
 
 Quagga.init({
 inputStream : {
@@ -103,9 +105,11 @@ decoder : {
 
 if (err){
     console.log(err);
+    alert("Cam is not found or Cam Accsess is rejected if you want to reuse the scanner you have to log out and log in agian and allow Accsess");
     Quagga.stop();
-    $("#cam").hide();
-    $("#SEARCH-FOOD").removeClass("HIDE");
+    HideAllFood();
+    addClassHideAll();
+    ShowOne("#SEARCH-FOOD");
     return
 }
 
@@ -115,9 +119,6 @@ if (err){
     $("video").attr("height","");
     $("canvas").hide();
     $("br").hide();
-    $("#FOOD-MACROS-DIV").hide();
-    $("#FOOD-LIST-DIV").hide();
-    $("#SEARCH-FOOD").hide();
     $("video").addClass("CAM");
 
 
@@ -135,12 +136,7 @@ if (err){
 
     $("#SEARCH-INPUT").val(text);
     $("#cam").hide();
-    $("#FOOD-MACROS-DIV").show();
-    $("#FOOD-LIST-DIV").show();
-    $("#SEARCH-FOOD").show();
-    $("body,html").animate({scrollTop:0},0);
-    $("#SEARCH-FOOD").removeClass("HIDE");
-
+    ShowOne("#SEARCH-FOOD");
     Quagga.stop();
 
      
