@@ -35,8 +35,9 @@ $(document).ready(function() {
       addClassHideAll();
       $("body,html").animate({scrollTop:0},0);
       $("#FOOD-MACROS-DIV").show();
-      $("#FOOD-MACROS-DIV").removeClass("HIDE");
       $("#FOOD-LIST-DIV").show();
+
+      $("#FOOD-MACROS-DIV").removeClass("HIDE");
       $("#FOOD-LIST-DIV").removeClass("HIDE");
     }
 
