@@ -39,7 +39,7 @@ $(document).ready(function() {
       setTimeout(function(){  
         $("#FOOD-MACROS-DIV").removeClass("HIDE");
         $("#FOOD-LIST-DIV").removeClass("HIDE");
-      },100);
+      },50);
     }
 
 

@@ -2,7 +2,7 @@
 /* Desktop  And Global*/
 
 body,html{
-    background-color:rgb(25,25,25);  
+    background-color:rgb(35, 35, 35);  
     font-family: 'Ubuntu', sans-serif;
     height: auto;
     min-height: 100%;
@@ -10,6 +10,7 @@ body,html{
 }
 
 
+  
 .HIDE{
     transform: translateX(-200%);
     transition: 0.3s;
@@ -24,7 +25,7 @@ body,html{
 }
 
 .BRAND{
-    color: #702bbc !important;
+    color: #712bbc !important;
 }
 
 .menuIcon{
@@ -38,8 +39,8 @@ body,html{
 }
 
 .SHADOW{
-    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
-    5px 5px 30px 5px rgba(0, 0, 0,0.090);
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.200),
+    5px 5px 30px 5px rgba(0, 0, 0,0.200);
 }
 
 .side-nav{
@@ -97,7 +98,7 @@ height: 50%;
     list-style: none;
     border-radius: 5px;
     transition: 0.2s;
-    color: #702bbc;
+    color: #919191;
 }
 
 
@@ -138,8 +139,8 @@ height: 50%;
     bottom: 30px;
     border-radius: 5px;
     padding:10px;
-    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.200),
-    5px 5px 30px 5px rgba(0, 0, 0, 0.200); 
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.350),
+    5px 5px 30px 5px rgba(0, 0, 0, 0.350); 
 }
 
    /******************************************************* Calculater styles **********************************************************/
@@ -148,7 +149,7 @@ height: 50%;
 
 .CALC-DIV{
     position: relative;
-    background-color:rgb(35, 35, 35); 
+    background-color:rgb(55,55, 55); 
     width: 50%;
     left: 25%;
     right: 25%;
@@ -163,7 +164,7 @@ height: 50%;
     position: relative;
     width: 100%;
     height: 200px;;
-    background-color:rgb(208, 208, 208);  
+    background-color:rgb(40, 40, 40);  
     color: #702bbc;
     font-size: 40px;
     padding-top: 10%;
@@ -175,7 +176,7 @@ height: 50%;
 
 .CALC-RESULT-DIV-GLOW{
     border-radius: 2px solid #702bbc;   
-    box-shadow: 0 0 40px #702bbc;
+    box-shadow: 0 0 30px #702bbc;
 }
 
 .CALC-OP{
@@ -195,6 +196,7 @@ height: 50%;
     padding-top: 10px;
     color: rgb(0, 0, 0);
     transition: 0.3s;
+    color: #919191;
 }
 
 .CALC-OP1-Active{
@@ -209,6 +211,7 @@ height: 50%;
     padding-top: 10px;
     color: rgb(0, 0, 0);
     transition: 0.3s;
+    color: #919191;
 }
 
 .CALC-OP2-Active{
@@ -220,14 +223,16 @@ height: 50%;
     position: relative;
     border-width: 0px;
     width: 95%;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(70, 70, 70);
     height: 40px;
     margin: 2.5%;
+
 }
 
 .CALC-INPUT:focus{
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(70, 70, 70);
 }
+
 
 .CALC-BTN{
     position: relative;
@@ -251,7 +256,9 @@ height: 50%;
     width: 95%;
     height: auto;
     margin: 2.5%;
+    color: #919191;
 }
+
 /******************************************************* end Calculater styles **********************************************************/
 
 
@@ -280,12 +287,14 @@ height: 50%;
     height: auto;
     border-radius: 6px;
     transition: 0.3s;
+    background-color: rgb(40, 40,40);
+
 }
 
 .MACROS-DIV-CAL{
     position: relative;
     color: #702bbc;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(55, 55, 55);
     width: 100%;
     height: 90px;;
     padding-top: 15px;
@@ -298,6 +307,7 @@ height: 50%;
     width: 100%;
     height: 50px;;
     font-size: 22px;
+    background-color: rgba(55, 55, 55, 0);
 }
 
 .MACROS-DIV-CAL-LABEL{
@@ -317,7 +327,14 @@ height: 50%;
     text-align: center;
     color: #702bbc;
 }
-
+.MACROS-DIV-CAL-GOAL-LABEL{
+    position: relative;
+    width: 30%;
+    float: left;
+    padding-left: 5px;
+    text-align: center;
+    color: #919191;
+}
 
 .MACROS-DIV-CAL-MIN{
     position: relative;
@@ -327,6 +344,15 @@ height: 50%;
     color: black;
 }
 
+.MACROS-DIV-CAL-MIN-LABEL{
+    position: relative;
+    width: 10%;
+    float: left;
+    text-align: center;
+    color: rgb(55, 55, 55);;
+}
+
+
 .MACROS-DIV-CAL-TOTAL{
     position: relative;
     width: 20%;
@@ -335,7 +361,23 @@ height: 50%;
     color: #702bbc;
 }
 
+.MACROS-DIV-CAL-TOTAL-LABEL{
+    position: relative;
+    width: 20%;
+    float: left;
+    text-align: center;
+    color: #919191;
+}
+
 .MACROS-DIV-CAL-EQUAL{
+    position: relative;
+    width: 10%;
+    float: left;
+    text-align: center;
+    color: rgb(55, 55, 55);;
+}
+
+.MACROS-DIV-CAL-EQUAL-LABEL{
     position: relative;
     width: 10%;
     float: left;
@@ -352,6 +394,16 @@ height: 50%;
     color: #702bbc;
 }
 
+.MACROS-DIV-CAL-RES-LABEL{
+    position: relative;
+    width: 30%;
+    float: left;
+    padding-right: 5px;
+    text-align: center;
+    color: #919191;
+}
+
+
 .MACROS-DIV-LABEL{
     position: relative;
     width: 100%;
@@ -366,6 +418,7 @@ height: 50%;
     float: left;
     margin-top: 2px;
     margin-bottom: 2px;
+    color: #919191;
 }
 
 
@@ -377,6 +430,8 @@ height: 50%;
     font-size: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
+    color: #919191;
+
 }
 
 
@@ -389,6 +444,7 @@ height: 50%;
     font-size: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
+    color: #919191;
 }
 
 
@@ -415,6 +471,8 @@ height: 50%;
     width: 6%;
     margin-top: 6px;
     font-size: 8px; 
+    color: #919191;
+
 }
 
 .MACROS-DIV-PROGRESS-ROW-PROGRESS{
@@ -432,8 +490,12 @@ height: 50%;
     text-align: right;
     padding-left: 2px;
     font-size: 8px; 
+    color: #919191;
 }
 
+.PROGRESS-BACK{
+    background-color: rgb(60, 60, 60); 
+}
 .PRO{
    background-color: #d5eb0d;
 }
@@ -492,13 +554,14 @@ height: 50%;
     border-radius: 6px;
     transition: 0.3s;
     margin-bottom: 50px;
+    background-color: rgb(55, 55, 55);
 }
 
 .EDIT-MACROS-DIV-GOAL-CAL{
 position: relative;
 width: 100%;
 height: 90px;
-background-color: rgb(208, 208, 208);
+background-color: rgb(40, 40, 40);
 border-top-left-radius: 6px; 
 border-top-right-radius: 6px; 
 }
@@ -508,7 +571,8 @@ border-top-right-radius: 6px;
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: rgb(208, 208, 208);
+    border: 0px;
+    background-color: rgb(40, 40, 40);
     border-top-left-radius: 6px; 
     border-top-right-radius: 6px; 
     text-align:center;
@@ -518,11 +582,9 @@ border-top-right-radius: 6px;
 }
 
 .EDIT-CAL-INPUT:focus{
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(70, 70, 70);
     border: 0px;
     color: #712bbc;
-    box-shadow: -1px -1px 5px 1px #712bbc,
-    1px 1px 5px 1px #712bbc;
 }
 
 
@@ -586,16 +648,19 @@ color: #712bbc;
     width: 60%;
     left: 20%;
     float: left;
-    background-color: rgb(208, 208, 208);
+    border:0px;
+    background-color: rgb(70, 70, 70);
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.096),
     5px 5px 30px 5px rgba(0, 0, 0, 0.096); 
+    color:whitesmoke;
 }
 
 
 .EDIT-MACROS-DIV-NUT-INPUT:focus{
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(75, 75,75);
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.096),
     5px 5px 30px 5px rgba(0, 0, 0, 0.096); 
+    color:whitesmoke;
 }
 
 .EDIT-MACROS-DIV-BTNS{
@@ -618,7 +683,7 @@ color: #712bbc;
     width: 50%;
     left: 25%;
     right: 25%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(55, 55, 55);
     height: auto;
     transition: 0.3s;
 
@@ -653,13 +718,13 @@ color: #712bbc;
 
 
 .FOOD-1{
-    color: #000000;
-    background-color: rgb(208, 208, 208);
+    color: #919191;
+    background-color: rgb(55, 55, 55)
 }
 
 .FOOD-2{
-    color: #000000;
-    background-color: rgb(255, 255, 255);
+    color: #919191;
+    background-color: rgb(40, 40, 40);
 }
 
 .FOOD-LEFT{
@@ -719,10 +784,11 @@ color: #712bbc;
      height: 60px;
      margin-top: 10px;
      margin-bottom: 10px;
+
  }
  
  .ADD-FOOD-BTN:hover{
-  background-color: #1c7c21;
+  background-color: #08660d;
 }
 
  .SEARCH-FOOD-DIV{
@@ -760,11 +826,12 @@ color: #712bbc;
     left: 2.5%;
     right: 2.5%;
     border-radius: 6px; 
-    background-color: rgb(208, 208, 208);
+    border: 0px;
+    background-color: rgb(60,60,60);
     height: 50px;; 
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
     5px 5px 30px 5px rgba(0, 0, 0,0.090);
-background-image:url("../../Img/search-icon.png"); 
+background-image:url("../../Img/dark/search-icon.png"); 
 background-repeat: no-repeat; 
 background-position: 90% 12px;
 background-size: 20px;
@@ -773,7 +840,7 @@ background-size: 20px;
 .SEARCH-BAR:focus{
     border: 0px;
     box-shadow: 0px;
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(70,70,70);
     background-image: none;
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
     5px 5px 30px 5px rgba(0, 0, 0,0.090);
