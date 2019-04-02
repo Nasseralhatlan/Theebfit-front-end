@@ -9,7 +9,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- <link id="STYLE-SHEET-LIGHT" rel="stylesheet" href="../Styles/index/index.css">
+  <link id="STYLE-SHEET-DARK" rel="stylesheet" href="../Styles/index/index_dark.css"> -->
   <link id="STYLE-SHEET" rel="stylesheet" href="../Styles/index/index.css">
+
+
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
   <title>Theeb fit</title>
 </head>
@@ -716,17 +720,25 @@
 
     $("#MODE-LIGHT").hide();
 
+    
     $("#MODE-DARK").click(function(){ 
+      var a = new Date();
+      var st = a.getMilliseconds();     
+      
       $("#MODE-DARK").hide();
       $("#MODE-LIGHT").show();
       $("#STYLE-SHEET").attr("href","../Styles/index/index_dark.css");
       iconsToDark();
+      var b = new Date();
+      var et = b.getMilliseconds();     
+      console.log(et-st);
     });
 
     $("#MODE-LIGHT").click(function(){ 
       $("#MODE-LIGHT").hide();
       $("#MODE-DARK").show();
       $("#STYLE-SHEET").attr("href","../Styles/index/index.css");
+
       iconsToLight();
     });
 
