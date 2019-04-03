@@ -25,7 +25,7 @@ body,html{
 }
 
 .BRAND{
-    color: #712bbc !important;
+    color: #8256b1 !important;
 }
 
 .menuIcon{
@@ -358,7 +358,7 @@ height: 50%;
     width: 20%;
     float: left;
     text-align: center;
-    color: #702bbc;
+    color: #712bbc;
 }
 
 .MACROS-DIV-CAL-TOTAL-LABEL{
@@ -374,7 +374,7 @@ height: 50%;
     width: 10%;
     float: left;
     text-align: center;
-    color: rgb(55, 55, 55);;
+    color: rgb(0, 0, 0);;
 }
 
 .MACROS-DIV-CAL-EQUAL-LABEL{
@@ -382,7 +382,7 @@ height: 50%;
     width: 10%;
     float: left;
     text-align: center;
-    color: black;
+    color: rgb(55, 55, 55);
 }
 
 .MACROS-DIV-CAL-RES{
