@@ -2,7 +2,7 @@
 /* Desktop  And Global*/
 
 body,html{
-    background-color:rgb(35, 35, 35);  
+    background-color:rgb(25, 25, 25);  
     font-family: 'Ubuntu', sans-serif;
     height: auto;
     min-height: 100%;
@@ -10,7 +10,6 @@ body,html{
 }
 
 
-  
 .HIDE{
     transform: translateX(-200%);
     transition: 0.3s;
@@ -19,13 +18,13 @@ body,html{
 
 
 .NAV{
-    background-color: rgb(50, 50, 50) !important;
+    background-color: rgb(35, 35, 35) !important;
     color: black;
     z-index: 2 !important;
 }
 
 .BRAND{
-    color: #8256b1 !important;
+    color: #702bbc !important;
 }
 
 .menuIcon{
@@ -39,8 +38,8 @@ body,html{
 }
 
 .SHADOW{
-    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.200),
-    5px 5px 30px 5px rgba(0, 0, 0,0.200);
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.400),
+    5px 5px 30px 5px rgba(0, 0, 0,0.400);
 }
 
 .side-nav{
@@ -49,7 +48,7 @@ body,html{
     width: 300px;
     z-index: 4;
     transform: translateX(-320px);
-    background-color: rgb(50, 50, 50) !important;
+    background-color: rgb(25, 25, 25) !important;
     transition: 0.3s;
 }
 
@@ -98,7 +97,7 @@ height: 50%;
     list-style: none;
     border-radius: 5px;
     transition: 0.2s;
-    color: #919191;
+    color: #702bbc;
 }
 
 
@@ -139,8 +138,8 @@ height: 50%;
     bottom: 30px;
     border-radius: 5px;
     padding:10px;
-    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.350),
-    5px 5px 30px 5px rgba(0, 0, 0, 0.350); 
+    box-shadow:-5px -5px 40px 5px rgba(0, 0, 0, 0.400),
+    5px 5px 40px 5px rgba(0, 0, 0, 0.400); 
 }
 
    /******************************************************* Calculater styles **********************************************************/
@@ -149,7 +148,7 @@ height: 50%;
 
 .CALC-DIV{
     position: relative;
-    background-color:rgb(55,55, 55); 
+    background-color:rgb(45, 45, 45); 
     width: 50%;
     left: 25%;
     right: 25%;
@@ -164,7 +163,7 @@ height: 50%;
     position: relative;
     width: 100%;
     height: 200px;;
-    background-color:rgb(40, 40, 40);  
+    background-color:rgb(35, 35, 35);  
     color: #702bbc;
     font-size: 40px;
     padding-top: 10%;
@@ -176,7 +175,7 @@ height: 50%;
 
 .CALC-RESULT-DIV-GLOW{
     border-radius: 2px solid #702bbc;   
-    box-shadow: 0 0 30px #702bbc;
+    box-shadow: 0 0 20px #702bbc;
 }
 
 .CALC-OP{
@@ -194,9 +193,8 @@ height: 50%;
     border-bottom: 3px solid #712bbc00;
     height: 50px;
     padding-top: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: 0.3s;
-    color: #919191;
 }
 
 .CALC-OP1-Active{
@@ -209,9 +207,8 @@ height: 50%;
     border-bottom: 3px solid #712bbc00;
     height: 50px;
     padding-top: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     transition: 0.3s;
-    color: #919191;
 }
 
 .CALC-OP2-Active{
@@ -223,16 +220,14 @@ height: 50%;
     position: relative;
     border-width: 0px;
     width: 95%;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(35,35,35);
     height: 40px;
     margin: 2.5%;
-
 }
 
 .CALC-INPUT:focus{
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(35, 35, 35);
 }
-
 
 .CALC-BTN{
     position: relative;
@@ -256,9 +251,7 @@ height: 50%;
     width: 95%;
     height: auto;
     margin: 2.5%;
-    color: #919191;
 }
-
 /******************************************************* end Calculater styles **********************************************************/
 
 
@@ -287,14 +280,13 @@ height: 50%;
     height: auto;
     border-radius: 6px;
     transition: 0.3s;
-    background-color: rgb(40, 40,40);
-
+    background-color: rgb(45, 45, 45);
 }
 
 .MACROS-DIV-CAL{
     position: relative;
     color: #702bbc;
-    background-color: rgb(55, 55, 55);
+    background-color: rgb(35, 35, 35);
     width: 100%;
     height: 90px;;
     padding-top: 15px;
@@ -307,7 +299,6 @@ height: 50%;
     width: 100%;
     height: 50px;;
     font-size: 22px;
-    background-color: rgba(55, 55, 55, 0);
 }
 
 .MACROS-DIV-CAL-LABEL{
@@ -327,13 +318,14 @@ height: 50%;
     text-align: center;
     color: #702bbc;
 }
+
 .MACROS-DIV-CAL-GOAL-LABEL{
     position: relative;
     width: 30%;
     float: left;
     padding-left: 5px;
     text-align: center;
-    color: #919191;
+    color: #ffffff;
 }
 
 .MACROS-DIV-CAL-MIN{
@@ -341,7 +333,7 @@ height: 50%;
     width: 10%;
     float: left;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .MACROS-DIV-CAL-MIN-LABEL{
@@ -349,7 +341,7 @@ height: 50%;
     width: 10%;
     float: left;
     text-align: center;
-    color: rgb(55, 55, 55);;
+    color: rgb(35, 35, 35);
 }
 
 
@@ -358,7 +350,7 @@ height: 50%;
     width: 20%;
     float: left;
     text-align: center;
-    color: #712bbc;
+    color: #702bbc;
 }
 
 .MACROS-DIV-CAL-TOTAL-LABEL{
@@ -366,15 +358,16 @@ height: 50%;
     width: 20%;
     float: left;
     text-align: center;
-    color: #919191;
+    color: #ffffff;
 }
+
 
 .MACROS-DIV-CAL-EQUAL{
     position: relative;
     width: 10%;
     float: left;
     text-align: center;
-    color: rgb(0, 0, 0);;
+    color: rgb(255, 255, 255);
 }
 
 .MACROS-DIV-CAL-EQUAL-LABEL{
@@ -382,7 +375,7 @@ height: 50%;
     width: 10%;
     float: left;
     text-align: center;
-    color: rgb(55, 55, 55);
+    color: rgb(35, 35, 35);
 }
 
 .MACROS-DIV-CAL-RES{
@@ -400,9 +393,8 @@ height: 50%;
     float: left;
     padding-right: 5px;
     text-align: center;
-    color: #919191;
+    color: #ffffff;
 }
-
 
 .MACROS-DIV-LABEL{
     position: relative;
@@ -418,7 +410,7 @@ height: 50%;
     float: left;
     margin-top: 2px;
     margin-bottom: 2px;
-    color: #919191;
+    color: white;
 }
 
 
@@ -430,7 +422,7 @@ height: 50%;
     font-size: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
-    color: #919191;
+    color: white;
 
 }
 
@@ -444,7 +436,8 @@ height: 50%;
     font-size: 10px;
     margin-top: 2px;
     margin-bottom: 2px;
-    color: #919191;
+    color: white;
+
 }
 
 
@@ -471,8 +464,7 @@ height: 50%;
     width: 6%;
     margin-top: 6px;
     font-size: 8px; 
-    color: #919191;
-
+    color: white;
 }
 
 .MACROS-DIV-PROGRESS-ROW-PROGRESS{
@@ -482,6 +474,9 @@ height: 50%;
     margin-top: 6px;
 }
 
+.PROGRESS-BACK{
+background-color: rgb(35, 35, 35);
+}
 .MACROS-DIV-PROGRESS-ROW-GOAL{
     position: relative;
     float: left;
@@ -490,12 +485,9 @@ height: 50%;
     text-align: right;
     padding-left: 2px;
     font-size: 8px; 
-    color: #919191;
+    color: white;
 }
 
-.PROGRESS-BACK{
-    background-color: rgb(60, 60, 60); 
-}
 .PRO{
    background-color: #d5eb0d;
 }
@@ -546,22 +538,22 @@ height: 50%;
 
 .EDIT-MACROS-DIV{
     position: absolute;
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
+    width: 50%;
+    left: 25%;
+    right: 25%;
     top: 90px;
     height: auto;
     border-radius: 6px;
     transition: 0.3s;
     margin-bottom: 50px;
-    background-color: rgb(55, 55, 55);
+    background-color: rgb(45, 45, 45);
 }
 
 .EDIT-MACROS-DIV-GOAL-CAL{
 position: relative;
 width: 100%;
 height: 90px;
-background-color: rgb(40, 40, 40);
+background-color: rgb(35, 35, 35);
 border-top-left-radius: 6px; 
 border-top-right-radius: 6px; 
 }
@@ -572,7 +564,7 @@ border-top-right-radius: 6px;
     width: 100%;
     height: 100%;
     border: 0px;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(35, 35, 35);
     border-top-left-radius: 6px; 
     border-top-right-radius: 6px; 
     text-align:center;
@@ -582,9 +574,11 @@ border-top-right-radius: 6px;
 }
 
 .EDIT-CAL-INPUT:focus{
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(35, 35, 35);
     border: 0px;
     color: #712bbc;
+    box-shadow: -1px -1px 5px 1px #712bbc,
+    1px 1px 5px 1px #712bbc;
 }
 
 
@@ -648,19 +642,17 @@ color: #712bbc;
     width: 60%;
     left: 20%;
     float: left;
-    border:0px;
-    background-color: rgb(70, 70, 70);
+    border: 0px;
+    background-color: rgb(35, 35, 35);
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.096),
     5px 5px 30px 5px rgba(0, 0, 0, 0.096); 
-    color:whitesmoke;
 }
 
 
 .EDIT-MACROS-DIV-NUT-INPUT:focus{
-    background-color: rgb(75, 75,75);
+    background-color: rgb(35, 35, 35);
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.096),
     5px 5px 30px 5px rgba(0, 0, 0, 0.096); 
-    color:whitesmoke;
 }
 
 .EDIT-MACROS-DIV-BTNS{
@@ -683,7 +675,7 @@ color: #712bbc;
     width: 50%;
     left: 25%;
     right: 25%;
-    background-color: rgba(55, 55, 55);
+    background-color: rgb(45, 45, 45);
     height: auto;
     transition: 0.3s;
 
@@ -718,13 +710,13 @@ color: #712bbc;
 
 
 .FOOD-1{
-    color: #919191;
-    background-color: rgb(55, 55, 55)
+    color: #000000;
+    background-color: rgb(35, 35, 35);
 }
 
 .FOOD-2{
-    color: #919191;
-    background-color: rgb(40, 40, 40);
+    color: #000000;
+    background-color: rgb(45, 45, 45);
 }
 
 .FOOD-LEFT{
@@ -736,6 +728,7 @@ color: #712bbc;
     float: left;
     padding-left: 10px;
     padding-bottom: 10px;
+    color: white;
 }
 
 .FOOD-NAME-DIV{
@@ -744,6 +737,7 @@ color: #712bbc;
     height: 65%;
     padding-top: 10px;
     background-color: #ffffff00;
+    color: white;
 }
 
 .FOOD-SERVING-DIV{
@@ -754,6 +748,7 @@ color: #712bbc;
     float: left;
     font-size: 15px;
     margin: 0px;
+    color: white;
 }
 
 .FOOD-RIGHT{
@@ -765,6 +760,7 @@ color: #712bbc;
     background-color: #ffffff00;
     margin: 0px;
     float: left;
+    color: white;
 }
 
 .ADD-FOOD-BTN-DIV{
@@ -784,11 +780,10 @@ color: #712bbc;
      height: 60px;
      margin-top: 10px;
      margin-bottom: 10px;
-
  }
  
  .ADD-FOOD-BTN:hover{
-  background-color: #08660d;
+  background-color: #1c7c21;
 }
 
  .SEARCH-FOOD-DIV{
@@ -825,12 +820,12 @@ color: #712bbc;
     width: 95%;
     left: 2.5%;
     right: 2.5%;
-    border-radius: 6px; 
     border: 0px;
-    background-color: rgb(60,60,60);
+    border-radius: 6px; 
+    background-color: rgb(35, 35, 35);
     height: 50px;; 
-    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
-    5px 5px 30px 5px rgba(0, 0, 0,0.090);
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.400),
+    5px 5px 30px 5px rgba(0, 0, 0,0.400);
 background-image:url("../../Img/dark/search-icon.png"); 
 background-repeat: no-repeat; 
 background-position: 90% 12px;
@@ -840,7 +835,7 @@ background-size: 20px;
 .SEARCH-BAR:focus{
     border: 0px;
     box-shadow: 0px;
-    background-color: rgb(70,70,70);
+    background-color: rgb(35, 35, 35);
     background-image: none;
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
     5px 5px 30px 5px rgba(0, 0, 0,0.090);
@@ -852,8 +847,8 @@ background-size: 20px;
     width: 95%;
     left: 2.5%;
     right: 2.5%;
-    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
-    5px 5px 30px 5px rgba(0, 0, 0,0.090);
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.400),
+    5px 5px 30px 5px rgba(0, 0, 0,0.400);
 }
 
 .SCAN-BAR-CODE-ICON{
@@ -875,8 +870,8 @@ background-size: 20px;
     left: 25%;
     right: 25%;
     margin-top: 70px;
-    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
-    5px 5px 30px 5px rgba(0, 0, 0,0.090);
+    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.400),
+    5px 5px 30px 5px rgba(0, 0, 0,0.400);
 }
 
 .CAM-BTN-DIV{
@@ -899,6 +894,19 @@ background-size: 20px;
     bottom: 32.5%;
 }
 
+
+
+.FOOD-INFO-DIV{
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    top: 90px;
+    height: auto;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-bottom: 50px; 
+}
 /******************************************************* end Food styles **********************************************************/
 
 /*Ultra wide*/
@@ -1008,6 +1016,18 @@ background-size: 20px;
     height: 40%;
     top: 30%;
     bottom: 30%;
+}
+
+.EDIT-MACROS-DIV{
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    top: 90px;
+    height: auto;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-bottom: 50px;
 }
 
 }

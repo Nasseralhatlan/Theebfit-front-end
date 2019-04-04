@@ -11,6 +11,8 @@
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <!-- <link id="STYLE-SHEET-LIGHT" rel="stylesheet" href="../Styles/index/index.css">
   <link id="STYLE-SHEET-DARK" rel="stylesheet" href="../Styles/index/index_dark.css"> -->
+
+
   <link id="STYLE-SHEET" rel="stylesheet" href="../Styles/index/index.css">
 
 
@@ -35,7 +37,7 @@
       <li id="Food-btn">Food<img id="FOOD-ICON" class="icon" src="../Img/light/food-icon.png" alt=""></li>
       <li id="Workout-btn">Workout<img id="WORKOUT-ICON" class="icon" src="../Img/light/workout-icon.png" alt=""></li>
       <li id="Weight-btn">Weight<img id="WEIGHT-ICON" class="icon" src="../Img/light/weight-icon.png" alt=""></li>
-      <li id="Calc-btn">Macros Calculater<img id="CALC-ICON" class="icon" src="../Img/light/calc-icon.png" alt=""></li>
+      <li id="Calc-btn">Calories Calculater<img id="CALC-ICON" class="icon" src="../Img/light/calc-icon.png" alt=""></li>
       <li id="Settings-btn">Settings<img id="SETTINGS-ICON" class="icon" src="../Img/light/settings-icon.png" alt=""></li>
 
 
@@ -295,7 +297,22 @@
 
 
 
-        
+        <div class="FOOD  FOOD-1">
+          <div class="FOOD-LEFT">
+            <div class="FOOD-NAME-DIV">
+              Al marai laban
+            </div>
+
+            <div class="FOOD-SERVING-DIV">
+
+              1000 ml 
+            </div>
+          </div>
+
+          <div class="FOOD-RIGHT">
+            388 cal
+          </div>
+        </div>
 
 
 
@@ -572,6 +589,23 @@
 
 
 
+
+    <!-- <div id="FOOD-INFO" class="card FOOD-INFO-DIV SHADOW">
+
+
+      <div class="FOOD-INFO-HEADER">
+
+
+
+      </div>
+
+      <div>
+
+
+      </div>
+
+    </div> -->
+
   </div>
   <!-- ============================== end food Section ==============================   -->
 
@@ -722,16 +756,10 @@
 
     
     $("#MODE-DARK").click(function(){ 
-      var a = new Date();
-      var st = a.getMilliseconds();     
-      
       $("#MODE-DARK").hide();
       $("#MODE-LIGHT").show();
       $("#STYLE-SHEET").attr("href","../Styles/index/index_dark.css");
       iconsToDark();
-      var b = new Date();
-      var et = b.getMilliseconds();     
-      console.log(et-st);
     });
 
     $("#MODE-LIGHT").click(function(){ 

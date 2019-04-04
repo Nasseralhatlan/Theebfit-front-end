@@ -527,9 +527,9 @@ height: 50%;
 
 .EDIT-MACROS-DIV{
     position: absolute;
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
+    width: 50%;
+    left: 25%;
+    right: 25%;
     top: 90px;
     height: auto;
     border-radius: 6px;
@@ -807,7 +807,7 @@ color: #712bbc;
     height: 50px;; 
     box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
     5px 5px 30px 5px rgba(0, 0, 0,0.090);
-background-image:url("../../Img/search-icon.png"); 
+background-image:url("../../Img/light/search-icon.png"); 
 background-repeat: no-repeat; 
 background-position: 90% 12px;
 background-size: 20px;
@@ -875,6 +875,19 @@ background-size: 20px;
     bottom: 32.5%;
 }
 
+
+
+.FOOD-INFO-DIV{
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    top: 90px;
+    height: auto;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-bottom: 50px; 
+}
 /******************************************************* end Food styles **********************************************************/
 
 /*Ultra wide*/
@@ -984,6 +997,18 @@ background-size: 20px;
     height: 40%;
     top: 30%;
     bottom: 30%;
+}
+
+.EDIT-MACROS-DIV{
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    top: 90px;
+    height: auto;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-bottom: 50px;
 }
 
 }
