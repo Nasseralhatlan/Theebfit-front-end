@@ -85,8 +85,10 @@ $("#SCAN-BARCODE-BTN").click(function(){
 
 Quagga.init({
 inputStream : {
+  numOfWorkers: navigator.hardwareConcurrency,
   name : "Live",
   type : "LiveStream",
+  frequency: 30,
   target: document.querySelector('#cam')    // Or '#yourElement' (optional)
 },
 
@@ -139,8 +141,8 @@ if (err){
     $("#SEARCH-INPUT").val(text);
     $("#cam").hide();
     ShowOne("#SEARCH-FOOD");
-    Quagga.stop();
 
+    Quagga.stop();
      
    });
 
