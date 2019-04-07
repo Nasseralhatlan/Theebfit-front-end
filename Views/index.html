@@ -42,7 +42,7 @@
 
 
     </ul>
-    <div><a class="btn btn-danger BTN" href="Sign.html" role="button">Sign out</a></div>
+    <div><a id="SIGN-OUT-BTN" class="btn btn-danger BTN" href="Sign.html" role="button">Sign out</a></div>
 
 
   </div>
@@ -808,15 +808,16 @@
 
     if($_GET['dev']=="app"){
 
-      $("#SIDE_NAV").attr("style","padding-top: 25px;");
-      $("#NAV_BAR").attr("style","padding-top: 35px;");
-      $("#Food").attr("style","position:relative;top:25px;");
-      $("#Home").attr("style","position:relative;top:25px;");
-      $("#Food").attr("style","position:relative;top:25px;");
-      $("#Calc").attr("style","position:relative;top:125px;");
-      $("#Workout").attr("style","position:relative;top:25px;");
-      $("#Settings").attr("style","position:relative;top:125px;");
-
+      $("#SIDE_NAV").attr("style","padding-top: 20px;");
+      $("#NAV_BAR").attr("style","padding-top: 30px;");
+      $("#Food").attr("style","position:relative;top:20px;");
+      $("#Home").attr("style","position:relative;top:20px;");
+      $("#Food").attr("style","position:relative;top:20px;");
+      $("#Calc").attr("style","position:relative;top:120px;");
+      $("#Workout").attr("style","position:relative;top:20px;");
+      $("#Settings").attr("style","position:relative;top:120px;");
+      $("#SIGN-OUT-BTN").removeAttr("href");
+      $("#SIGN-OUT-BTN").attr("href","Sign.html?dev=app");
     }else{
       $("#SIDE_NAV").removeAttr("style");
       $("#NAV_BAR").removeAttr("style");
@@ -825,7 +826,10 @@
       $("#Food").removeAttr("style");
       $("#Calc").removeAttr("style");
       $("#Workout").removeAttr("style");
-      $("#Settings").removeAttr("style");
+      $("#Settings").removeAttr("style"); 
+      $("#Settings").attr("style","padding-top:70px;");   
+      $("#SIGN-OUT-BTN").removeAttr("href");
+      $("#SIGN-OUT-BTN").attr("href","Sign.html");
     }
 
 
