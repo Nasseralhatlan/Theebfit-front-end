@@ -23,6 +23,7 @@ $(document).ready(function() {
 
 
     function ShowOne(id){
+      $("body,html").animate({scrollTop:0},0);
       HideAllFood();
       addClassHideAll();
       $(id).show();

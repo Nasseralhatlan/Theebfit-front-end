@@ -53,7 +53,7 @@
 
 
 
-  <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
+  <nav id="NAV_BAR" class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
     <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
     <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theebfit</a>
   </nav>
@@ -68,7 +68,7 @@
 
   <!-- ============================== Home Section ==============================   -->
 
-  <div id="Home" style="padding-left:250px;padding-top:200px;">
+  <div id="Home">
 
 
     Home
@@ -90,7 +90,7 @@
 
   <!-- ============================== food Section ==============================   -->
 
-  <div  id="Food" style="position:relative;top:20px;">
+  <div  id="Food">
  
   
 
@@ -621,7 +621,7 @@
 
   <!-- ==============================  workout Section ==============================   -->
 
-  <div  style="position:relative;top:20px;" id="Workout">
+  <div  id="Workout">
 
 
     <h1> Workout </h1>
@@ -666,7 +666,7 @@
 
 
 
-  <div  style="position:relative;top:120px;" id="Calc" class="CALC-DIV SHADOW">
+  <div id="Calc" class="CALC-DIV SHADOW">
 
     <div id="res" class="CALC-RESULT-DIV">
       fill the form below
@@ -731,7 +731,7 @@
 
 
 
-  <div style="position:relative;top:120px;"  id="Settings">
+  <div   id="Settings">
 
     
     <button style="position: relative;width: 40%;left: 30%;right: 30%;" id="MODE-DARK" type="button" class="btn btn-dark SHADOW">Dark Mode</button>
@@ -791,6 +791,43 @@
 
 
  });
+
+
+
+    const $_GET = {};
+    const args = location.search.substr(1).split(/&/);
+
+    for (let i=0; i<args.length; ++i) {
+        const tmp = args[i].split(/=/);
+
+        if (tmp[0] != "") {
+            $_GET[decodeURIComponent(tmp[0])] = decodeURIComponent(tmp.slice(1).join("").replace("+", " "));
+        }//::END if
+    }//::END for
+
+
+    if($_GET['dev']=="app"){
+
+      $("#SIDE_NAV").attr("style","padding-top: 25px;");
+      $("#NAV_BAR").attr("style","padding-top: 35px;");
+      $("#Food").attr("style","position:relative;top:25px;");
+      $("#Home").attr("style","position:relative;top:25px;");
+      $("#Food").attr("style","position:relative;top:25px;");
+      $("#Calc").attr("style","position:relative;top:125px;");
+      $("#Workout").attr("style","position:relative;top:25px;");
+      $("#Settings").attr("style","position:relative;top:125px;");
+
+    }else{
+      $("#SIDE_NAV").removeAttr("style");
+      $("#NAV_BAR").removeAttr("style");
+      $("#Food").removeAttr("style");
+      $("#Home").removeAttr("style");
+      $("#Food").removeAttr("style");
+      $("#Calc").removeAttr("style");
+      $("#Workout").removeAttr("style");
+      $("#Settings").removeAttr("style");
+    }
+
 
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
