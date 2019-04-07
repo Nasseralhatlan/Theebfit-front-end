@@ -5,7 +5,6 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 , viewport-fit=cover">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -820,10 +819,8 @@
       $("#Calc").attr("style","position:relative;top:120px;");
       $("#Workout").attr("style","position:relative;top:20px;");
       $("#Settings").attr("style","position:relative;top:120px;");
-      // $("#SIGN-OUT-BTN").removeAttr("href");
-      // $("#SIGN-OUT-BTN").attr("href","Sign.html?dev=app");
-      Signoutlink = "Sign.html?dev=app";
-
+      $("#SIGN-OUT-BTN").removeAttr("href");
+      $("#SIGN-OUT-BTN").attr("href","Sign.html?dev=app");
     }else{
       $("#SIDE_NAV").removeAttr("style");
       $("#NAV_BAR").removeAttr("style");
@@ -834,16 +831,11 @@
       $("#Workout").removeAttr("style");
       $("#Settings").removeAttr("style"); 
       $("#Settings").attr("style","padding-top:70px;");   
-      // $("#SIGN-OUT-BTN").removeAttr("href");
-      // $("#SIGN-OUT-BTN").attr("href","Sign.html");
-      Signoutlink = "Sign.html";
+      $("#SIGN-OUT-BTN").removeAttr("href");
+      $("#SIGN-OUT-BTN").attr("href","Sign.html");
     }
 
-    $("#SIGN-OUT-BTN").click(function(){
-      $("body").appendTo("<img class='GIF' src='../Img/loading.gif'>");
-      window.setTimeout(5000);
-      window.location.replace(Signoutlink);
-    });
+
 
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
