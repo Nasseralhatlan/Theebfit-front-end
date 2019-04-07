@@ -9,6 +9,15 @@ body,html{
     width: 100%;
 }
 
+.GIF{
+    position: absolute;
+width: 30%;
+left: 35%;
+right: 35%;
+top: 35%;
+z-index: 5;
+height: auto;
+}
 
 .HIDE{
     transform: translateX(-200%);
