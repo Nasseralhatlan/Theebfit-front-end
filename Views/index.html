@@ -13,7 +13,7 @@
   <link id="STYLE-SHEET-DARK" rel="stylesheet" href="../Styles/index/index_dark.css"> -->
 
 
-  <link id="STYLE-SHEET" rel="stylesheet" href="../Styles/index/index.css">
+  <link id="STYLE-SHEET" rel="stylesheet" href="../Styles/index/index_dark.css">
 
 
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
@@ -55,7 +55,7 @@
 
   <nav class="navbar fixed-top navbar-dark bg-dark NAV SHADOW">
     <img id="MENU" class="menuIcon navbar-brand" src="../Img/pm.png" alt="">
-    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theeb</a>
+    <a style="color:black;" class="navbar-brand BRAND" href="Sign.html">Theebfit</a>
   </nav>
 
 
@@ -90,7 +90,7 @@
 
   <!-- ============================== food Section ==============================   -->
 
-  <div  id="Food">
+  <div  id="Food" style="position:relative;top:20px;">
  
   
 
@@ -621,7 +621,7 @@
 
   <!-- ==============================  workout Section ==============================   -->
 
-  <div style="padding-left:250px;padding-top:200px;" id="Workout">
+  <div  style="position:relative;top:20px;" id="Workout">
 
 
     <h1> Workout </h1>
@@ -643,7 +643,7 @@
 
   <!-- ==============================  weight Section ==============================   -->
 
-  <div style="padding-left:200px;padding-top:200px;" id="Weight">
+  <div  style="position:relative;top:20px;" id="Weight">
 
     weight
 
@@ -666,7 +666,7 @@
 
 
 
-  <div id="Calc" class="CALC-DIV SHADOW">
+  <div  style="position:relative;top:120px;" id="Calc" class="CALC-DIV SHADOW">
 
     <div id="res" class="CALC-RESULT-DIV">
       fill the form below
@@ -731,7 +731,7 @@
 
 
 
-  <div style="width: 100% ;height: 100%;padding-top: 70px;"  id="Settings">
+  <div style="position:relative;top:120px;"  id="Settings">
 
     
     <button style="position: relative;width: 40%;left: 30%;right: 30%;" id="MODE-DARK" type="button" class="btn btn-dark SHADOW">Dark Mode</button>
@@ -752,8 +752,8 @@
  $(document).ready(function () {
    
 
-    $("#MODE-LIGHT").hide();
-
+    $("#MODE-DARK").hide();
+    iconsToDark();
     
     $("#MODE-DARK").click(function(){ 
       $("#MODE-DARK").hide();

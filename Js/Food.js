@@ -88,7 +88,6 @@ inputStream : {
   numOfWorkers: navigator.hardwareConcurrency,
   name : "Live",
   type : "LiveStream",
-  frequency: 30,
   target: document.querySelector('#cam')    // Or '#yourElement' (optional)
 },
 
