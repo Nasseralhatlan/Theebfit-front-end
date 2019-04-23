@@ -12,6 +12,7 @@
   <!-- <link id="STYLE-SHEET-LIGHT" rel="stylesheet" href="../Styles/index/index.css">
   <link id="STYLE-SHEET-DARK" rel="stylesheet" href="../Styles/index/index_dark.css"> -->
 
+  <link id="STYLE-SHEET" rel="stylesheet" href="../Styles/index/Test.css">
 
   <link id="STYLE-SHEET" rel="stylesheet" href="../Styles/index/index_dark.css">
 
@@ -42,7 +43,7 @@
 
 
     </ul>
-    <div><a id="SIGN-OUT-BTN" class="btn btn-danger BTN" href="Sign.html" role="button">Sign out</a></div>
+    <div><a id="SIGN-OUT-BTN" class="btn BTN SHADOW" href="Sign.html" role="button">Sign out</a></div>
 
 
   </div>
@@ -75,20 +76,15 @@
 
 
   </div>
-  <!-- ============================== end Home Section ==============================   -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ============================== food Section ==============================   -->
+  <!-- ============================== end Home Section ==============================  
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ============================== food Section ==============================   -->
 
   <div  id="Food">
  
@@ -151,7 +147,7 @@
 
 
           <div class="MACROS-DIV-PROGRESS-ROW-PROGRESS">
-            <div class="progress PROGRESS-BACK" style="height:12px;">
+            <div class="progress PROGRESS-BACK">
               <div class="progress-bar progress-bar-striped progress-bar-animated PRO" role="progressbar"
                 style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -185,7 +181,7 @@
 
 
           <div class="MACROS-DIV-PROGRESS-ROW-PROGRESS">
-            <div class="progress PROGRESS-BACK" style="height:12px;">
+            <div class="progress PROGRESS-BACK">
               <div class="progress-bar progress-bar-striped progress-bar-animated CARB" role="progressbar"
                 style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -218,7 +214,7 @@
 
 
           <div class="MACROS-DIV-PROGRESS-ROW-PROGRESS">
-            <div class="progress PROGRESS-BACK" style="height:12px;">
+            <div class="progress PROGRESS-BACK">
               <div class="progress-bar progress-bar-striped progress-bar-animated FAT" role="progressbar"
                 style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -345,7 +341,7 @@
 
              <div class="SEARCH-RESLUT-DIV">
 
-                <div class="FOOD  FOOD-1">
+                <div id="food-sea-res"  class="FOOD  FOOD-1">
                     <div class="FOOD-LEFT">
                       <div class="FOOD-NAME-DIV">
                         White rice
@@ -362,7 +358,7 @@
                     </div>
                   </div>
           
-                  <div class="FOOD  FOOD-2">
+                  <div id="food-sea-res" class="FOOD  FOOD-2">
                     <div class="FOOD-LEFT">
                       <div class="FOOD-NAME-DIV">
                         Oats
@@ -531,7 +527,8 @@
       <div class="EDIT-MACROS-DIV-GOAL-CAL">
 
         <input
-        type="number"
+        type="text" 
+        pattern="[0-9]*"
         class="form-control EDIT-CAL-INPUT"
         placeholder="Enter Cal"
         value=3700
@@ -590,36 +587,147 @@
 
 
 
-    <!-- <div id="FOOD-INFO" class="card FOOD-INFO-DIV SHADOW">
+    <div id="FOOD-INFO" class="card FOOD-INFO-DIV SHADOW">
 
 
       <div class="FOOD-INFO-HEADER">
 
+           <div class="LEFT">
+
+                 <img class="FOOD-INFO-ICON" src="../Img/dark/FoodInfo.png" alt="Name :">
+
+
+           </div>
+
+
+           <div class="RIGHT">
+
+
+                  <div class="RIGHT-TOP">
+
+
+                  Full fat milk  
+
+
+                  </div>
+                  
+                  <div class="RIGHT-BOT">
+
+                    Almarai
+
+                  </div>
+
+
+           </div>
+
+
+
+
+        <div class="FOOD-INFO-LABEL">
+
+
+            <ul>
+              <li class="PRO">Protein</li>
+              <li class="CARB">Carbs</li>
+              <li class="FAT">Fat</li>
+            </ul>
+  
+  
+          </div>
 
 
       </div>
 
-      <div>
 
 
-      </div>
 
-    </div> -->
+      <div class="FOOD-INFO-BODY">
+
+
+
+
+
+<!--  circle progress bar -->
+<div class="container PROGREES-CIR-DIV">
+    <div class="row">
+
+  <ul>
+    <li> 
+        <div class="col-md-3 col-sm-6">
+            <div class="progressC blue">
+                <span class="progressC-left">
+                    <span class="progressC-bar"></span>
+                </span>
+                <span class="progressC-right">
+                    <span class="progressC-bar"></span>
+                </span>
+                <div class="progressC-value">90%</div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="col-md-3 col-sm-6">
+            <div class="progressC yellow">
+                <span class="progressC-left">
+                    <span class="progressC-bar"></span>
+                </span>
+                <span class="progressC-right">
+                    <span class="progressC-bar"></span>
+                </span>
+                <div class="progressC-value">75%</div>
+            </div>
+        </div>
+    </li>
+    <li>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="progressC blue">
+                <span class="progressC-left">
+                    <span class="progressC-bar"></span>
+                </span>
+                <span class="progressC-right">
+                    <span class="progressC-bar"></span>
+                </span>
+                <div class="progressC-value">90%</div>
+            </div>
+        </div>
+    </li>
+  </ul>
+   
+ 
+      
+    </div>
+
+</div>
+
+
+
+
+
+
+
+       </div>
+
+
+
+
+    </div>
+
+
+
+
+
 
   </div>
-  <!-- ============================== end food Section ==============================   -->
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ==============================  workout Section ==============================   -->
+  <!-- ============================== end food Section ============================== 
+ ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ==============================  workout Section ==============================   -->
 
   <div  id="Workout">
 
@@ -627,42 +735,32 @@
     <h1> Workout </h1>
 
   </div>
-  <!-- ============================== end workout Section ==============================   -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ==============================  weight Section ==============================   -->
+  <!-- ============================== end workout Section ==============================  
+ ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ==============================  weight Section ==============================   -->
 
   <div  style="position:relative;top:20px;" id="Weight">
 
     weight
 
   </div>
-  <!-- ============================== end weight Section ==============================   -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ==============================  calc Section ==============================   -->
+  <!-- ============================== end weight Section ==============================   
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ****************************************************************************************
+  ==============================  calc Section ==============================   -->
 
 
 
@@ -711,25 +809,16 @@
   </div>
 
 
-  <!-- ============================== end calc Section ==============================   -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- ============================== end calc Section ==============================  
+****************************************************************************************
+****************************************************************************************
+****************************************************************************************
+****************************************************************************************
+****************************************************************************************
+****************************************************************************************
+****************************************************************************************
+****************************************************************************************
+  ==============================  settings Section ==============================   -->
 
   <div   id="Settings">
 
@@ -740,6 +829,16 @@
 
 
   </div>
+
+
+
+  <!-- ============================== end  settings Section ==============================   -->
+
+
+
+
+
+
 
 
 

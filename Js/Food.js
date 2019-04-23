@@ -10,6 +10,7 @@ $(document).ready(function() {
      $("#SEARCH-FOOD").hide();
      $("#EDIT-MACROS-DIV").hide();
      $("#EDIT-MACROS-DIV").hide();
+     $("#FOOD-INFO").hide();
      $("#cam").hide();
     } 
 
@@ -19,6 +20,7 @@ $(document).ready(function() {
       $("#FOOD-LIST-DIV").addClass("HIDE");
       $("#SEARCH-FOOD").addClass("HIDE");
       $("#EDIT-MACROS-DIV").addClass("HIDE");
+      $("#FOOD-INFO").addClass("HIDE");
     }
 
 
@@ -48,7 +50,7 @@ $(document).ready(function() {
   
 
 $("#EDIT-CAL-BTN").click(function () { 
-    ShowOne("#EDIT-MACROS-DIV");
+  ShowOne("#EDIT-MACROS-DIV");
 });
 
 $("#ADD-FOOD-BTN").click(function (){ 
@@ -78,6 +80,15 @@ $("#CAM-CAN-BTN").click(function () {
     $("#cam").hide();
     ShowOne("#SEARCH-FOOD");    
 });
+
+
+$(".FOOD").click(function (){  
+  ShowOne("#FOOD-INFO");
+});
+
+
+
+
 
 $("#SCAN-BARCODE-BTN").click(function(){ 
 
