@@ -5,19 +5,21 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <!-- <link id="STYLE-SHEET-LIGHT" rel="stylesheet" href="../Styles/index/index.css">
-  <link id="STYLE-SHEET-DARK" rel="stylesheet" href="../Styles/index/index_dark.css"> -->
-
-  <link id="STYLE-SHEET" rel="stylesheet" href="../Styles/index/Test.css">
-
-  <link id="STYLE-SHEET" rel="stylesheet" href="../Styles/index/index_dark.css">
-
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../Styles/index/Dark/Global.css">
+  <link rel="stylesheet" href="../Styles/index/Dark/Calc.css">
+  <link rel="stylesheet" href="../Styles/index/Dark/Home.css">
+  <link rel="stylesheet" href="../Styles/index/Dark/Food.css">
+  <link rel="stylesheet" href="../Styles/index/Dark/Workout.css">
+  <link rel="stylesheet" href="../Styles/index/Dark/Weight.css">
+  <link rel="stylesheet" href="../Styles/index/Dark/Calc.css">
+  <link rel="stylesheet" href="../Styles/index/Dark/Settings.css">
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
   <title>Theeb fit</title>
 </head>
 
@@ -40,8 +42,6 @@
       <li id="Weight-btn">Weight<img id="WEIGHT-ICON" class="icon" src="../Img/light/weight-icon.png" alt=""></li>
       <li id="Calc-btn">Calories Calculater<img id="CALC-ICON" class="icon" src="../Img/light/calc-icon.png" alt=""></li>
       <li id="Settings-btn">Settings<img id="SETTINGS-ICON" class="icon" src="../Img/light/settings-icon.png" alt=""></li>
-
-
     </ul>
     <div><a id="SIGN-OUT-BTN" class="btn BTN SHADOW" href="Sign.html" role="button">Sign out</a></div>
 
@@ -579,7 +579,6 @@
     <div class="EDIT-MACROS-DIV-BTNS">
       <button id="BACK-EDIT-MACROS-BTN" type="button" style="float:left;"class="btn btn-info SHADOW">back</button>
       <button id="SAVE-EDIT-MACROS-BTN" type="button" style="float:right;width:30%" class="btn btn-success SHADOW">Save</button>
-
     </div>
     </div>
 
@@ -623,18 +622,6 @@
 
 
 
-        <div class="FOOD-INFO-LABEL">
-
-
-            <ul>
-              <li class="PRO">Protein</li>
-              <li class="CARB">Carbs</li>
-              <li class="FAT">Fat</li>
-            </ul>
-  
-  
-          </div>
-
 
       </div>
 
@@ -645,6 +632,18 @@
 
 
 
+        <div class="FOOD-INFO-LABEL">
+
+
+          <ul>
+            <li class="PRO">Protein</li>
+            <li class="CARB">Carbs</li>
+            <li class="FAT">Fat</li>
+          </ul>
+
+
+        </div>
+
 
 
 <!--  circle progress bar -->
@@ -654,20 +653,20 @@
   <ul>
     <li> 
         <div class="col-md-3 col-sm-6">
-            <div class="progressC blue">
+            <div class="progressC ProteinC">
                 <span class="progressC-left">
                     <span class="progressC-bar"></span>
                 </span>
                 <span class="progressC-right">
                     <span class="progressC-bar"></span>
                 </span>
-                <div class="progressC-value">90%</div>
+                <div class="progressC-value">100%</div>
             </div>
         </div>
     </li>
     <li>
         <div class="col-md-3 col-sm-6">
-            <div class="progressC yellow">
+            <div class="progressC CarbsC">
                 <span class="progressC-left">
                     <span class="progressC-bar"></span>
                 </span>
@@ -681,14 +680,14 @@
     <li>
 
         <div class="col-md-3 col-sm-6">
-            <div class="progressC blue">
+            <div class="progressC FatC">
                 <span class="progressC-left">
                     <span class="progressC-bar"></span>
                 </span>
                 <span class="progressC-right">
                     <span class="progressC-bar"></span>
                 </span>
-                <div class="progressC-value">90%</div>
+                <div class="progressC-value">50%</div>
             </div>
         </div>
     </li>
@@ -706,6 +705,11 @@
 
 
 
+      
+<div class="EDIT-MACROS-DIV-BTNS">
+  <button id="BACK-FOOD-INFO-BTN" type="button" style="float:left;"class="btn btn-info SHADOW">back</button>
+  <button id="SAVE-FOOD-INFO-BTN" type="button" style="float:right;width:50%" class="btn btn-success SHADOW">Add to Food list</button>
+</div>
        </div>
 
 

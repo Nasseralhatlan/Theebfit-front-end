@@ -67,13 +67,19 @@ $("#BACK-EDIT-MACROS-BTN").click(function () {
   startFoodPoint();
 });
 
-$("#BACK-EDIT-MACROS-BTN").click(function () { 
-  startFoodPoint();
-});
-
 $("#SAVE-EDIT-MACROS-BTN").click(function () { 
   startFoodPoint();
 });
+
+
+$("#BACK-FOOD-INFO-BTN").click(function () { 
+  startFoodPoint();
+});
+
+$("#SAVE-FOOD-INFO-BTN").click(function () { 
+  startFoodPoint();
+});
+
 
 $("#CAM-CAN-BTN").click(function () { 
     Quagga.stop();
