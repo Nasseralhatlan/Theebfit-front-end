@@ -91,7 +91,6 @@
   
 
     <div id="cam" class="CAM-DIV">
-
          <div class="CAM-BTN-DIV">
           <button id="CAM-CAN-BTN"type="button" class="CAM-BTN btn btn-danger SHADOW">Cancel</button>             
          </div>
@@ -313,7 +312,7 @@
 
 
        <div class="ADD-FOOD-BTN-DIV">
-            <button id="ADD-FOOD-BTN" type="button" class="btn btn-success ADD-FOOD-BTN SHADOW"> Add food </button>
+            <button id="ADD-FOOD-BTN" type="button" class="btn btn-success ADD-FOOD-BTN"> Add food </button>
         
         </div>
     </div>
@@ -336,10 +335,10 @@
             </div>
 
              <div class="SEARCH-BAR-DIV">
-                <input id="SEARCH-INPUT"style="text-indent:17px;" type="text" class="SEARCH-BAR form-control"  placeholder="Search food">
+                <input id="SEARCH-INPUT"style="text-indent:17px;" type="text" class="SEARCH-BAR form-control SHADOW"  placeholder="Search food">
              </div> 
 
-             <div class="SEARCH-RESLUT-DIV">
+             <div class="SEARCH-RESLUT-DIV SHADOW">
 
                 <div id="food-sea-res"  class="FOOD  FOOD-1">
                     <div class="FOOD-LEFT">
@@ -527,7 +526,7 @@
       <div class="EDIT-MACROS-DIV-GOAL-CAL">
 
         <input
-        type="text" 
+        type="number" 
         pattern="[0-9]*"
         class="form-control EDIT-CAL-INPUT"
         placeholder="Enter Cal"
@@ -550,7 +549,8 @@
     <div class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
       <ul>
         <li> <input
-          type="number"
+          type="number" 
+          pattern="[0-9]*"
           class="form-control EDIT-MACROS-DIV-NUT-INPUT"
           placeholder="Protein %"
           value=30
@@ -558,7 +558,8 @@
 
 
         <li> <input
-          type="number"
+          type="number" 
+          pattern="[0-9]*"          
           class="form-control EDIT-MACROS-DIV-NUT-INPUT"
           placeholder="Carbs %"
           value=50
@@ -568,6 +569,7 @@
 
         <li> <input
           type="number"
+          pattern="[0-9]*"          
           class="form-control EDIT-MACROS-DIV-NUT-INPUT"
           placeholder="Fat %"
           value=20
@@ -577,8 +579,8 @@
 
 
     <div class="EDIT-MACROS-DIV-BTNS">
-      <button id="BACK-EDIT-MACROS-BTN" type="button" style="float:left;"class="btn btn-info SHADOW">back</button>
-      <button id="SAVE-EDIT-MACROS-BTN" type="button" style="float:right;width:30%" class="btn btn-success SHADOW">Save</button>
+      <button id="BACK-EDIT-MACROS-BTN" type="button" style="float:left;"class="btn btn-info">back</button>
+      <button id="SAVE-EDIT-MACROS-BTN" type="button" style="float:right;width:30%" class="btn btn-success">Save</button>
     </div>
     </div>
 
@@ -591,30 +593,30 @@
 
       <div class="FOOD-INFO-HEADER">
 
-           <div class="LEFT">
+           <div class="FOOD-INFO-HEADER-LEFT">
 
-                 <img class="FOOD-INFO-ICON" src="../Img/dark/FoodInfo.png" alt="Name :">
+            <div class="FOOD-INFO-HEADER-LEFT-TOP">
+
+
+              Full fat milk  
+
+
+              </div>
+              
+              <div class="FOOD-INFO-HEADER-LEFT-BOT">
+
+                Almarai
+
+              </div>
 
 
            </div>
 
 
-           <div class="RIGHT">
+           <div class="FOOD-INFO-HEADER-RIGHT">
 
 
-                  <div class="RIGHT-TOP">
-
-
-                  Full fat milk  
-
-
-                  </div>
-                  
-                  <div class="RIGHT-BOT">
-
-                    Almarai
-
-                  </div>
+                4000 cal
 
 
            </div>
@@ -702,13 +704,50 @@
 
 
 
+<div class="FOOD-INFO-DIV-NUT">
+    <ul>
+         <li class="pro"> 100g</li>
+         <li class="carbs"> 30g</li>
+         <li class="fat"> 2g</li>
+    </ul>
+  </div>
 
 
 
+
+<div class="FOOD-INFO-DIV-INPUT">
+<ul>
+  <li>
+    <div class="FOOD-INFO-DIV-INPUT-LABEL">
+      Serving size :    
+    </div>
+    <div class="FOOD-INFO-DIV-INPUT-INPUT">
+        <select id="Act" class="custom-select CALC-INPUT" id="inputGroupSelect01" aria-placeholder="Activity level">
+            <option selected value="1g">1 gram</option>
+            <option value="oz">1 oz </option>
+            <option value="lb">1 lb</option>
+          </select>
+    </div>
+  </li>
+
+
+  <li>
+      <div class="FOOD-INFO-DIV-INPUT-LABEL">
+          Servings  Num:    
+        </div>
+        <div class="FOOD-INFO-DIV-INPUT-INPUT">
+            <input id="CALC-Age-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Number of servings">
+
+        </div>
+  </li>
+
+
+</ul>
+</div>
       
 <div class="EDIT-MACROS-DIV-BTNS">
-  <button id="BACK-FOOD-INFO-BTN" type="button" style="float:left;"class="btn btn-info SHADOW">back</button>
-  <button id="SAVE-FOOD-INFO-BTN" type="button" style="float:right;width:50%" class="btn btn-success SHADOW">Add to Food list</button>
+  <button id="BACK-FOOD-INFO-BTN" type="button" style="float:left;"class="btn btn-info">back</button>
+  <button id="SAVE-FOOD-INFO-BTN" type="button" style="float:right;width:50%" class="btn btn-success">Add to Food list</button>
 </div>
        </div>
 
@@ -774,23 +813,22 @@
       fill the form below
     </div>
 
-
     <div class="CALC-BODY-DIV">
 
       <div id="Gender-Female" class="CALC-OP1 CALC-OP CALC-OP1-Active">Female</div>
       <div id="Gender-Male" class="CALC-OP2 CALC-OP">Male</div>
-      <input id="CALC-Age-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Enter Age">
+      <input id="CALC-Age-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Enter Age">
 
 
       <div id="Kg" class="CALC-OP1 CALC-OP CALC-OP1-Active"> Kg </div>
       <div id="Lb" class="CALC-OP2 CALC-OP"> lb</div>
 
-      <input id="CALC-Weight-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Enter Weight">
+      <input id="CALC-Weight-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Enter Weight">
 
       <div id="Cm" class="CALC-OP1 CALC-OP CALC-OP1-Active"> Cm </div>
       <div id="Feet" class="CALC-OP2 CALC-OP"> Feet </div>
 
-      <input id="CALC-Height-Input" value="" type="number" class="form-control CALC-INPUT" placeholder="Enter Height">
+      <input id="CALC-Height-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Enter Height">
 
       <label class="CALC-ACT">Activity level</label>
       <select id="Act" class="custom-select CALC-INPUT" id="inputGroupSelect01" aria-placeholder="Activity level">
@@ -827,9 +865,7 @@
   <div   id="Settings">
 
     
-    <button style="position: relative;width: 40%;left: 30%;right: 30%;" id="MODE-DARK" type="button" class="btn btn-dark SHADOW">Dark Mode</button>
 
-    <button style="position: relative;width: 40%;left: 30%;right: 30%;" id="MODE-LIGHT" type="button" class="btn btn-light SHADOW">Light Mode</button>
 
 
   </div>
