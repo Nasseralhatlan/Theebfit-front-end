@@ -36,12 +36,12 @@
 
   <div id="SIDE_NAV" class="side-nav SHADOW">
     <ul>
-      <li id="Home-btn" class="active">Home<img id="HOME-ICON"class="icon" src="../Img/light/home-icon.png" alt=""></li>
-      <li id="Food-btn">Food<img id="FOOD-ICON" class="icon" src="../Img/light/food-icon.png" alt=""></li>
-      <li id="Workout-btn">Workout<img id="WORKOUT-ICON" class="icon" src="../Img/light/workout-icon.png" alt=""></li>
-      <li id="Weight-btn">Weight<img id="WEIGHT-ICON" class="icon" src="../Img/light/weight-icon.png" alt=""></li>
-      <li id="Calc-btn">Calories Calculater<img id="CALC-ICON" class="icon" src="../Img/light/calc-icon.png" alt=""></li>
-      <li id="Settings-btn">Settings<img id="SETTINGS-ICON" class="icon" src="../Img/light/settings-icon.png" alt=""></li>
+      <li id="Home-btn" class="active">Home<img id="HOME-ICON"class="icon" src="../Img/dark/home-icon.png" alt=""></li>
+      <li id="Food-btn">Food<img id="FOOD-ICON" class="icon" src="../Img/dark/food-icon.png" alt=""></li>
+      <li id="Workout-btn">Workout<img id="WORKOUT-ICON" class="icon" src="../Img/dark/workout-icon.png" alt=""></li>
+      <li id="Weight-btn">Weight<img id="WEIGHT-ICON" class="icon" src="../Img/dark/weight-icon.png" alt=""></li>
+      <li id="Calc-btn">Calories Calculater<img id="CALC-ICON" class="icon" src="../Img/dark/calc-icon.png" alt=""></li>
+      <li id="Settings-btn">Settings<img id="SETTINGS-ICON" class="icon" src="../Img/dark/settings-icon.png" alt=""></li>
     </ul>
     <div><a id="SIGN-OUT-BTN" class="btn BTN SHADOW" href="Sign.html" role="button">Sign out</a></div>
 
@@ -722,7 +722,7 @@
       Serving size :    
     </div>
     <div class="FOOD-INFO-DIV-INPUT-INPUT">
-        <select id="Act" class="custom-select CALC-INPUT" id="inputGroupSelect01" aria-placeholder="Activity level">
+        <select class="custom-select CALC-INPUT" id="inputGroupSelect01" aria-placeholder="Activity level">
             <option selected value="1g">1 gram</option>
             <option value="oz">1 oz </option>
             <option value="lb">1 lb</option>
@@ -736,8 +736,7 @@
           Servings  Num:    
         </div>
         <div class="FOOD-INFO-DIV-INPUT-INPUT">
-            <input id="CALC-Age-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Number of servings">
-
+            <input value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="">
         </div>
   </li>
 
@@ -887,96 +886,6 @@
   <script src="../Js/Food.js"></script>
   <script src="../Js/Calc.js"></script>
   <script src="../Js/SideNav.js"></script>
-  <script>
- $(document).ready(function () {
-   
-
-    $("#MODE-DARK").hide();
-    iconsToDark();
-    
-    $("#MODE-DARK").click(function(){ 
-      $("#MODE-DARK").hide();
-      $("#MODE-LIGHT").show();
-      $("#STYLE-SHEET").attr("href","../Styles/index/index_dark.css");
-      iconsToDark();
-    });
-
-    $("#MODE-LIGHT").click(function(){ 
-      $("#MODE-LIGHT").hide();
-      $("#MODE-DARK").show();
-      $("#STYLE-SHEET").attr("href","../Styles/index/index.css");
-
-      iconsToLight();
-    });
-
-
-   function iconsToLight(){  
-     $("#HOME-ICON").attr("src","../Img/light/home-icon.png");
-     $("#FOOD-ICON").attr("src","../Img/light/food-icon.png");
-     $("#WORKOUT-ICON").attr("src","../Img/light/workout-icon.png");
-     $("#WEIGHT-ICON").attr("src","../Img/light/weight-icon.png");
-     $("#CALC-ICON").attr("src","../Img/light/calc-icon.png");
-     $("#SETTINGS-ICON").attr("src","../Img/light/settings-icon.png");
-   }
-
-   function iconsToDark(){  
-     $("#HOME-ICON").attr("src","../Img/dark/home-icon.png");
-     $("#FOOD-ICON").attr("src","../Img/dark/food-icon.png");
-     $("#WORKOUT-ICON").attr("src","../Img/dark/workout-icon.png");
-     $("#WEIGHT-ICON").attr("src","../Img/dark/weight-icon.png");
-     $("#CALC-ICON").attr("src","../Img/dark/calc-icon.png");
-     $("#SETTINGS-ICON").attr("src","../Img/dark/settings-icon.png");
-   }
-
-
- });
-
-
-
-
-    const $_GET = {};
-    const args = location.search.substr(1).split(/&/);
-
-    for (let i=0; i<args.length; ++i) {
-        const tmp = args[i].split(/=/);
-
-        if (tmp[0] != "") {
-            $_GET[decodeURIComponent(tmp[0])] = decodeURIComponent(tmp.slice(1).join("").replace("+", " "));
-        }//::END if
-    }//::END for
-
-
-    var Signoutlink = "Sign.html";
-
-    if($_GET['dev']=="app"){
-
-      $("#SIDE_NAV").attr("style","padding-top: 20px;");
-      $("#NAV_BAR").attr("style","padding-top: 30px;");
-      $("#Food").attr("style","position:relative;top:20px;");
-      $("#Home").attr("style","position:relative;top:20px;");
-      $("#Food").attr("style","position:relative;top:20px;");
-      $("#Calc").attr("style","position:relative;top:120px;");
-      $("#Workout").attr("style","position:relative;top:20px;");
-      $("#Settings").attr("style","position:relative;top:120px;");
-      $("#SIGN-OUT-BTN").removeAttr("href");
-      $("#SIGN-OUT-BTN").attr("href","Sign.html?dev=app");
-    }else{
-      $("#SIDE_NAV").removeAttr("style");
-      $("#NAV_BAR").removeAttr("style");
-      $("#Food").removeAttr("style");
-      $("#Home").removeAttr("style");
-      $("#Food").removeAttr("style");
-      $("#Calc").removeAttr("style");
-      $("#Workout").removeAttr("style");
-      $("#Settings").removeAttr("style"); 
-      $("#Settings").attr("style","padding-top:70px;");   
-      $("#SIGN-OUT-BTN").removeAttr("href");
-      $("#SIGN-OUT-BTN").attr("href","Sign.html");
-    }
-
-
-
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>

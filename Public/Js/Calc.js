@@ -82,15 +82,14 @@ $("#CALC-Weight-Input").keyup(function(){
 
 $("#CALC-BTN").click(function(){
 
+    
 var Height = 0;
 Height = $("#CALC-Height-Input").val();
-
 if(Height == ""){
     Height = 0;
 }
 
-
-
+var age = 0 ;
 age = $("#CALC-Age-Input").val();
 if(age == ""){
     age = 0;
@@ -104,7 +103,6 @@ if(Weight == ""){
 }
 
 if(WeightType=="Lb"){
-
      Weight = Weight / 2.2 ; 
 }
 
