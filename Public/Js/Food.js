@@ -70,7 +70,7 @@ $("#OP-PRE").click(function(){
   $("#EDIT-MACROS-GRAMS").hide();
   $("#EDIT-MACROS-PRE").show();
   $("#EDIT-MACROS-GOAL-INPUT").prop("disabled",false);
-  $("#EDIT-MACROS-GOAL-INPUT").attr("style","");
+  $("#EDIT-MACROS-GOAL-INPUT").removeAttr("style");
 
 })
 
