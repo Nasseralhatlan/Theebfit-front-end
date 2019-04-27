@@ -53,6 +53,27 @@ $("#EDIT-CAL-BTN").click(function () {
   ShowOne("#EDIT-MACROS-DIV");
 });
 
+
+$("#OP-GRAMS").click(function(){
+  $("#OP-PRE").removeClass("ACTIVE-OPTION");
+  $("#OP-GRAMS").addClass("ACTIVE-OPTION");
+  $("#EDIT-MACROS-PRE").hide();
+  $("#EDIT-MACROS-GRAMS").show();
+  $("#EDIT-MACROS-GOAL-INPUT").prop("disabled",true);
+  $("#EDIT-MACROS-GOAL-INPUT").attr("style","background-color:rgb(25,25,25);color:rgb(35,35,35);");
+
+})
+
+$("#OP-PRE").click(function(){
+  $("#OP-GRAMS").removeClass("ACTIVE-OPTION");
+  $("#OP-PRE").addClass("ACTIVE-OPTION");
+  $("#EDIT-MACROS-GRAMS").hide();
+  $("#EDIT-MACROS-PRE").show();
+  $("#EDIT-MACROS-GOAL-INPUT").prop("disabled",false);
+  $("#EDIT-MACROS-GOAL-INPUT").attr("style","");
+
+})
+
 $("#ADD-FOOD-BTN").click(function (){ 
    ShowOne("#SEARCH-FOOD");
 });

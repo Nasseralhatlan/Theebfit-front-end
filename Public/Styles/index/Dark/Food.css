@@ -292,6 +292,35 @@ border-top-left-radius: 6px;
 border-top-right-radius: 6px; 
 }
 
+.OPTION-DIV{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.OPTION-DIV ul{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 98%;
+    left: 1%;
+    right: 1%;
+}
+
+.OPTION-DIV ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: white;
+    height: 40px;
+}
+
+.ACTIVE-OPTION{
+    border-bottom: 3px solid #702bbc; 
+}
+
 
 .EDIT-CAL-INPUT{
     position: relative;
@@ -502,14 +531,6 @@ color: #712bbc;
     color: rgb(210,210,210);
 }
 
-.ADD-FOOD-BTN-DIV{
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
- }
- 
  .ADD-FOOD-BTN{
      position: relative;
      width: 95%;
@@ -517,12 +538,12 @@ color: #712bbc;
      right: 2.5%;
      border-radius:0px; 
      height: 60px;
-     margin-top: 10px;
-     margin-bottom: 10px;
+     margin-top: 20px;
+     margin-bottom: 20px;
  }
  
  .ADD-FOOD-BTN:hover{
-  background-color: #1c7c21;
+  background-color: #1a641d;
 }
 
  .SEARCH-FOOD-DIV{

@@ -311,10 +311,8 @@
 
 
 
-       <div class="ADD-FOOD-BTN-DIV">
             <button id="ADD-FOOD-BTN" type="button" class="btn btn-success ADD-FOOD-BTN"> Add food </button>
         
-        </div>
     </div>
 
 
@@ -525,7 +523,7 @@
 
       <div class="EDIT-MACROS-DIV-GOAL-CAL">
 
-        <input
+        <input id="EDIT-MACROS-GOAL-INPUT"
         type="number" 
         pattern="[0-9]*"
         class="form-control EDIT-CAL-INPUT"
@@ -535,7 +533,13 @@
     
     </div>
 
-    <div class="EDIT-MACROS-DIV-NUT-LABEL">
+    <div class="OPTION-DIV">
+      <ul>
+        <li id="OP-PRE"   class="ACTIVE-OPTION"> %    </li>
+        <li id="OP-GRAMS" > grams </li>
+      </ul>
+    </div>
+    <div  id="EDIT-MACROS-PREC" class="EDIT-MACROS-DIV-NUT-LABEL">
 
       <ul>
         <li>Protein</li>
@@ -546,7 +550,7 @@
     </div>
          
     
-    <div class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
+    <div id="EDIT-MACROS-PRE"  class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
       <ul>
         <li> <input
           type="number" 
@@ -576,6 +580,39 @@
           />    % </li>
       </ul>
     </div>
+
+
+    <div id="EDIT-MACROS-GRAMS" style="display:none;" class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
+      <ul>
+        <li> <input
+          type="number" 
+          pattern="[0-9]*"
+          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+          placeholder="Protein %"
+          value=30
+          /> g </li>
+
+
+        <li> <input
+          type="number" 
+          pattern="[0-9]*"          
+          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+          placeholder="Carbs %"
+          value=50
+          />    g </li>
+
+
+
+        <li> <input
+          type="number"
+          pattern="[0-9]*"          
+          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+          placeholder="Fat %"
+          value=20
+          />    g </li>
+      </ul>
+    </div>
+
 
 
     <div class="EDIT-MACROS-DIV-BTNS">
