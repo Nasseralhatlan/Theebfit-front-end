@@ -59,9 +59,8 @@ $("#OP-GRAMS").click(function(){
   $("#OP-GRAMS").addClass("ACTIVE-OPTION");
   $("#EDIT-MACROS-PRE").hide();
   $("#EDIT-MACROS-GRAMS").show();
-  $("#EDIT-MACROS-GOAL-INPUT").prop("disabled",true);
   $("#EDIT-MACROS-GOAL-INPUT").attr("style","background-color:rgb(25,25,25);color:rgb(35,35,35);");
-
+  $("#EDIT-MACROS-GOAL-INPUT").prop("disabled",true);
 })
 
 $("#OP-PRE").click(function(){

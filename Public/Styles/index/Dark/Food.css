@@ -290,6 +290,7 @@ height: 90px;
 background-color: rgb(25, 25, 25);
 border-top-left-radius: 6px; 
 border-top-right-radius: 6px; 
+transition: 0.3s;
 }
 
 .OPTION-DIV{
