@@ -5,8 +5,8 @@
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     width: 100%;
-    margin-bottom: 50px;
-    padding-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 10px;
     padding-bottom: 10px; 
 }
 
@@ -627,11 +627,9 @@ color: #712bbc;
       width: 50%;
       left: 25%;
       right: 25%;
-      height: auto;
       border-radius: 6px;
       transition: 0.3s;
-      margin-top: 30px;
-      margin-bottom: 10px; 
+      margin-top: 5px;
       background-color: rgb(35, 35, 35);
   }
   
@@ -733,14 +731,14 @@ color: #712bbc;
   .PROGREES-CIR-DIV{
       position: relative;
       width: 100%;
-      height: auto;
+      height: 100px;
       padding: 0px;
   }
   
   .PROGREES-CIR-DIV ul{
       position: relative;
       width: 100%;
-      height: auto;
+      height: 100px;
       list-style: none;
       padding: 0px;
       margin: 0px;
@@ -750,9 +748,9 @@ color: #712bbc;
   .PROGREES-CIR-DIV ul li{
       position: relative;
       width: 33.3333333%;
-      height: auto;
+      height: 100px;
       float: left;
-      padding-left: 10%;
+      margin-bottom: 20px;
   }
 
 
@@ -910,6 +908,7 @@ color: #712bbc;
     position: relative;
     width: 100%;
     height: 25px;;
+    margin-bottom: 20px;
 }
 
 .FOOD-INFO-DIV-NUT ul{
@@ -918,12 +917,15 @@ color: #712bbc;
     color: white;
     list-style: none;
     text-align: center;
+    height: 25px;
 }
 
 .FOOD-INFO-DIV-NUT ul li{
 position: relative;
 float: left;
 width: 33.3333333%;
+height: 25px;
+margin-bottom: 20px;
 }
 
 
@@ -943,6 +945,7 @@ color: rgb(224, 39, 55);
 .FOOD-INFO-DIV-INPUT{
 position: relative;
 margin-top: 10px;
+margin-bottom: 10px;
 height: 140px;
 }
 
@@ -960,6 +963,7 @@ height: 140px;
     margin: 0px;
     width: 100%;
     height: 70px;
+    margin-bottom: 10px;
 }
 
 
@@ -1031,9 +1035,11 @@ height: 140px;
     }
     
     .FOOD-INFO-DIV{
-        width: 96%;
-        left: 2.5%;
-        right: 2.5%;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        left:0px;
+        right: 0px;
     }
 
     .PROGREES-CIR-DIV ul li{
