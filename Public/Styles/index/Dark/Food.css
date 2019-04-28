@@ -318,6 +318,18 @@ transition: 0.3s;
     height: 40px;
 }
 
+.OPTION-DIV ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: white;
+    height: 40px;
+}
+.OPTION-DIV ul li:hover{
+   cursor: pointer;
+}
+
+
 .ACTIVE-OPTION{
     border-bottom: 3px solid #702bbc; 
 }
@@ -477,7 +489,7 @@ color: #712bbc;
     transition: 0.3s;
 }
 .FOOD-1:hover{
-    background-color: rgb(60, 0, 95);
+    background-color: rgb(15, 15, 15);
 }
 .FOOD-2{
     color: #000000;
@@ -486,7 +498,7 @@ color: #712bbc;
 }
 
 .FOOD-2:hover{
-    background-color: rgb(60, 0, 95);
+    background-color: rgb(15, 15, 15);
 }
 .FOOD-LEFT{
     position: relative;
@@ -541,10 +553,13 @@ color: #712bbc;
      height: 60px;
      margin-top: 20px;
      margin-bottom: 20px;
+     background-color: rgb(43, 170, 43);
+     color: white;
  }
  
  .ADD-FOOD-BTN:hover{
   background-color: #1a641d;
+  color: white;
 }
 
  .SEARCH-FOOD-DIV{
