@@ -60,7 +60,8 @@ $("#OP-GRAMS").click(function(){
   $("#EDIT-MACROS-PRE").hide();
   $("#EDIT-MACROS-GRAMS").show();
   $("#EDIT-MACROS-GOAL-INPUT").attr("style","background-color:rgb(25,25,25);color:rgb(35,35,35);");
-  $("#EDIT-MACROS-GOAL-INPUT").prop("disabled",true);
+  $("#EDIT-MACROS-GOAL-INPUT").attr("disabled",true);
+
 })
 
 $("#OP-PRE").click(function(){
@@ -68,8 +69,9 @@ $("#OP-PRE").click(function(){
   $("#OP-PRE").addClass("ACTIVE-OPTION");
   $("#EDIT-MACROS-GRAMS").hide();
   $("#EDIT-MACROS-PRE").show();
-  $("#EDIT-MACROS-GOAL-INPUT").prop("disabled",false);
   $("#EDIT-MACROS-GOAL-INPUT").removeAttr("style");
+  $("#EDIT-MACROS-GOAL-INPUT").removeAttr("disabled");
+
 
 })
 
