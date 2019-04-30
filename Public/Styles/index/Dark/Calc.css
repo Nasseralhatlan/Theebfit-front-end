@@ -1,13 +1,13 @@
 
 .CALC-DIV{
-    position: absolute;
+    position: relative;
     background-color:rgb(35, 35, 35); 
     width: 50%;
     left: 25%;
     right: 25%;
     height: auto;
     top: 80px;;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border-radius: 6px;
 }
 
