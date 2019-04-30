@@ -2,7 +2,8 @@ $(document).ready(function(){
 
 
     $("#res").removeClass("CALC-RESULT-DIV-GLOW");
-
+    $("#CALC-Height-Input-Feet").hide();
+    $("#CALC-Height-Input-Inch").hide();
 
 var gender = "f";
 
@@ -54,7 +55,10 @@ $("#Cm").click(function(){
     $("#res").removeClass("CALC-RESULT-DIV-GLOW");
     $("#Feet").removeClass("CALC-OP2-Active");
     $("#Cm").addClass("CALC-OP1-Active")
-    
+    $("#CALC-Height-Input-Feet").hide();
+    $("#CALC-Height-Input-Inch").hide();
+    $("#CALC-Height-Input").show();
+
     });
     
     
@@ -64,7 +68,10 @@ $("#Cm").click(function(){
     $("#res").removeClass("CALC-RESULT-DIV-GLOW");
     $("#Cm").removeClass("CALC-OP1-Active");
     $("#Feet").addClass("CALC-OP2-Active")
-    
+    $("#CALC-Height-Input").hide();
+    $("#CALC-Height-Input-Feet").show();
+    $("#CALC-Height-Input-Inch").show();
+
 });
 
 $("#CALC-Height-Input").keyup(function(){
@@ -82,13 +89,19 @@ $("#CALC-Weight-Input").keyup(function(){
 
 $("#CALC-BTN").click(function(){
 
-    
+if(HeightType == "Feet"){
+        var Height = 0;
+        HeightFT =   $("#CALC-Height-Input-Feet").val();
+        HeigthIN =   $("#CALC-Height-Input-Inch").val();
+        Height = parseFloat(HeightFT+"."+HeigthIN);
+}else{
 var Height = 0;
 Height = $("#CALC-Height-Input").val();
 if(Height == ""){
     Height = 0;
 }
 
+}
 var age = 0 ;
 age = $("#CALC-Age-Input").val();
 if(age == ""){

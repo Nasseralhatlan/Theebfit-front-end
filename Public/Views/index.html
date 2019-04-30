@@ -25,7 +25,7 @@
 
 
 
-<body>
+<body ontouchstart="" onmouseover="">
 
 
 
@@ -69,7 +69,7 @@
 
   <!-- ============================== Home Section ==============================   -->
 
-  <div id="Home">
+  <div id="Home" class="HOME-MAIN-DIV">
 
 
     Home
@@ -86,19 +86,9 @@
   ****************************************************************************************
   ============================== food Section ==============================   -->
 
-  <div  id="Food">
+  <div  id="FOOD" class="FOOD">
  
-  
-
-    <div id="cam" class="CAM-DIV">
-         <div class="CAM-BTN-DIV">
-          <button id="CAM-CAN-BTN"type="button" class="CAM-BTN btn btn-danger SHADOW">Cancel</button>             
-         </div>
-    </div>
-
-
-
-     <div id="FOOD-MACROS-DIV" class="card MACROS-DIV SHADOW">
+<div id="FOOD-MACROS-DIV" class="card FOOD-MACROS-DIV SHADOW">
 
       <div  class="MACROS-DIV-CAL">
 
@@ -239,13 +229,117 @@
             src="../Img/settings-icon-white.png" alt=""></button>
       </div>
 
-    </div>
+</div>
 
 
 
+<div id="EDIT-MACROS-DIV" class="card EDIT-MACROS-DIV SHADOW">
+
+  <div  class="EDIT-MACROS-DIV-GOAL-CAL">
+
+    <input 
+    id="EDIT-MACROS-GOAL-INPUT"
+    type="number" 
+    pattern="[0-9]*"
+    class="form-control EDIT-CAL-INPUT"
+    placeholder="Enter Cal"
+    value=3700
+    />      
+
+</div>
+
+<div class="OPTION-DIV">
+  <ul>
+    <li id="OP-PRE"   class="ACTIVE-OPTION"> %    </li>
+    <li id="OP-GRAMS" > grams </li>
+  </ul>
+</div>
+<div  id="EDIT-MACROS-PREC" class="EDIT-MACROS-DIV-NUT-LABEL">
+
+  <ul>
+    <li>Protein</li>
+    <li>Carbs</li>
+    <li>Fat</li>
+  </ul>
+  
+</div>
+     
+
+<div id="EDIT-MACROS-PRE"  class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
+  <ul>
+    <li> <input
+      type="number" 
+      pattern="[0-9]*"
+      class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+      placeholder="Protein %"
+      value=30
+      /> % </li>
 
 
-    <div id="FOOD-LIST-DIV" class="card FOOD-MAIN-DIV SHADOW">
+    <li> <input
+      type="number" 
+      pattern="[0-9]*"          
+      class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+      placeholder="Carbs %"
+      value=50
+      />    % </li>
+
+
+
+    <li> <input
+      type="number"
+      pattern="[0-9]*"          
+      class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+      placeholder="Fat %"
+      value=20
+      />    % </li>
+  </ul>
+</div>
+
+
+<div id="EDIT-MACROS-GRAMS" style="display:none;" class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
+  <ul>
+    <li> <input
+      type="number" 
+      pattern="[0-9]*"
+      class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+      placeholder="Protein %"
+      value=30
+      /> g </li>
+
+
+    <li> <input
+      type="number" 
+      pattern="[0-9]*"          
+      class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+      placeholder="Carbs %"
+      value=50
+      />    g </li>
+
+
+
+    <li> <input
+      type="number"
+      pattern="[0-9]*"          
+      class="form-control EDIT-MACROS-DIV-NUT-INPUT"
+      placeholder="Fat %"
+      value=20
+      />    g </li>
+  </ul>
+</div>
+
+
+
+<div class="EDIT-MACROS-DIV-BTNS">
+  <button id="BACK-EDIT-MACROS-BTN" type="button" style="float:left;"class="btn btn-info">back</button>
+  <button id="SAVE-EDIT-MACROS-BTN" type="button" style="float:right;width:30%" class="btn btn-success">Save</button>
+</div>
+
+
+</div>
+
+
+<div id="FOOD-LIST-MAIN-DIV" class="card FOOD-LIST-MAIN-DIV SHADOW">
 
       <div class="FOOD-DIV-HEAD">
 
@@ -256,7 +350,7 @@
 
       <div class="FOOD-DIV-LIST">
 
-        <div class="FOOD  FOOD-1">
+        <div class="ADDED-FOOD  FOOD-1">
           <div class="FOOD-LEFT">
             <div class="FOOD-NAME-DIV">
               Al marai laban
@@ -273,7 +367,7 @@
           </div>
         </div>
 
-        <div class="FOOD  FOOD-2">
+        <div class="ADDED-FOOD  FOOD-2">
           <div class="FOOD-LEFT">
             <div class="FOOD-NAME-DIV">
               Frozen bone less chicken 
@@ -292,7 +386,7 @@
 
 
 
-        <div class="FOOD  FOOD-1">
+        <div class="ADDED-FOOD  FOOD-1">
           <div class="FOOD-LEFT">
             <div class="FOOD-NAME-DIV">
               Al marai laban
@@ -311,25 +405,20 @@
 
 
 
-            <button id="ADD-FOOD-BTN" type="button" class="btn ADD-FOOD-BTN"> Add food </button>
         
     </div>
+
+    <button id="ADD-FOOD-BTN"  type="button" class="btn btn-success ADD-FOOD-BTN"> Add food </button>
 
 
 </div>
  
-
  
-
-
-
-    <div id="SEARCH-FOOD" class="SEARCH-FOOD-DIV">
+<div id="SEARCH-FOOD" class="SEARCH-FOOD-DIV">
 
    
             <div class="SEARCH-BACKBTN-DIV">
                 <button id="SEARCH-BACBTN"type="button" class="btn btn-info SHADOW">Back</button>
-
-                <button id="SCAN-BARCODE-BTN"style="float: right;"id="BAR-CODE-BTN"type="button" class="btn btn-info SHADOW"> <img class="SCAN-BAR-CODE-ICON" src="../Img/scanBarcode-icon.png" alt="Scan barcode"></button>
             </div>
 
              <div class="SEARCH-BAR-DIV">
@@ -338,7 +427,7 @@
 
              <div class="SEARCH-RESLUT-DIV SHADOW">
 
-                <div id="food-sea-res"  class="FOOD  FOOD-1">
+                <div id="food-sea-res"  class="SEARCH-RESULT-FOOD  FOOD-1">
                     <div class="FOOD-LEFT">
                       <div class="FOOD-NAME-DIV">
                         White rice
@@ -355,7 +444,7 @@
                     </div>
                   </div>
           
-                  <div id="food-sea-res" class="FOOD  FOOD-2">
+                  <div id="food-sea-res" class="SEARCH-RESULT-FOOD   FOOD-2">
                     <div class="FOOD-LEFT">
                       <div class="FOOD-NAME-DIV">
                         Oats
@@ -373,7 +462,7 @@
                   </div>
 
 
-                  <div class="FOOD  FOOD-1">
+                  <div class="SEARCH-RESULT-FOOD  FOOD-1">
                       <div class="FOOD-LEFT">
                         <div class="FOOD-NAME-DIV">
                           White rice
@@ -390,7 +479,7 @@
                       </div>
                     </div>
             
-                    <div class="FOOD  FOOD-2">
+                    <div class="SEARCH-RESULT-FOOD  FOOD-2">
                       <div class="FOOD-LEFT">
                         <div class="FOOD-NAME-DIV">
                           Oats
@@ -408,7 +497,7 @@
                     </div>
 
 
-                    <div class="FOOD  FOOD-1">
+                    <div class="SEARCH-RESULT-FOOD  FOOD-1">
                         <div class="FOOD-LEFT">
                           <div class="FOOD-NAME-DIV">
                             White rice
@@ -425,7 +514,7 @@
                         </div>
                       </div>
               
-                      <div class="FOOD  FOOD-2">
+                      <div class="SEARCH-RESULT-FOOD  FOOD-2">
                         <div class="FOOD-LEFT">
                           <div class="FOOD-NAME-DIV">
                             Oats
@@ -442,7 +531,7 @@
                         </div>
                       </div>
 
-                      <div class="FOOD  FOOD-1">
+                      <div class="SEARCH-RESULT-FOOD  FOOD-1">
                           <div class="FOOD-LEFT">
                             <div class="FOOD-NAME-DIV">
                               White rice
@@ -459,7 +548,7 @@
                           </div>
                         </div>
                 
-                        <div class="FOOD  FOOD-2">
+                        <div class="SEARCH-RESULT-FOOD  FOOD-2">
                           <div class="FOOD-LEFT">
                             <div class="FOOD-NAME-DIV">
                               Oats
@@ -476,7 +565,7 @@
                           </div>
                         </div>
 
-                        <div class="FOOD  FOOD-1">
+                        <div class="SEARCH-RESULT-FOOD  FOOD-1">
                             <div class="FOOD-LEFT">
                               <div class="FOOD-NAME-DIV">
                                 White rice
@@ -493,7 +582,7 @@
                             </div>
                           </div>
                   
-                          <div class="FOOD  FOOD-2">
+                          <div class="SEARCH-RESULT-FOOD  FOOD-2">
                             <div class="FOOD-LEFT">
                               <div class="FOOD-NAME-DIV">
                                 Oats
@@ -514,119 +603,12 @@
        
                   </div>
 
-    </div>
-
-
-
-  
-    <div id="EDIT-MACROS-DIV" class="card EDIT-MACROS-DIV SHADOW">
-
-      <div  class="EDIT-MACROS-DIV-GOAL-CAL">
-
-        <input 
-        id="EDIT-MACROS-GOAL-INPUT"
-        type="number" 
-        pattern="[0-9]*"
-        class="form-control EDIT-CAL-INPUT"
-        placeholder="Enter Cal"
-        value=3700
-        />      
-    
-    </div>
-
-    <div class="OPTION-DIV">
-      <ul>
-        <li id="OP-PRE"   class="ACTIVE-OPTION"> %    </li>
-        <li id="OP-GRAMS" > grams </li>
-      </ul>
-    </div>
-    <div  id="EDIT-MACROS-PREC" class="EDIT-MACROS-DIV-NUT-LABEL">
-
-      <ul>
-        <li>Protein</li>
-        <li>Carbs</li>
-        <li>Fat</li>
-      </ul>
-      
-    </div>
-         
-    
-    <div id="EDIT-MACROS-PRE"  class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
-      <ul>
-        <li> <input
-          type="number" 
-          pattern="[0-9]*"
-          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
-          placeholder="Protein %"
-          value=30
-          /> % </li>
-
-
-        <li> <input
-          type="number" 
-          pattern="[0-9]*"          
-          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
-          placeholder="Carbs %"
-          value=50
-          />    % </li>
-
-
-
-        <li> <input
-          type="number"
-          pattern="[0-9]*"          
-          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
-          placeholder="Fat %"
-          value=20
-          />    % </li>
-      </ul>
-    </div>
-
-
-    <div id="EDIT-MACROS-GRAMS" style="display:none;" class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
-      <ul>
-        <li> <input
-          type="number" 
-          pattern="[0-9]*"
-          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
-          placeholder="Protein %"
-          value=30
-          /> g </li>
-
-
-        <li> <input
-          type="number" 
-          pattern="[0-9]*"          
-          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
-          placeholder="Carbs %"
-          value=50
-          />    g </li>
-
-
-
-        <li> <input
-          type="number"
-          pattern="[0-9]*"          
-          class="form-control EDIT-MACROS-DIV-NUT-INPUT"
-          placeholder="Fat %"
-          value=20
-          />    g </li>
-      </ul>
-    </div>
-
-
-
-    <div class="EDIT-MACROS-DIV-BTNS">
-      <button id="BACK-EDIT-MACROS-BTN" type="button" style="float:left;"class="btn btn-info">back</button>
-      <button id="SAVE-EDIT-MACROS-BTN" type="button" style="float:right;width:30%" class="btn btn-success">Save</button>
-    </div>
-    </div>
+</div>
 
 
 
 
-
-    <div id="FOOD-INFO" class="card FOOD-INFO-DIV SHADOW">
+    <div id="FOOD-INFO-ADDED" class="card FOOD-INFO-DIV SHADOW">
 
 
       <div class="FOOD-INFO-HEADER">
@@ -686,13 +668,12 @@
 
 
 
-<!--  circle progress bar -->
+ circle progress bar 
 <div class="container PROGREES-CIR-DIV">
-    <div class="row">
 
   <ul>
     <li> 
-        <div class="col-md-3 col-sm-6">
+        <div class="">
             <div class="progressC ProteinC">
                 <span class="progressC-left">
                     <span class="progressC-bar"></span>
@@ -705,7 +686,7 @@
         </div>
     </li>
     <li>
-        <div class="col-md-3 col-sm-6">
+        <div class="">
             <div class="progressC CarbsC">
                 <span class="progressC-left">
                     <span class="progressC-bar"></span>
@@ -719,7 +700,7 @@
     </li>
     <li>
 
-        <div class="col-md-3 col-sm-6">
+        <div class="">
             <div class="progressC FatC">
                 <span class="progressC-left">
                     <span class="progressC-bar"></span>
@@ -735,7 +716,174 @@
    
  
       
+
+</div>
+
+
+
+
+<div class="FOOD-INFO-DIV-NUT">
+    <ul>
+         <li class="pro"> 100g</li>
+         <li class="carbs"> 30g</li>
+         <li class="fat"> 2g</li>
+    </ul>
+  </div>
+
+
+
+
+<div class="FOOD-INFO-DIV-INPUT">
+<ul>
+  <li>
+    <div class="FOOD-INFO-DIV-INPUT-LABEL">
+      Serving size :    
     </div>
+    <div class="FOOD-INFO-DIV-INPUT-INPUT">
+        <select class="custom-select CALC-INPUT" id="inputGroupSelect01" aria-placeholder="Activity level">
+            <option selected value="1g">1 gram</option>
+            <option value="oz">1 oz </option>
+            <option value="lb">1 lb</option>
+          </select>
+    </div>
+  </li>
+
+
+  <li>
+      <div class="FOOD-INFO-DIV-INPUT-LABEL">
+          Servings  Num:    
+        </div>
+        <div class="FOOD-INFO-DIV-INPUT-INPUT">
+            <input value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="">
+        </div>
+  </li>
+
+
+</ul>
+</div>
+      
+<div class="FOOD-INFO-BTNS-DIV">
+  <button id="BACK-ADDED-FOOD-INFO-BTN" type="button" style="float: left;width:30%;"class="btn btn-success">Save</button>
+  <button id="SAVE-ADDED-FOOD-INFO-BTN" type="button" style="float:right;width:40%" class="btn btn-danger">remove</button>
+</div>
+       </div>
+
+
+
+
+    </div>
+
+
+    
+    <div id="FOOD-INFO-SEARCH" class="card FOOD-INFO-DIV SHADOW">
+
+
+      <div class="FOOD-INFO-HEADER">
+
+           <div class="FOOD-INFO-HEADER-LEFT">
+
+            <div class="FOOD-INFO-HEADER-LEFT-TOP">
+
+
+              Full fat milk  
+
+
+              </div>
+              
+              <div class="FOOD-INFO-HEADER-LEFT-BOT">
+
+                Almarai
+
+              </div>
+
+
+           </div>
+
+
+           <div class="FOOD-INFO-HEADER-RIGHT">
+
+
+                4000 cal
+
+
+           </div>
+
+
+
+
+
+      </div>
+
+
+
+
+      <div class="FOOD-INFO-BODY">
+
+
+
+        <div class="FOOD-INFO-LABEL">
+
+
+          <ul>
+            <li class="PRO">Protein</li>
+            <li class="CARB">Carbs</li>
+            <li class="FAT">Fat</li>
+          </ul>
+
+
+        </div>
+
+
+
+ circle progress bar 
+<div class="container PROGREES-CIR-DIV">
+
+  <ul>
+    <li> 
+        <div>
+            <div class="progressC ProteinC">
+                <span class="progressC-left">
+                    <span class="progressC-bar"></span>
+                </span>
+                <span class="progressC-right">
+                    <span class="progressC-bar"></span>
+                </span>
+                <div class="progressC-value">100%</div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div>
+            <div class="progressC CarbsC">
+                <span class="progressC-left">
+                    <span class="progressC-bar"></span>
+                </span>
+                <span class="progressC-right">
+                    <span class="progressC-bar"></span>
+                </span>
+                <div class="progressC-value">75%</div>
+            </div>
+        </div>
+    </li>
+    <li>
+
+        <div>
+            <div class="progressC FatC">
+                <span class="progressC-left">
+                    <span class="progressC-bar"></span>
+                </span>
+                <span class="progressC-right">
+                    <span class="progressC-bar"></span>
+                </span>
+                <div class="progressC-value">50%</div>
+            </div>
+        </div>
+    </li>
+  </ul>
+   
+ 
+      
+
 
 </div>
 
@@ -783,8 +931,8 @@
 </div>
       
 <div class="EDIT-MACROS-DIV-BTNS">
-  <button id="BACK-FOOD-INFO-BTN" type="button" style="float:left;"class="btn btn-info">back</button>
-  <button id="SAVE-FOOD-INFO-BTN" type="button" style="float:right;width:50%" class="btn btn-success">Add to Food list</button>
+  <button id="BACK-SEARCH-FOOD-INFO-BTN" type="button" style="float:left;"class="btn btn-info">back</button>
+  <button id="ADD-SEARCH-FOOD-INFO-BTN" type="button" style="float:right;width:50%" class="btn btn-success">Add to Food list</button>
 </div>
        </div>
 
@@ -792,8 +940,6 @@
 
 
     </div>
-
-
 
 
 
@@ -837,8 +983,8 @@
   ****************************************************************************************
   ****************************************************************************************
   ==============================  calc Section ==============================   -->
-
-  <div id="Calc"  class="CALC-DIV SHADOW">
+<div id="Calc" class="CALC">
+  <div   class="CALC-DIV SHADOW">
 
     <div id="res" class="CALC-RESULT-DIV">
       fill the form below
@@ -848,18 +994,21 @@
 
       <div id="Gender-Female" class="CALC-OP1 CALC-OP CALC-OP1-Active">Female</div>
       <div id="Gender-Male" class="CALC-OP2 CALC-OP">Male</div>
-      <input id="CALC-Age-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Enter Age">
+      <input id="CALC-Age-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Age">
 
 
       <div id="Kg" class="CALC-OP1 CALC-OP CALC-OP1-Active"> Kg </div>
       <div id="Lb" class="CALC-OP2 CALC-OP"> lb</div>
 
-      <input id="CALC-Weight-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Enter Weight">
+      <input id="CALC-Weight-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Weight">
 
       <div id="Cm" class="CALC-OP1 CALC-OP CALC-OP1-Active"> Cm </div>
       <div id="Feet" class="CALC-OP2 CALC-OP"> Feet </div>
 
-      <input id="CALC-Height-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="Enter Height">
+      <input id="CALC-Height-Input" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT" placeholder="cm">
+      <input id="CALC-Height-Input-Feet" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT Feet" placeholder="ft">
+      <input id="CALC-Height-Input-Inch" value="" type="number" pattern="[0-9]*" class="form-control CALC-INPUT INCH" placeholder="in">
+
 
       <label class="CALC-ACT">Activity level</label>
       <select id="Act" class="custom-select CALC-INPUT" id="inputGroupSelect01" aria-placeholder="Activity level">
@@ -882,6 +1031,8 @@
 
   </div>
 
+
+  </div>
 
   <!-- ============================== end calc Section ==============================  
 ****************************************************************************************

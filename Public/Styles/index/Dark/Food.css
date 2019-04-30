@@ -1,15 +1,24 @@
 
-
-.MACROS-DIV{
+.FOOD{
     position: relative;
-    /* width: 95%;
-    left: 2.5%;
-    right: 2.5%; */
+    top: 56px;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+
+.FOOD-MACROS-DIV{
+    position: relative;
     width: 50%;
     left: 25%;
     right: 25%;
-    top: 90px;
     height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 6px;
     transition: 0.3s;
     background-color: rgb(35, 35, 35);
@@ -25,6 +34,7 @@
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
+
 
 .MACROS-DIV-CAL-CAL{
     position: relative;
@@ -173,7 +183,6 @@
 }
 
 
-
 .MACROS-DIV-PROGRESS{
     position: relative;
     width: 100%;
@@ -248,38 +257,35 @@ height: 5px;
     padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
-
-   border-radius: 4px;
-   float: left;
-   }
+    border-radius: 4px;
+    float: left;
+}
    
-   .EDIT-ICON{
+
+.EDIT-CAL-BTN:hover{
+    background-color: #4d217c;
+    color: white;
+}
+
+.EDIT-ICON{
        position: relative;
        width: 20px;
        height: auto;
        text-align: center;
-   }
-
-.ADD-FOOD-CAL-BTN:hover{
-    background-color: #1c7c21;
-    color: white;
 }
 
-.EDIT-CAL-BTN:hover{
-  background-color: #4d217c;
-  color: white;
-}
+
+
 
 .EDIT-MACROS-DIV{
-    position: absolute;
+    position: relative;
     width: 50%;
     left: 25%;
     right: 25%;
-    top: 90px;
-    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 6px;
     transition: 0.3s;
-    margin-bottom: 50px;
     background-color: rgb(35, 35, 35);
 }
 
@@ -333,6 +339,7 @@ transition: 0.3s;
 .ACTIVE-OPTION{
     border-bottom: 3px solid #702bbc; 
 }
+
 
 
 .EDIT-CAL-INPUT{
@@ -441,19 +448,16 @@ color: #712bbc;
 }
 
 
-.FOOD-MAIN-DIV{
+.FOOD-LIST-MAIN-DIV{
     position: relative;
-    top: 130px;
-    /* width: 95%;
-    left: 2.5%;
-    right: 2.5%; */
     width: 50%;
     left: 25%;
     right: 25%;
     background-color: rgb(35, 35, 35);
     height: auto;
     transition: 0.3s;
-    margin-bottom: 30px; 
+    margin-bottom: 10px;
+    margin-top: 30px; 
 }
 
 
@@ -466,8 +470,6 @@ color: #712bbc;
     background-color: #702bbc;
     text-align: center;
     padding-top: 10px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
 }
 
 .FOOD-DIV-LIST{
@@ -477,7 +479,7 @@ color: #712bbc;
     min-height: 100px;
 }
 
-.FOOD{
+.ADDED-FOOD{
     position: relative;
     width: 100%;
     height: 90px;
@@ -500,6 +502,7 @@ color: #712bbc;
 .FOOD-2:hover{
     background-color: rgb(15, 15, 15);
 }
+
 .FOOD-LEFT{
     position: relative;
     width: 80%;
@@ -547,43 +550,35 @@ color: #712bbc;
  .ADD-FOOD-BTN{
      position: relative;
      width: 95%;
-     left: 2.5%;
+     left: 2.5% ; 
      right: 2.5%;
-     border-radius:0px; 
      height: 60px;
      margin-top: 20px;
      margin-bottom: 20px;
-     background-color: rgb(43, 170, 43);
-     color: white;
  }
- 
  .ADD-FOOD-BTN:hover{
-  background-color: #1a641d;
-  color: white;
+   background-color: rgb(0, 109, 18);
 }
-
  .SEARCH-FOOD-DIV{
-    position: absolute;
+    position: relative;
     width: 50%;
     left: 25%;
     right: 25%;
-    /* width:100% */
-    top: 80px;
     height: auto;
     border-radius: 0px;
     background-color: #00000000;
     transition: 0.2s;
-    margin-bottom: 30px; 
+    margin-bottom: 10px;
+    margin-top: 10px; 
  }
 
 
 .SEARCH-BACKBTN-DIV{
     position: relative;
-    width: 95%;
-    left: 2.5%;
-    right:2.5%;
+    width: 100%;
     margin-bottom: 10px;
 }
+
  .SEARCH-BAR-DIV{
   position: relative;
   height: auto;
@@ -594,18 +589,16 @@ color: #712bbc;
 
 .SEARCH-BAR{
     position: relative;
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
+    width: 100%;
     border: 0px;
     border-radius: 6px; 
     background-color: rgb(25, 25, 25);
     height: 50px;; 
-background-image:url("../../../Img/dark/search-icon.png"); 
-background-repeat: no-repeat; 
-background-position: 90% 12px;
-background-size: 20px;
-color: rgb(210,210,210);
+    background-image:url("../../../Img/dark/search-icon.png"); 
+    background-repeat: no-repeat; 
+    background-position: 95% 12px;
+    background-size: 20px;
+    color: rgb(210,210,210);
 }
 
 .SEARCH-BAR:focus{
@@ -617,69 +610,27 @@ color: rgb(210,210,210);
 .SEARCH-RESLUT-DIV{
     position: relative;
     height: auto;
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
-}
-
-.SCAN-BAR-CODE-ICON{
-    position: relative;
-    width: 25px;
-}
-
-
-
-.CAM-DIV{
-    position: relative ; 
     width: 100%;
-    height: auto;
-    top: 56px;  
-  }
-  
-  
-  
-  .CAM{
-      position: relative;
-      width: 50%;
-      left: 25%;
-      right: 25%;
-      margin-top: 70px;
-      box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.500),
-      5px 5px 30px 5px rgba(0, 0, 0,0.500);
-  }
-  
-  .CAM-BTN-DIV{
-      position: absolute;
-      z-index: 1;
-      width: 50%;
-      left: 25%;
-      right: 25%;
-      height: 20%;
-      top: 80%;
-  }
-  
-  .CAM-BTN{
-      position: relative;
-      width: 25%;
-      left: 37.5%;
-      right: 37.5%;
-      height: 35%;
-      top: 32.5%;
-      bottom: 32.5%;
-  }
-  
-  
-  
+}
+
+
+.SEARCH-RESULT-FOOD{
+    position: relative;
+    width: 100%;
+    height: 90px;
+}
+
+
+
+
   .FOOD-INFO-DIV{
-      position: absolute;
+      position: relative;
       width: 50%;
       left: 25%;
       right: 25%;
-      top: 90px;
-      height: auto;
       border-radius: 6px;
-      transition: 0.3s;
-      margin-bottom: 50px; 
+      transition: 0.5s;
+      margin-top: 20px;
       background-color: rgb(35, 35, 35);
   }
   
@@ -738,7 +689,9 @@ color: rgb(210,210,210);
   .FOOD-INFO-BODY{
       position: relative;
       width: 100%;
-      height: 400px;
+      height: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
   }
   
   
@@ -779,14 +732,14 @@ color: rgb(210,210,210);
   .PROGREES-CIR-DIV{
       position: relative;
       width: 100%;
-      height: auto;
+      height: 100px;
       padding: 0px;
   }
   
   .PROGREES-CIR-DIV ul{
       position: relative;
       width: 100%;
-      height: auto;
+      height: 100px;
       list-style: none;
       padding: 0px;
       margin: 0px;
@@ -796,9 +749,9 @@ color: rgb(210,210,210);
   .PROGREES-CIR-DIV ul li{
       position: relative;
       width: 33.3333333%;
-      height: auto;
+      height: 100px;
       float: left;
-      padding-left: 10%;
+      margin-bottom: 20px;
   }
 
 
@@ -956,6 +909,7 @@ color: rgb(210,210,210);
     position: relative;
     width: 100%;
     height: 25px;;
+    margin-bottom: 20px;
 }
 
 .FOOD-INFO-DIV-NUT ul{
@@ -964,12 +918,15 @@ color: rgb(210,210,210);
     color: white;
     list-style: none;
     text-align: center;
+    height: 25px;
 }
 
 .FOOD-INFO-DIV-NUT ul li{
 position: relative;
 float: left;
 width: 33.3333333%;
+height: 25px;
+margin-bottom: 20px;
 }
 
 
@@ -989,6 +946,7 @@ color: rgb(224, 39, 55);
 .FOOD-INFO-DIV-INPUT{
 position: relative;
 margin-top: 10px;
+margin-bottom: 10px;
 height: 140px;
 }
 
@@ -1006,6 +964,7 @@ height: 140px;
     margin: 0px;
     width: 100%;
     height: 70px;
+    margin-bottom: 10px;
 }
 
 
@@ -1024,10 +983,19 @@ height: 140px;
     width: 70%;
     float: left;
 }
+
+.FOOD-INFO-BTNS-DIV{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 /*Ultra wide*/
 @media (min-width:1950px){
 
 
+    
 }
 
 /* Ipad */
@@ -1035,86 +1003,48 @@ height: 140px;
 
 
 
+    
+
 }
 
 /* Iphone */
 @media (max-width:720px) and (min-width:320px){
 
+    
+    .FOOD-MACROS-DIV{
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
 
-.MACROS-DIV{
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
-}
+    .EDIT-MACROS-DIV{
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
+    
+    .FOOD-LIST-MAIN-DIV{
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
 
+    .SEARCH-FOOD-DIV{
+        width: 96%;
+        left: 2.5%;
+        right: 2.5%;
+    }
+    
+    .FOOD-INFO-DIV{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        left:0px;
+        right: 0px;
+    }
 
-
-.FOOD-MAIN-DIV{
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
-}
-
-
-.SEARCH-FOOD-DIV{
-     width:100% ;
-     left: 0%;
-     right: 0%;
-}
-
-.CAM{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    left: 0%;
-    right: 0%;
-    margin-top: 0px;
-    box-shadow:-5px -5px 30px 5px rgba(0, 0, 0, 0.090),
-    5px 5px 30px 5px rgba(0, 0, 0,0.090);
-}
-
-.CAM-BTN-DIV{
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    left: 0%;
-    right: 0%;
-    height: 25%;
-    top: 75%;
-}
-
-.CAM-BTN{
-    position: relative;
-    width: 40%;
-    left: 30%;
-    right: 30%;
-    height: 40%;
-    top: 30%;
-    bottom: 30%;
-}
-
-.EDIT-MACROS-DIV{
-    position: absolute;
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
-    top: 90px;
-    height: auto;
-    border-radius: 6px;
-    transition: 0.3s;
-    margin-bottom: 50px;
-}
-
-
-.FOOD-INFO-DIV{
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
-}
-
-
-.PROGREES-CIR-DIV ul li{
-    padding-left: 0%;
-}
+    .PROGREES-CIR-DIV ul li{
+        padding-left: 0%;
+    }
 
 }

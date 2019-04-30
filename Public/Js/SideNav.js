@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     function HideAll(){
     $("#Home").hide();
-    $("#Food").hide();
+    $("#FOOD").hide();
     $("#Workout").hide();
     $("#Weight").hide();
     $("#Calc").hide();
@@ -56,7 +56,7 @@ $(document).ready(function(){
       RemoveAllClasses();
       HideAll();
       toggleSideNav();
-      $("#Food").show();
+      $("#FOOD").show();
       $("#Food-btn").addClass("active");
     });
 

@@ -1,4 +1,13 @@
-
+.CALC{
+    position: relative;
+    top: 56px;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
 .CALC-DIV{
     position: relative;
     background-color:rgb(35, 35, 35); 
@@ -6,8 +15,8 @@
     left: 25%;
     right: 25%;
     height: auto;
-    top: 80px;;
-    margin-bottom: 30px;
+    top: 20px;
+    margin-bottom: 10px;
     border-radius: 6px;
 }
 
@@ -96,6 +105,16 @@
     color: rgb(210, 210, 210);
   }
   
+  .Feet{
+    width: 45% !important;
+    float: left;
+    }
+    
+    .INCH{
+        width: 45% !important;
+        float: left;
+    }
+
 
 .CALC-BTN{
     position: relative;
