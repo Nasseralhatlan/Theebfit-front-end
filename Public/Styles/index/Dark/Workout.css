@@ -15,7 +15,7 @@
     width: 94%;
     left: 3%;
     right: 3%;
-    margin-top: 10px;
+    margin-top: 20px;
     height: auto;
 }
 
@@ -38,10 +38,10 @@
 }
 
 .DAY-ODD{
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(20, 20, 20);
 }
 .DAY-EVEN{
-    background-color: rgb(35, 35, 35);
+    background-color: rgb( 30, 30, 30);
 }
 
 .WORKOUT-DAY-DIV{
