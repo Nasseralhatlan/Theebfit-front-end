@@ -15,11 +15,18 @@
     width: 94%;
     left: 3%;
     right: 3%;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 20px;
     height: auto;
 }
 
+
+.WORKOUT-DAYS-BTNS-DIV{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 5px;
+}
 .WORKOUT-DAYS-LIST-DIV ul {
     position: relative;
     width: 100%;
@@ -39,10 +46,10 @@
 }
 
 .DAY-ODD{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(25, 25, 25);
 }
 .DAY-EVEN{
-    background-color: rgb( 30, 30, 30);
+    background-color: rgb( 35, 35, 35);
 }
 
 .WORKOUT-DAY-DIV{

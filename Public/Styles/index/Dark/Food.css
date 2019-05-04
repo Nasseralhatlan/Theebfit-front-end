@@ -246,26 +246,16 @@ height: 5px;
     color: white;
 }
 
-.EDIT-CAL-BTN{
+/* .EDIT-CAL-BTN{
     position: relative;
-    background-color: #712bbc00;
-    width: 15%;
-    left: 83%;
-    right: 2%;
-    height: 35px;;
-    font-size: 12px;
     padding: 0;
     margin-top: 10px;
+    margin-right: 1%;
     margin-bottom: 10px;
     border-radius: 4px;
-    float: left;
-}
+    float: right;
+} */
    
-
-.EDIT-CAL-BTN:hover{
-    background-color: #00000000;
-    color: white;
-}
 
 .EDIT-ICON{
        position: relative;
