@@ -1,3 +1,71 @@
+.WORKOUT{
+    position: relative;
+    top: 56px;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px; 
+}
+
+
+.WORKOUT-DAYS-LIST-DIV{
+    position: relative;
+    width: 94%;
+    left: 3%;
+    right: 3%;
+    margin-top: 10px;
+    height: auto;
+}
+
+.WORKOUT-DAYS-LIST-DIV ul {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 630px;
+    list-style: none;
+}
+
+.WORKOUT-DAYS-LIST-DIV ul li{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    height: 90px;
+}
+
+.DAY-ODD{
+    background-color: rgb(25, 25, 25);
+}
+.DAY-EVEN{
+    background-color: rgb(35, 35, 35);
+}
+
+.WORKOUT-DAY-DIV{
+position: relative;
+width: 40%;
+color: #702bbc;
+float: left;
+text-align: center;
+font-size: 25px;
+padding-top: 20px;
+height: 100%;
+}
+
+.WORKOUT-NAME-DIV{
+    position: relative;
+    width: 60%;
+    color: white;
+    float: right;
+    font-size: 15px;
+    padding-top: 30px;
+    text-align: center;
+    height: 100%;
+}
+
 /*Ultra wide*/
 @media (min-width:1950px){
 
