@@ -9,15 +9,16 @@
     padding-bottom: 10px; 
 }
 
-
-.WORKOUT-DAYS-LIST-DIV{
+/* MAIN DAYS SPLIT DIV */
+.WORKOUT-DAYS-LIST-DIV{ 
     position: relative;
-    width: 94%;
-    left: 3%;
-    right: 3%;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
     margin-top: 15px;
     margin-bottom: 20px;
     height: auto;
+    transition: 0.3s;
 }
 
 
@@ -32,7 +33,7 @@
     width: 100%;
     margin: 0px;
     padding: 0px;
-    height: 630px;
+    height: 700px;
     list-style: none;
 }
 
@@ -42,7 +43,7 @@
     margin: 0px;
     padding: 0px;
     float: left;
-    height: 90px;
+    height: 100px;
 }
 
 .DAY-ODD{
@@ -59,7 +60,7 @@ color: #702bbc;
 float: left;
 text-align: center;
 font-size: 25px;
-padding-top: 20px;
+padding-top: 25px;
 height: 100%;
 }
 
@@ -69,11 +70,106 @@ height: 100%;
     color: white;
     float: right;
     font-size: 15px;
-    padding-top: 30px;
+    padding-top: 35px;
     text-align: center;
     height: 100%;
 }
 
+
+
+/* EDIT SPLIT DIV */
+.WORKOUT-EDIT-SPLIT-DIV{
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.WORKOUT-EDIT-SPLIT-DIV ul {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.WORKOUT-EDIT-SPLIT-DIV ul li{
+    position: relative;
+    width: 100%;
+    height: 100px; 
+}
+
+.EDIT-SPLIT-LABEL{
+    height: 60px !important; 
+}
+.WORKOUT-EDIT-SPLIT-DAY-NAME-LABEL{
+    position: relative;
+    width: 40%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    color: #702bbc;
+    padding-top: 35px;
+    font-size: 20px;
+}
+
+.WORKOUT-EDIT-SPLIT-WORKOUT-NAME-LABEL{
+    position: relative;
+    width: 60%;
+    float: right;
+    height: 100%;
+    text-align: center;
+    color: #702bbc;
+    font-size: 20px;
+    padding-top: 35px;
+
+}
+
+
+.INPUT-DAY-NAME{
+    position: relative;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px; 
+    border: 0px;
+    border-radius: 6px;
+    width: 35%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: #702bbc;
+    background-color: rgb(15, 15, 15);
+    float: left;
+}
+
+.INPUT-WORKOUT-NAME{
+    position: relative;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px; 
+    border: 0px;
+    border-radius: 6px;
+    width: 55%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    float: right;
+}
+
+.INPUT-DAY-NAME:hover{
+    background-color: rgb(20, 20, 20);
+}
+.INPUT-WORKOUT-NAME:hover{
+    background-color: rgb(20, 20, 20);
+}
+
+.BTNS-LI{
+    height: 50px !important;
+}
 /*Ultra wide*/
 @media (min-width:1950px){
 

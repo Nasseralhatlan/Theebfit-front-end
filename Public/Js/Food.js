@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     } 
 
-    function addClassHideAll(){
+    function addClassHideAllFood(){
       $("#FOOD-MACROS-DIV").addClass("HIDE");
       $("#FOOD-LIST-MAIN-DIV").addClass("HIDE");
       $("#SEARCH-FOOD").addClass("HIDE");
@@ -23,10 +23,10 @@ $(document).ready(function(){
       $("#FOOD-INFO-SEARCH").addClass("HIDE");
     }
 
-    function ShowOne(id){
+    function ShowOneFood(id){
       $("body,html").animate({scrollTop:0},0);
       HideAllFood();
-      addClassHideAll();
+      addClassHideAllFood();
       $(id).show();
       $(id).removeClass("HIDE");
     }
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     function startFoodPoint(){
       HideAllFood();
-      addClassHideAll();
+      addClassHideAllFood();
       $("body,html").animate({scrollTop:0},0);
       $("#FOOD-MACROS-DIV").show();
       $("#FOOD-LIST-MAIN-DIV").show();
@@ -49,7 +49,7 @@ $(document).ready(function(){
   
 
 $("#EDIT-CAL-BTN").click(function () { 
-  ShowOne("#EDIT-MACROS-DIV");
+  ShowOneFood("#EDIT-MACROS-DIV");
 });
 
 
@@ -68,7 +68,7 @@ $("#OP-PRE").click(function(){
 })
 
 $("#ADD-FOOD-BTN").click(function (){ 
-   ShowOne("#SEARCH-FOOD");
+   ShowOneFood("#SEARCH-FOOD");
 });
 
 
@@ -95,14 +95,14 @@ $("#SAVE-ADDED-FOOD-INFO-BTN").click(function () {
 });
 
 $(".ADDED-FOOD").click(function (){  
-  ShowOne("#FOOD-INFO-ADDED");
+  ShowOneFood("#FOOD-INFO-ADDED");
 });
 
 
 
 
 $("#BACK-SEARCH-FOOD-INFO-BTN").click(function () { 
-  ShowOne("#SEARCH-FOOD");
+  ShowOneFood("#SEARCH-FOOD");
 });
 
 $("#ADD-SEARCH-FOOD-INFO-BTN").click(function () { 
@@ -110,7 +110,7 @@ $("#ADD-SEARCH-FOOD-INFO-BTN").click(function () {
 });
 
 $(".SEARCH-RESULT-FOOD").click(function (){  
-  ShowOne("#FOOD-INFO-SEARCH");
+  ShowOneFood("#FOOD-INFO-SEARCH");
 });
 
 
