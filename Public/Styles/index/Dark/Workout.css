@@ -12,9 +12,9 @@
 /* MAIN DAYS SPLIT DIV */
 .WORKOUT-DAYS-LIST-DIV{ 
     position: relative;
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
+    width: 50%;
+    left: 25%;
+    right: 25%;
     margin-top: 15px;
     margin-bottom: 20px;
     height: auto;
@@ -80,9 +80,9 @@ height: 100%;
 /* EDIT SPLIT DIV */
 .WORKOUT-EDIT-SPLIT-DIV{
     position: relative;
-    width: 95%;
-    left: 2.5%;
-    right: 2.5%;
+    width: 50%;
+    left: 25%;
+    right: 25%;
     margin-top: 15px;
     margin-bottom: 20px;
     height: auto;
@@ -95,6 +95,7 @@ height: 100%;
     height: auto;
     margin: 0px;
     padding: 0px; 
+    list-style: none;
 }
 
 .WORKOUT-EDIT-SPLIT-DIV ul li{
@@ -173,18 +174,48 @@ height: 100%;
 /*Ultra wide*/
 @media (min-width:1950px){
 
+    .WORKOUT-DAYS-LIST-DIV{ 
+        width: 30%;
+        left: 35%;
+        right: 35%;
+    }
 
+    .WORKOUT-EDIT-SPLIT-DIV{
+        width: 30%;
+        left: 35%;
+        right: 35%;
+    }
 }
 
 /* Ipad */
 @media (max-width:1024px) and (min-width:720px){
 
+    .WORKOUT-DAYS-LIST-DIV{ 
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
 
+    .WORKOUT-EDIT-SPLIT-DIV{
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
 
 }
 
 /* Iphone */
 @media (max-width:720px) and (min-width:320px){
 
+    .WORKOUT-DAYS-LIST-DIV{ 
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
 
+    .WORKOUT-EDIT-SPLIT-DIV{
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
 }
