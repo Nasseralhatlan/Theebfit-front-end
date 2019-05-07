@@ -225,8 +225,7 @@
 
 
       <div>
-          <button id="EDIT-CAL-BTN" type="button" class="EDIT-CAL-BTN btn"><img class="EDIT-ICON"
-            src="../Img/settings-icon-white.png" alt=""></button>
+          <button id="EDIT-CAL-BTN" type="button" class="btn btn-warning" style="float:right;margin-right:3%;margin-bottom:3%;">Edit macros</button>
       </div>
 
 </div>
@@ -856,45 +855,49 @@
 
   <div  id="Workout" class="WORKOUT">
 
-    <div class="WORKOUT-DAYS-LIST-DIV">
+    <div id="WORKOUT-DAYS-LIST" class="WORKOUT-DAYS-LIST-DIV">
+
+      <div class="WORKOUT-DAYS-BTNS-DIV">
+        <button id="EDIT-SPLIT-BTN" type="button" class="btn btn-warning SHADOW" >Edit Split</button>
+      </div>
 
       <ul class="SHADOW">
-        <li class="DAY-ODD">
-            <div class="WORKOUT-DAY-DIV"> Day 1 </div>
+        <li class="DAY-ODD DAY">
+            <div class="WORKOUT-DAY-DIV"> Sun </div>
             <div class="WORKOUT-NAME-DIV">push day</div>
         </li>
 
-        <li class="DAY-EVEN">
-            <div class="WORKOUT-DAY-DIV">Day 2 </div>
+        <li class="DAY-EVEN DAY">
+            <div class="WORKOUT-DAY-DIV">Mon </div>
             <div class="WORKOUT-NAME-DIV">pull day</div>
         </li>
 
 
-        <li class="DAY-ODD">
-            <div class="WORKOUT-DAY-DIV">Day 3 </div>
+        <li class="DAY-ODD DAY">
+            <div class="WORKOUT-DAY-DIV">Tue</div>
             <div class="WORKOUT-NAME-DIV">legs day</div>
         </li>
 
 
         <li class="DAY-EVEN">
-            <div class="WORKOUT-DAY-DIV">Day 4</div>
+            <div class="WORKOUT-DAY-DIV">Wed</div>
             <div class="WORKOUT-NAME-DIV">rest</div>
         </li>
 
 
-        <li class="DAY-ODD">
-            <div class="WORKOUT-DAY-DIV">Day 5 </div>
+        <li class="DAY-ODD DAY">
+            <div class="WORKOUT-DAY-DIV">Thur</div>
             <div class="WORKOUT-NAME-DIV">push day</div>
         </li>
 
-        <li class="DAY-EVEN">
-            <div class="WORKOUT-DAY-DIV">Day 6 </div>
+        <li class="DAY-EVEN DAY">
+            <div class="WORKOUT-DAY-DIV">Fri</div>
             <div class="WORKOUT-NAME-DIV">pull day</div>
         </li>
 
 
-        <li class="DAY-ODD">
-            <div class="WORKOUT-DAY-DIV">Day 7 </div>
+        <li class="DAY-ODD DAY">
+            <div class="WORKOUT-DAY-DIV">Sat</div>
             <div class="WORKOUT-NAME-DIV">legs day</div>
         </li>
 
@@ -904,6 +907,121 @@
       </ul>
 
     </div>
+
+
+    <div id="WORKOUT-EDIT-SPLIT-DIV" class="WORKOUT-EDIT-SPLIT-DIV">
+ 
+      
+      <button id="CANCEL-EDIT-SPLIT-BTN" type="button" class="btn btn-danger" style="margin-bottom: 15px">Cancel</button>
+      <button id="SAVE-EDIT-SPLIT-BTN" type="button" class="btn btn-success" style="float:right;margin-bottom: 15px">Save changes</button>
+
+           <ul class="SHADOW">
+      
+             <li class="DAY-ODD">
+              <input id="DAY-ONE-NAME" value="Sun" type="text" class="form-control INPUT-DAY-NAME" placeholder="Day 1 name">
+              <input id="WORKOUT-ONE-NAME" value="" type="text" class="form-control INPUT-WORKOUT-NAME" placeholder="Workout 1 name">
+            </li>
+             <li class="DAY-EVEN">
+              <input id="DAY-ONE-NAME" value="Mon" type="text" class="form-control INPUT-DAY-NAME" placeholder="Day 2 name">
+              <input id="WORKOUT-ONE-NAME" value="" type="text" class="form-control INPUT-WORKOUT-NAME" placeholder="Workout 2 name">
+             </li>
+             <li class="DAY-ODD">
+              <input id="DAY-ONE-NAME" value="Tue" type="text" class="form-control INPUT-DAY-NAME" placeholder="Day 3 name">
+              <input id="WORKOUT-ONE-NAME" value="" type="text" class="form-control INPUT-WORKOUT-NAME" placeholder="Workout 3 name">
+             </li>
+             <li class="DAY-EVEN">
+              <input id="DAY-ONE-NAME" value="Wed" type="text" class="form-control INPUT-DAY-NAME" placeholder="Day 4 name">
+              <input id="WORKOUT-ONE-NAME" value="" type="text" class="form-control INPUT-WORKOUT-NAME" placeholder="Workout 4 name">
+             </li>
+             <li class="DAY-ODD">
+              <input id="DAY-ONE-NAME" value="Thur" type="text" class="form-control INPUT-DAY-NAME" placeholder="Day 5 name">
+              <input id="WORKOUT-ONE-NAME" value="" type="text" class="form-control INPUT-WORKOUT-NAME" placeholder="Workout 5 name">
+             </li>
+             <li class="DAY-EVEN">
+              <input id="DAY-ONE-NAME" value="Fri" type="text" class="form-control INPUT-DAY-NAME" placeholder="Day 6 name">
+              <input id="WORKOUT-ONE-NAME" value="" type="text" class="form-control INPUT-WORKOUT-NAME" placeholder="Workout 6 name">
+             </li>
+             <li class="DAY-ODD">
+              <input id="DAY-ONE-NAME" value="Sat" type="text" class="form-control INPUT-DAY-NAME" placeholder="Day 7 name">
+              <input id="WORKOUT-ONE-NAME" value="" type="text" class="form-control INPUT-WORKOUT-NAME" placeholder="Workout 7 name">
+             </li>
+           
+
+           </ul>
+
+    </div>
+
+
+
+
+
+
+    <div id="WORKOUTS-LIST" class="WORKOUTS-LIST-DIV">
+
+
+        <div class="WORKOUT-DIV SHADOW">
+            <table class="WORKOUT-TABLE">
+                <tr>
+                  <th class="WORKOUT-NAME">  Lats pull down</th>
+                  <th class="WORKOUT-LABEL"> Reps </th>
+                  <th class="WORKOUT-X-LABEL"></td>
+                  <th class="WORKOUT-LABEL"> Weight </th>
+                </tr>
+
+                <tr>
+                  <td class="WORKOUT-SET-LABEL">Set 1</td>
+                  <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                  <td class="WORKOUT-X-LABEL"> X </td>
+                  <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                  
+                </tr>
+
+
+                <tr>
+                    <td class="WORKOUT-SET-LABEL">Set 1</td>
+                    <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                    <td class="WORKOUT-X-LABEL"> X </td>
+                    <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                    
+                  </tr>
+
+                  <tr>
+                      <td class="WORKOUT-SET-LABEL">Set 1</td>
+                      <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                      <td class="WORKOUT-X-LABEL"> X </td>
+                      <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                      
+                    </tr>
+              
+            </table>
+        </div>
+
+        <div class="WORKOUT-DIV SHADOW">
+            <table class="WORKOUT-TABLE">
+                <tr>
+                  <th class="WORKOUT-NAME">  Bench press </th>
+                  <th class="WORKOUT-LABEL"> Reps </th>
+                  <th class="WORKOUT-LABEL"> Weight </th>
+                </tr>
+
+                <tr>
+                  <td class="WORKOUT-SET-LABEL">Set 1</td>
+                  <td> 12  </td>
+                  <td> 3kg</td>
+                </tr>
+
+
+                <tr>
+                    <td class="WORKOUT-SET-LABEL">Set 2</td>
+                    <td> 12  </td>
+                    <td> 3kg</td>
+                  </tr>
+            </table>
+        </div>
+    </div>
+
+
+
   </div>
   <!-- ============================== end workout Section ==============================  
  ****************************************************************************************
@@ -1017,6 +1135,7 @@
   <script src="../Js/quagga.min.js"></script>
   <script src="../Js/Food.js"></script>
   <script src="../Js/Calc.js"></script>
+  <script src="../Js/Workout.js"></script>
   <script src="../Js/SideNav.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
