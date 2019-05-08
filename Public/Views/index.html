@@ -234,18 +234,6 @@
 
 <div id="EDIT-MACROS-DIV" class="card EDIT-MACROS-DIV SHADOW">
 
-  <div  class="EDIT-MACROS-DIV-GOAL-CAL">
-
-    <input 
-    id="EDIT-MACROS-GOAL-INPUT"
-    type="number" 
-    pattern="[0-9]*"
-    class="form-control EDIT-CAL-INPUT"
-    placeholder="Enter Cal"
-    value=3700
-    />      
-
-</div>
 
 <div class="OPTION-DIV">
   <ul>
@@ -253,19 +241,44 @@
     <li id="OP-GRAMS" > grams </li>
   </ul>
 </div>
-<div  id="EDIT-MACROS-PREC" class="EDIT-MACROS-DIV-NUT-LABEL">
 
-  <ul>
-    <li>Protein</li>
-    <li>Carbs</li>
-    <li>Fat</li>
-  </ul>
-  
-</div>
+
+
+
      
 
 <div id="EDIT-MACROS-PRE"  class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
-  <ul>
+
+
+
+    <div  class="EDIT-MACROS-DIV-GOAL-CAL">
+
+        <h5 class="EDIT-CAL-LABEL">Cal</h5>
+        <input 
+        id="EDIT-MACROS-GOAL-INPUT"
+        type="number" 
+        pattern="[0-9]*"
+        class="form-control EDIT-CAL-INPUT"
+        placeholder="Enter Cal"
+        value=3700
+        />      
+    
+    </div>
+
+
+    <div class="EDIT-MACROS-DIV-NUT-LABEL">
+
+        <ul>
+          <li>Protein</li>
+          <li>Carbs</li>
+          <li>Fat</li>
+        </ul>
+        
+  </div>
+
+
+
+  <ul class="INPUT-UL"> 
     <li> <input
       type="number" 
       pattern="[0-9]*"
@@ -297,7 +310,19 @@
 
 
 <div id="EDIT-MACROS-GRAMS" style="display:none;" class="EDIT-MACROS-DIV-NUT-INPUT-DIV">
-  <ul>
+  
+    <div class="EDIT-MACROS-DIV-NUT-LABEL">
+
+        <ul>
+          <li>Protein</li>
+          <li>Carbs</li>
+          <li>Fat</li>
+        </ul>
+        
+  </div>
+
+
+  <ul class="INPUT-UL">
     <li> <input
       type="number" 
       pattern="[0-9]*"
@@ -330,8 +355,8 @@
 
 
 <div class="EDIT-MACROS-DIV-BTNS">
-  <button id="BACK-EDIT-MACROS-BTN" type="button" style="float:left;"class="btn btn-info">back</button>
-  <button id="SAVE-EDIT-MACROS-BTN" type="button" style="float:right;width:30%" class="btn btn-success">Save</button>
+  <button id="BACK-EDIT-MACROS-BTN" type="button" style="float:left;"class="btn btn-info">Back</button>
+  <button id="SAVE-EDIT-MACROS-BTN" type="button" style="float:right;" class="btn btn-success">Save changes</button>
 </div>
 
 
@@ -418,6 +443,8 @@
    
             <div class="SEARCH-BACKBTN-DIV">
                 <button id="SEARCH-BACBTN"type="button" class="btn btn-info SHADOW">Back</button>
+                <button id="CREATE-NEW-FOOD-BTN" type="button" style="float:right;" class="btn btn-success SHADOW">Create new food</button>
+
             </div>
 
              <div class="SEARCH-BAR-DIV">
@@ -711,9 +738,8 @@
 </div>
       
 <div class="FOOD-INFO-BTNS-DIV">
-
-    <button  id="BACK-ADDED-FOOD-INFO-BTN" type="button" style="float:left;"class="btn btn-info">Done</button>
-  <button id="SAVE-ADDED-FOOD-INFO-BTN" type="button" style="float:right;width:40%" class="btn btn-danger">remove</button>
+    <button id="SAVE-ADDED-FOOD-INFO-BTN" type="button" style="float:left;" class="btn btn-danger">remove</button>
+    <button  id="BACK-ADDED-FOOD-INFO-BTN" type="button" style="float:Right;"class="btn btn-success">Save changes</button>
 </div>
        </div>
 
@@ -829,8 +855,8 @@
 </div>
       
 <div class="EDIT-MACROS-DIV-BTNS">
-  <button id="BACK-SEARCH-FOOD-INFO-BTN" type="button" style="float:left;"class="btn btn-info">back</button>
-  <button id="ADD-SEARCH-FOOD-INFO-BTN" type="button" style="float:right;width:50%" class="btn btn-success">Add to Food list</button>
+  <button id="BACK-SEARCH-FOOD-INFO-BTN" type="button" style="float:left;"class="btn btn-info">Back</button>
+  <button id="ADD-SEARCH-FOOD-INFO-BTN" type="button" style="float:right;" class="btn btn-success">Add to Food list</button>
 </div>
        </div>
 
@@ -961,11 +987,12 @@
 
         <div class="WORKOUT-DIV SHADOW">
             <table class="WORKOUT-TABLE">
+              <tbody>
                 <tr>
-                  <th class="WORKOUT-NAME">  Lats pull down</th>
+                  <th class="WORKOUT-NAME" style="border-top-left-radius: 6px;">  Lats pull down</th>
                   <th class="WORKOUT-LABEL"> Reps </th>
                   <th class="WORKOUT-X-LABEL"></td>
-                  <th class="WORKOUT-LABEL"> Weight </th>
+                  <th class="WORKOUT-LABEL" style="border-top-right-radius: 6px;"> Weight </th>
                 </tr>
 
                 <tr>
@@ -978,7 +1005,7 @@
 
 
                 <tr>
-                    <td class="WORKOUT-SET-LABEL">Set 1</td>
+                    <td class="WORKOUT-SET-LABEL">Set 2</td>
                     <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
                     <td class="WORKOUT-X-LABEL"> X </td>
                     <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
@@ -986,38 +1013,121 @@
                   </tr>
 
                   <tr>
-                      <td class="WORKOUT-SET-LABEL">Set 1</td>
+                      <td class="WORKOUT-SET-LABEL">Set 3</td>
                       <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
                       <td class="WORKOUT-X-LABEL"> X </td>
                       <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
                       
                     </tr>
-              
+
+
+                    <tr>
+                      <td class="WORKOUT-SET-LABEL">Set 4</td>
+                      <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                      <td class="WORKOUT-X-LABEL"> X </td>
+                      <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                      
+                    </tr>
+
+
+                    <tr>
+                      <td class="WORKOUT-SET-LABEL">Set 5</td>
+                      <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                      <td class="WORKOUT-X-LABEL"> X </td>
+                      <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                      
+                    </tr>
+                  </tbody>
             </table>
         </div>
 
         <div class="WORKOUT-DIV SHADOW">
-            <table class="WORKOUT-TABLE">
-                <tr>
-                  <th class="WORKOUT-NAME">  Bench press </th>
-                  <th class="WORKOUT-LABEL"> Reps </th>
-                  <th class="WORKOUT-LABEL"> Weight </th>
+          <table class="WORKOUT-TABLE">
+              <tr>
+                <th class="WORKOUT-NAME">Incline bench press</th>
+                <th class="WORKOUT-LABEL"> Reps </th>
+                <th class="WORKOUT-X-LABEL"></td>
+                <th class="WORKOUT-LABEL"> Weight </th>
+              </tr>
+
+              <tr>
+                <td class="WORKOUT-SET-LABEL">Set 1</td>
+                <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                <td class="WORKOUT-X-LABEL"> X </td>
+                <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                
+              </tr>
+
+
+              <tr>
+                  <td class="WORKOUT-SET-LABEL">Set 2</td>
+                  <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                  <td class="WORKOUT-X-LABEL"> X </td>
+                  <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                  
                 </tr>
 
                 <tr>
-                  <td class="WORKOUT-SET-LABEL">Set 1</td>
-                  <td> 12  </td>
-                  <td> 3kg</td>
-                </tr>
-
-
-                <tr>
-                    <td class="WORKOUT-SET-LABEL">Set 2</td>
-                    <td> 12  </td>
-                    <td> 3kg</td>
+                    <td class="WORKOUT-SET-LABEL">Set 3</td>
+                    <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                    <td class="WORKOUT-X-LABEL"> X </td>
+                    <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                    
                   </tr>
-            </table>
-        </div>
+
+
+                  <tr>
+                    <td class="WORKOUT-SET-LABEL">Set 4</td>
+                    <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                    <td class="WORKOUT-X-LABEL"> X </td>
+                    <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                    
+                  </tr>
+
+            
+          </table>
+      </div>
+
+
+      <div class="WORKOUT-DIV SHADOW">
+        <table class="WORKOUT-TABLE">
+            <tr>
+              <th class="WORKOUT-NAME"> Squats</th>
+              <th class="WORKOUT-LABEL"> Reps </th>
+              <th class="WORKOUT-X-LABEL"></td>
+              <th class="WORKOUT-LABEL"> Weight </th>
+            </tr>
+
+            <tr>
+              <td class="WORKOUT-SET-LABEL">Set 1</td>
+              <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+              <td class="WORKOUT-X-LABEL"> X </td>
+              <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+              
+            </tr>
+
+
+            <tr>
+                <td class="WORKOUT-SET-LABEL">Set 2</td>
+                <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                <td class="WORKOUT-X-LABEL"> X </td>
+                <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                
+              </tr>
+
+              <tr>
+                  <td class="WORKOUT-SET-LABEL">Set 3</td>
+                  <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                  <td class="WORKOUT-X-LABEL"> X </td>
+                  <td> <input type="number" name="" id="" class="form-control WORKOUT-SET-INPUT"> </td>
+                  
+                </tr>
+          
+        </table>
+    </div>
+
+
+
     </div>
 
 

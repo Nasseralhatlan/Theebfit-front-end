@@ -282,18 +282,16 @@ height: 5px;
 .EDIT-MACROS-DIV-GOAL-CAL{
 position: relative;
 width: 100%;
-height: 90px;
-background-color: rgb(25, 25, 25);
-border-top-left-radius: 6px; 
-border-top-right-radius: 6px; 
-transition: 0.3s;
+height: 50px;
+margin-bottom: 40px;
 }
 
 .OPTION-DIV{
     position: relative;
     width: 100%;
-    margin-top: 10px;
+    padding-top: 15px;
     margin-bottom: 10px;
+    background-color: rgb(25, 25, 25);
 }
 
 .OPTION-DIV ul{
@@ -301,9 +299,7 @@ transition: 0.3s;
     margin: 0px;
     padding: 0px;
     list-style: none;
-    width: 98%;
-    left: 1%;
-    right: 1%;
+    width: 100%;
 }
 
 .OPTION-DIV ul li{
@@ -311,16 +307,10 @@ transition: 0.3s;
     width: 50%;
     text-align: center;
     color: white;
-    height: 40px;
+    height: 50px;
 }
 
-.OPTION-DIV ul li{
-    float: left;
-    width: 50%;
-    text-align: center;
-    color: white;
-    height: 40px;
-}
+
 .OPTION-DIV ul li:hover{
    cursor: pointer;
 }
@@ -331,28 +321,34 @@ transition: 0.3s;
 }
 
 
+.EDIT-CAL-LABEL{
+position: relative;
+width: 25%;
+padding-top: 15px;
+height:100%;
+float: left;
+text-align: center;
+color: #702bbc;
+}
 
 .EDIT-CAL-INPUT{
     position: relative;
-    width: 100%;
-    height: 100%;
-    border: 0px;
+    width: 70%;
+    right: 2.5%;
+    left: 2.5%;
+    height: 90%;
+    top: 5%;
+    bottom: 5%;
+    float: left;
     background-color: rgb(25, 25, 25);
-    border-top-left-radius: 6px; 
-    border-top-right-radius: 6px; 
-    text-align:center;
-    transition: 0.3s;
-    color: rgb(210,210,210);
-    font-size: 30px;
+    border: 0px;
+    color: white;
 }
 
 .EDIT-CAL-INPUT:focus{
-    background-color: rgb(25, 25, 25);
-    border: 0px;
-    color: rgb(210,210,210);
-    box-shadow: -1px -1px 5px 1px #712bbc,
-    1px 1px 5px 1px #712bbc;
+   background-color:rgb(25, 25, 25);
 }
+
 
 
 .EDIT-MACROS-DIV-NUT-LABEL{
@@ -399,7 +395,7 @@ color: #712bbc;
     margin: 0px;
 }
 
-.EDIT-MACROS-DIV-NUT-INPUT-DIV ul li{
+.EDIT-MACROS-DIV-NUT-INPUT-DIV .INPUT-UL  li{
 position: relative;
 float: left;
 text-decoration: none;
@@ -408,6 +404,7 @@ width: 33%;
 text-align: right;
 font-size: 20px;
 color: #712bbc;
+margin-top: 30px;
 }
 
 .EDIT-MACROS-DIV-NUT-INPUT{

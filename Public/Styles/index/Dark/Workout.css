@@ -192,19 +192,25 @@ height: 100%;
     width: 100%;
     height: auto;
     margin-bottom: 30px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0);
 }
+
 
 .WORKOUT-DIV table th{
     background-color: rgb(25, 25, 25);
 }
 
+.WORKOUT-DIV table tr{
+    background-color: rgb(35, 35, 35);
+}
+
 .WORKOUT-TABLE{
     width: 100%;
-    background-color: rgb( 35, 35, 35);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     padding: 5px;
     text-align: center;
-
 }
 
 .WORKOUT-NAME{
