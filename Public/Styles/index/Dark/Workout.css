@@ -165,6 +165,12 @@ height: 100%;
     float: right;
 }
 
+.INPUT-DAY-NAME:focus{
+    background-color: rgb(20, 20, 20);
+}
+.INPUT-WORKOUT-NAME:focus{
+    background-color: rgb(20, 20, 20);
+}
 .INPUT-DAY-NAME:hover{
     background-color: rgb(20, 20, 20);
 }
@@ -193,7 +199,7 @@ height: 100%;
     height: auto;
     margin-bottom: 30px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(20, 20, 20);
 }
 
 
@@ -248,6 +254,21 @@ height: 100%;
     background-color: rgb(25, 25, 25);
     border: 0px;
 }
+
+.WORKOUT-SET-INPUT:focus{
+    background-color: rgb(20, 20, 20);
+}
+
+.WORKOUT-SET-INPUT:hover{
+    background-color: rgb(20, 20, 20);
+}
+.WORKOUT-BTNS-DIV{
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 
 /*Ultra wide*/
 @media (min-width:1950px){
