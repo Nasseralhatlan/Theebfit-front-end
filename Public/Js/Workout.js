@@ -6,13 +6,14 @@ $(document).ready(function(){
         $("#WORKOUT-DAYS-LIST").hide();
         $("#WORKOUT-EDIT-SPLIT-DIV").hide();
         $("#WORKOUTS-LIST").hide();
+        $("#ADD-NEW-EXC").hide();
     } 
    
     function addClassHideAllWorkout(){
         $("#WORKOUT-DAYS-LIST").addClass("HIDE");
         $("#WORKOUT-EDIT-SPLIT-DIV").addClass("HIDE");
         $("#WORKOUTS-LIST").addClass("HIDE");
-
+        $("#ADD-NEW-EXC").addClass("HIDE");
     }
    
     
@@ -49,4 +50,30 @@ $(document).ready(function(){
        $(".DAY").click(function(){
         ShowOneWorkout("#WORKOUTS-LIST");
        });
+
+
+       $("#WORKOUT-BACK-BTN").click(function(){ 
+         startingPointWorkout();
+        });
+
+        $("#WORKOUT-FINISH-BTN").click(function(){ 
+          startingPointWorkout();
+        });
+
+        
+       $("#WORKOUT-ADD-NEW-EXC").click(function(){ 
+         
+        ShowOneWorkout("#ADD-NEW-EXC");
+
+       });
+       
+       $("#CANCEL-ADD-EXC-BTN").click(function(){
+        ShowOneWorkout("#WORKOUTS-LIST");
+       });
+       
+       $("#ADD-EXC-BTN").click(function(){
+        ShowOneWorkout("#WORKOUTS-LIST");
+       });
+      
+
 });

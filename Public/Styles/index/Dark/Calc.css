@@ -142,6 +142,13 @@
 }
 
 
+.CALC-ACT:focus{
+  background-color: rgb(25, 25, 25);
+}
+
+.CALC-ACT:hover{
+    background-color: rgb(25, 25, 25);
+  }
 
 
 /*Ultra wide*/
