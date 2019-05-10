@@ -44,6 +44,7 @@
     padding: 0px;
     float: left;
     height: 100px;
+    transition: 0.3s; 
 }
 
 .DAY-ODD{
@@ -55,8 +56,13 @@
 
 .DAY:hover{
    background-color: rgb(15, 15,15);
+   transition: 0.3s;
 }
 
+.DAY:focus{
+    background-color: rgb(15, 15,15);
+    transition: 0.3s; 
+}
 .WORKOUT-DAY-DIV{
 position: relative;
 width: 40%;
@@ -148,6 +154,7 @@ height: 100%;
     color: #702bbc;
     background-color: rgb(15, 15, 15);
     float: left;
+    transition: 0.3s;
 }
 
 .INPUT-WORKOUT-NAME{
@@ -163,7 +170,9 @@ height: 100%;
     color: white;
     background-color: rgb(15, 15, 15);
     float: right;
+    transition: 0.3s;
 }
+
 
 .INPUT-DAY-NAME:focus{
     background-color: rgb(20, 20, 20);
@@ -253,6 +262,7 @@ height: 100%;
     right: 2.5%;
     background-color: rgb(25, 25, 25);
     border: 0px;
+    transition: 0.3s;
 }
 
 .WORKOUT-SET-INPUT:focus{
@@ -275,7 +285,7 @@ height: 100%;
     left: 25%;
     right: 25%;
     transition: 0.3s;
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(25, 25, 25);
     color: #702bbc;
     border-radius:6px; 
     margin-top: 20px;
@@ -290,7 +300,6 @@ height: 100%;
    text-align: center;
    padding-top: 20px;
    margin-bottom: 10px;
-   background-color: rgb(25, 25, 25);
    border-top-left-radius: 6px;
    border-top-right-radius: 6px;
 }
@@ -301,7 +310,8 @@ height: 100%;
      margin: 0px;
      padding: 0px;
      list-style: none;
-     height: 270px;
+     height: 540px;
+     margin-top: 20px;
   }
   .WORKOUT-ADD-NEW-EXC-DIV ul li{
     position: relative;
@@ -322,7 +332,7 @@ height: 100%;
     height: 30px;
     margin-bottom: 20px;
     color: white;
-    padding-left: 10px;
+    padding-left: 5%;
     float: left;
  }
 
@@ -337,18 +347,19 @@ height: 100%;
     margin-bottom: 10px;
     color: white;
     float: left;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(20, 20, 20);
     border:0px;
     padding-left: 10px;
+    transition: 0.3s;
  }
 
 
  .WORKOUT-ADD-NEW-EXC-DIV ul li input:focus{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(30, 30, 30);
 }
 
 .WORKOUT-ADD-NEW-EXC-DIV ul li input:hover{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(30, 30, 30);
 }
 
 
@@ -363,19 +374,26 @@ height: 100%;
     margin-bottom: 10px;
     color: white;
     float: left;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(20, 20, 20);
     border:0px;
     padding-left: 10px;
  }
 
 
  .WORKOUT-ADD-NEW-EXC-DIV ul li select:focus{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(30, 30, 30);
 }
 
 .WORKOUT-ADD-NEW-EXC-DIV ul li select:hover{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(30, 30, 30);
 }
+
+
+
+
+
+
+
 /*Ultra wide*/
 @media (min-width:1950px){
 
