@@ -246,27 +246,7 @@ height: 5px;
     color: white;
 }
 
-/* .EDIT-CAL-BTN{
-    position: relative;
-    padding: 0;
-    margin-top: 10px;
-    margin-right: 1%;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    float: right;
-} */
    
-
-.EDIT-ICON{
-       position: relative;
-       width: 25px;
-       height: auto;
-       text-align: center;
-}
-
-
-
-
 .EDIT-MACROS-DIV{
     position: relative;
     width: 40%;
