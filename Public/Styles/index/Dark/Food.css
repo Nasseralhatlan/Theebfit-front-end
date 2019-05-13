@@ -457,18 +457,14 @@ margin-top: 30px;
     background-color: rgb(25, 25, 25);
     transition: 0.3s;
 }
-/* .FOOD-1:hover{
-    background-color: rgb(15, 15, 15);
-} */
+
 .FOOD-2{
     color: #000000;
     background-color: rgb(35, 35, 35);
     transition: 0.3s;
 }
 
-/* .FOOD-2:hover{
-    background-color: rgb(15, 15, 15);
-} */
+
 
 .FOOD-LEFT{
     position: relative;
@@ -524,7 +520,7 @@ margin-top: 30px;
      margin-bottom: 20px;
  }
 
- 
+
  .SEARCH-FOOD-DIV{
     position: relative;
     width: 40%;

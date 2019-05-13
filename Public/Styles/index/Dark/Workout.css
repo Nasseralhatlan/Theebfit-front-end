@@ -54,15 +54,6 @@
     background-color: rgb( 35, 35, 35);
 }
 
-.DAY:hover{
-   background-color: rgb(15, 15,15);
-   transition: 0.3s;
-}
-
-.DAY:focus{
-    background-color: rgb(15, 15,15);
-    transition: 0.3s; 
-}
 .WORKOUT-DAY-DIV{
 position: relative;
 width: 40%;
