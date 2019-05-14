@@ -126,7 +126,7 @@
 
         <div class="MACROS-DIV-PROGRESS-ROW">
           <div class="MACROS-DIV-PROGRESS-ROW-TYPE">
-            Protein :
+            Protein 
           </div>
 
 
@@ -137,7 +137,7 @@
 
           <div class="MACROS-DIV-PROGRESS-ROW-PROGRESS">
             <div class="progress PROGRESS-BACK">
-              <div class="progress-bar progress-bar-striped progress-bar-animated PRO" role="progressbar"
+              <div class="progress-bar PRO" role="progressbar"
                 style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -160,7 +160,7 @@
 
         <div class="MACROS-DIV-PROGRESS-ROW">
           <div class="MACROS-DIV-PROGRESS-ROW-TYPE">
-            Carbs :
+            Carbs 
           </div>
 
 
@@ -171,7 +171,7 @@
 
           <div class="MACROS-DIV-PROGRESS-ROW-PROGRESS">
             <div class="progress PROGRESS-BACK">
-              <div class="progress-bar progress-bar-striped progress-bar-animated CARB" role="progressbar"
+              <div class="progress-bar CARB" role="progressbar"
                 style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -193,7 +193,7 @@
 
         <div class="MACROS-DIV-PROGRESS-ROW">
           <div class="MACROS-DIV-PROGRESS-ROW-TYPE">
-            Fat :
+            Fat 
           </div>
 
 
@@ -204,7 +204,7 @@
 
           <div class="MACROS-DIV-PROGRESS-ROW-PROGRESS">
             <div class="progress PROGRESS-BACK">
-              <div class="progress-bar progress-bar-striped progress-bar-animated FAT" role="progressbar"
+              <div class="progress-bar FAT" role="progressbar"
                 style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
@@ -437,7 +437,7 @@
 
 </div>
  
- 
+
 <div id="SEARCH-FOOD" class="SEARCH-FOOD-DIV">
 
    
@@ -867,6 +867,38 @@
 
 
 
+    <div id="CREATE-NEW-FOOD-DIV" class="CREATE-NEW-FOOD-DIV SHADOW">
+
+        <h4>Create new food</h4>
+
+        <ul>
+          <li><label>Name :</label><input type="text" class="form-control" placeholder="food name"></li>
+          <li><label>Brand :</label><input type="text" placeholder="food brand name"class="form-control"></li>
+          <li><label>Serving size :</label>
+            <input type="number"  pattern="[0-9]*" step="0.01" placeholder="Serving size ex 100" class="form-control CREATE-NEW-FOOD-INPUT-SERVING-SIZE"> 
+            <select id="NUM-SETS" class="custom-select CREATE-NEW-FOOD-INPUT-SERVING-UNIT" id="inputGroupSelect01" aria-placeholder="Number of sets">
+            <option Wvalue="1">ml</option>
+            <option value="2">L</option>
+            <option value="3">gram</option>
+            <option value="4">kg</option>
+            <option value="5">lb</option>           
+            <option value="5">oz</option>            
+            <option value="5">piece</option>            
+            <option value="5">scope</option>            
+           </select>  
+        </li>
+        <li><label>Protein :</label><input type="number"  pattern="[0-9]*" step="0.01" class="form-control" placeholder="grams of Protein"></li>
+        <li><label>Carbs :</label><input type="number"  pattern="[0-9]*" step="0.01" class="form-control" placeholder="grams of Carbs"></li>
+        <li><label>Fat :</label><input type="number"  pattern="[0-9]*" step="0.01" class="form-control" placeholder="grams of Fat"></li>
+
+W
+        </ul>
+
+        <button id="CANCEL-CREATE-FOOD-BTN" type="button" class="btn btn-danger" style="margin-bottom: 15px;margin-left: 5%;">Cancel <img src="../Img/dark/x.png" class="RIGHT-ICON" alt=""> </button>
+        <button id="CREATE-FOOD-BTN" type="button" class="btn btn-success" style="float:right;margin-bottom: 15px;margin-right:5%;">Create food<img src="../Img/dark/correct.png" class="RIGHT-ICON" alt=""></button>
+
+    </div>
+
 
   </div>
   <!-- ============================== end food Section ============================== 
@@ -1103,40 +1135,34 @@
 
     </div>
 
+   <!-- THE FORM CSS IS VERY SIMILAR TO CREATE NEW FOOD CSS SO YOU FIND THE CSS CLASSES OF THIS FORM IN FODD CSS -->
+      <div id="ADD-NEW-EXC" class="CREATE-NEW-FOOD-DIV SHADOW">
+ 
+        <h4>Add new exercise</h4>
 
-    <div id="ADD-NEW-EXC" class="WORKOUT-ADD-NEW-EXC-DIV SHADOW">
+        <ul>
+          <li><label>Name :</label><input type="text" class="form-control" placeholder="exercise name"></li>
+          <li><label>Num of sets :</label> 
+            <select id="NUM-SETS" class="custom-select" id="inputGroupSelect01" aria-placeholder="Number of sets">
+            <option Wvalue="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>                     
+           </select>  
+          </li>
 
-             <h4>New exercise</h4>
-             <ul>
-              <li>
-                  <h6>Exercise name</h6>
-                  <input type="text" name="" id="" class="form-control" placeholder="Exercise name ex Squats">
-              </li>
-              
-              <li>
-                <h6>Number of sets</h6>
-                <select id="NUM-SETS" class="custom-select" id="inputGroupSelect01" aria-placeholder="Number of sets">
-                    <option selected value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>            
-                </select>              
-              </li>
+          <li><label>Reps range</label>
+            <input type="number"  pattern="[0-9]*" step="0.01" placeholder="From" class="form-control CREATE-NEW-FOOD-INPUT-SERVING-SIZE"> 
+            <input type="number"  pattern="[0-9]*" step="0.01" placeholder="To" class="form-control CREATE-NEW-FOOD-INPUT-SERVING-UNIT"> 
+        </li>
 
-              <li>
-                  <h6>Min reps range</h6>
-                  <input type="text" name="" id="" class="form-control" placeholder="Min reps ex 8">
-              </li>
 
-              <li>
-                  <h6>Max reps range</h6>
-                  <input type="text" name="" id="" class="form-control" placeholder="Max reps ex 12">
-              </li>
-            </ul>
+W
+        </ul>
 
-            <button id="CANCEL-ADD-EXC-BTN" type="button" class="btn btn-danger SHADOW" style="margin-bottom: 15px;margin-left: 5%;">Cancel <img src="../Img/dark/x.png" class="RIGHT-ICON" alt=""> </button>
-            <button id="ADD-EXC-BTN" type="button" class="btn btn-success SHADOW" style="float:right;margin-bottom: 15px;margin-right:5%;">Add exercise <img src="../Img/dark/correct.png" class="RIGHT-ICON" alt=""></button>
+        <button id="CANCEL-ADD-EXC-BTN" type="button" class="btn btn-danger" style="margin-bottom: 15px;margin-left: 5%;">Cancel <img src="../Img/dark/x.png" class="RIGHT-ICON" alt=""> </button>
+        <button id="ADD-EXC-BTN" type="button" class="btn btn-success" style="float:right;margin-bottom: 15px;margin-right:5%;">Add exercise<img src="../Img/dark/correct.png" class="RIGHT-ICON" alt=""></button>
 
     </div>
 

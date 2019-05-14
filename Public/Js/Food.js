@@ -11,6 +11,7 @@ $(document).ready(function(){
      $("#EDIT-MACROS-DIV").hide();
      $("#FOOD-INFO-ADDED").hide();
      $("#FOOD-INFO-SEARCH").hide();
+     $("#CREATE-NEW-FOOD-DIV").hide();
 
     } 
 
@@ -21,6 +22,7 @@ $(document).ready(function(){
       $("#EDIT-MACROS-DIV").addClass("HIDE");
       $("#FOOD-INFO-ADDED").addClass("HIDE");
       $("#FOOD-INFO-SEARCH").addClass("HIDE");
+      $("#CREATE-NEW-FOOD-DIV").addClass("HIDE");
     }
 
     function ShowOneFood(id){
@@ -114,9 +116,19 @@ $(".SEARCH-RESULT-FOOD").click(function (){
 });
 
 
+$("#CREATE-NEW-FOOD-BTN").click(function(){
+  ShowOneFood("#CREATE-NEW-FOOD-DIV");
+});
+
+
+$("#CANCEL-CREATE-FOOD-BTN").click(function(){
+  ShowOneFood("#SEARCH-FOOD");
+});
 
 
 
-
+$("#CREATE-FOOD-BTN").click(function(){
+  startFoodPoint();
+});
 
 });

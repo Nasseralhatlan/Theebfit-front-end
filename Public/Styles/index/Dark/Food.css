@@ -434,7 +434,7 @@ margin-top: 30px;
     height: 40px;
     font-size: 12px;
     color: rgb(210,210,210);
-    background-color: #702bbc;
+    background-color: rgb(35, 35, 35);
     text-align: center;
     padding-top: 10px;
 }
@@ -484,7 +484,8 @@ margin-top: 30px;
     height: 65%;
     padding-top: 10px;
     background-color: #ffffff00;
-    color: rgb(210,210,210);
+    color: #7d2cd3;
+    font-size: 15px;
 }
 
 .FOOD-SERVING-DIV{
@@ -493,7 +494,7 @@ margin-top: 30px;
     height: 35%;
     background-color: #ffffff00;
     float: left;
-    font-size: 15px;
+    font-size: 10px;
     margin: 0px;
     color: rgb(210,210,210);
 }
@@ -779,6 +780,110 @@ height: 140px;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+
+.CREATE-NEW-FOOD-DIV{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    margin-top:15px;
+    background-color: rgb(35, 35, 35);
+    height: auto; 
+    transition: 0.3s;
+    border-radius: 6px;
+    padding-top: 15px;
+}
+
+
+.CREATE-NEW-FOOD-DIV h4{
+   position: relative;
+   width: 100%;
+   text-align: center;
+   margin-bottom: 10px;
+   color: #7d2cd3;
+}
+
+.CREATE-NEW-FOOD-DIV ul{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    list-style: none;
+    padding: 0px;
+ }
+ 
+ .CREATE-NEW-FOOD-DIV ul li{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    color: white;
+    height: 70px;
+ }
+
+
+ .CREATE-NEW-FOOD-DIV label{
+    position: relative;
+    width: 30%;
+    float: left;
+    margin: 0px;
+    height: 70px;
+    padding-top: 20px;
+    text-align: center;
+ }
+
+ .CREATE-NEW-FOOD-DIV input{
+    position: relative;
+    width: 60%;
+    left: 5%;
+    right: 5%;
+    float: left;
+    margin: 0px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(25, 25, 25);
+    border: 0px;
+    color: white;
+ }
+
+ 
+ .CREATE-NEW-FOOD-DIV select{
+    position: relative;
+    width: 60%;
+    left: 5%;
+    right: 5%;
+    float: left;
+    margin: 0px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(25, 25, 25);
+    border: 0px;
+    color: white;
+ }
+
+ .CREATE-NEW-FOOD-DIV input:focus{
+    background-color: rgb(15, 15, 15);
+ }
+
+ .CREATE-NEW-FOOD-DIV select:focus{
+    background-color: rgb(15, 15, 15);
+ }
+
+
+ .CREATE-NEW-FOOD-INPUT-SERVING-SIZE{
+    position: relative;
+    width: 30% !important;
+ }
+
+ .CREATE-NEW-FOOD-INPUT-SERVING-UNIT{
+    position: relative;
+    width: 25% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+ }
 /*Ultra wide*/
 @media (min-width:1950px){
 
@@ -812,6 +917,11 @@ height: 140px;
         right: 35%;
     }
     
+    .CREATE-NEW-FOOD-DIV{
+        width: 30%;
+        left: 35%;
+        right: 35%;
+    }
 }
 
 /* Ipad */
@@ -848,7 +958,11 @@ height: 140px;
     }
 
 
-    
+    .CREATE-NEW-FOOD-DIV{
+        width: 80%;
+        left: 10%;
+        right: 10%
+    }
 
 }
 
@@ -888,6 +1002,10 @@ height: 140px;
         right: 0px;
     }
 
-
+    .CREATE-NEW-FOOD-DIV{
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
 
 }
