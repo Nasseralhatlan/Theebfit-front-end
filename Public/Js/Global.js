@@ -8,13 +8,13 @@ var ele = document.getElementsByClassName("HOVERABLE");
     for(i;i<ele.length;i++){
 
             ele[i].addEventListener('touchstart', function (){
-                    this.style.backgroundColor = "rgb(0, 0, 0, 0.600)";
+                    this.style.backgroundColor = "rgb(0, 0, 0, 0.450)";
                 
             });
             
             
             ele[i].addEventListener('mouseover', function (){
-                this.style.backgroundColor = "rgb(0, 0, 0, 0.600)";
+                this.style.backgroundColor = "rgb(0, 0, 0, 0.450)";
             
             });
 
