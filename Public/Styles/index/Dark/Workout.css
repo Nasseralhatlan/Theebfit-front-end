@@ -171,12 +171,7 @@ height: 100%;
 .INPUT-WORKOUT-NAME:focus{
     background-color: rgb(20, 20, 20);
 }
-.INPUT-DAY-NAME:hover{
-    background-color: rgb(20, 20, 20);
-}
-.INPUT-WORKOUT-NAME:hover{
-    background-color: rgb(20, 20, 20);
-}
+
 
 .BTNS-LI{
     height: 50px !important;
@@ -254,15 +249,14 @@ height: 100%;
     background-color: rgb(25, 25, 25);
     border: 0px;
     transition: 0.3s;
+    color: #702bbc
 }
 
 .WORKOUT-SET-INPUT:focus{
     background-color: rgb(20, 20, 20);
 }
 
-.WORKOUT-SET-INPUT:hover{
-    background-color: rgb(20, 20, 20);
-}
+
 .WORKOUT-BTNS-DIV{
     position: relative;
     width: 100%;

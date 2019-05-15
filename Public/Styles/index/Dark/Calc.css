@@ -90,20 +90,11 @@
 }
 
 .CALC-INPUT:focus{
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(20, 20, 20);
 }
 
-.CALC-INPUT::-webkit-input-placeholder { /* Edge */
-    color: rgb(210, 210, 210);
-  }
+
   
-  .CALC-INPUT:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: rgb(210, 210, 210);
-  }
-  
-  .CALC-INPUT::placeholder {
-    color: rgb(210, 210, 210);
-  }
   
   .Feet{
     width: 45% !important;
