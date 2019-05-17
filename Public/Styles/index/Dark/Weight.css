@@ -1,11 +1,76 @@
+.WEIGHT{
+    position: relative;
+    top: 56px;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px; 
+    
+}   
+.WEIGHT-WEEKS-LIST{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+}
+
+
+.WEIGHT-WEEK-DIV{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    transition: 0.3s;
+}
+
+
+.WEEK-ODD{
+    background-color: rgb(25,25,25);
+
+}
+
+.WEEK-EVEN{
+    background-color: rgb(35,35,35);
+}
+.WEIGHT-WEEK-LEFT{
+    position: relative;
+    width: 60%;
+    font-size: 25px;
+    color: #7d2cd3;
+    float: left;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.WEIGHT-WEEK-RIGHT{
+    position: relative;
+    width: 40%;
+    font-size: 15px;
+    float: left;
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(210, 210, 210);
+}
 /*Ultra wide*/
 @media (min-width:1950px){
-
+    .WEIGHT-WEEKS-LIST{
+        width: 30%;
+        left: 35%;
+        right: 35%;
+    }
 
 }
 
 /* Ipad */
 @media (max-width:1024px) and (min-width:720px){
+    .WEIGHT-WEEKS-LIST{
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
 
 
 
@@ -14,5 +79,9 @@
 /* Iphone */
 @media (max-width:720px) and (min-width:320px){
 
-
+    .WEIGHT-WEEKS-LIST{
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
 }

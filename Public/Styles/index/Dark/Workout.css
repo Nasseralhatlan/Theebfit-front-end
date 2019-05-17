@@ -12,9 +12,9 @@
 /* MAIN DAYS SPLIT DIV */
 .WORKOUT-DAYS-LIST-DIV{ 
     position: relative;
-    width: 50%;
-    left: 25%;
-    right: 25%;
+    width: 40%;
+    left: 30%;
+    right: 30%;
     margin-top: 15px;
     margin-bottom: 20px;
     height: auto;
@@ -81,9 +81,9 @@ height: 100%;
 /* EDIT SPLIT DIV */
 .WORKOUT-EDIT-SPLIT-DIV{
     position: relative;
-    width: 50%;
-    left: 25%;
-    right: 25%;
+    width: 40%;
+    left: 30%;
+    right: 30%;
     margin-top: 15px;
     margin-bottom: 20px;
     height: auto;
@@ -180,9 +180,9 @@ height: 100%;
 
 .WORKOUTS-LIST-DIV{
     position: relative;
-    width: 50%;
-    left: 25%;
-    right: 25%;
+    width: 40%;
+    left: 30%;
+    right: 30%;
     height: 100%;
     transition: 0.3s;
     margin-top: 20px;
@@ -266,9 +266,9 @@ height: 100%;
 
 .WORKOUT-ADD-NEW-EXC-DIV{
     position: relative;
-    width: 50%;
-    left: 25%;
-    right: 25%;
+    width: 40%;
+    left: 30%;
+    right: 30%;
     transition: 0.3s;
     background-color: rgb(25, 25, 25);
     color: #702bbc;

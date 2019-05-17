@@ -15,7 +15,8 @@ var ele = document.getElementsByClassName("HOVERABLE");
             
             ele[i].addEventListener('mouseover', function (){
                 this.style.backgroundColor = "rgb(0, 0, 0, 0.450)";
-            
+                this.style.cursor = "pointer";
+
             });
 
 
@@ -26,6 +27,7 @@ var ele = document.getElementsByClassName("HOVERABLE");
 
             ele[i].addEventListener('mouseout', function (){
                 this.style.backgroundColor = "";
+                this.style.cursor = "";
             
             });
 
