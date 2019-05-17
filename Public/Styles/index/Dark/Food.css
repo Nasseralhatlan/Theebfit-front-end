@@ -551,26 +551,44 @@ margin-top: 30px;
   width: 100%;  
   margin-top: 10px;
   margin-bottom: 40px;
+  border-radius: 6px;
 }
 
 .SEARCH-BAR{
     position: relative;
-    width: 100%;
+    width: 88%;
     border: 0px;
-    border-radius: 6px; 
+    border-radius: 0px;
+    border-top-right-radius: 6px; 
+    border-bottom-right-radius: 6px;
     background-color: rgb(25, 25, 25);
     height: 50px;; 
-    background-image:url("../../../Img/dark/search-icon.png"); 
-    background-repeat: no-repeat; 
-    background-position: 95% 12px;
-    background-size: 20px;
+    background-size: 20px; 
     color: rgb(210,210,210);
 }
 
 .SEARCH-BAR:focus{
     border: 0px;
     background-color: rgb(35, 35, 35);
-    background-image: none;
+}
+
+
+.SEARCH-ICON-DIV{
+    background-color: rgb(25, 25, 25);
+    border:0px;
+    width:12%;
+    float: left;
+    height: 50px;; 
+    border-radius: 0px;
+    border-top-left-radius: 6px; 
+    border-bottom-left-radius: 6px;
+    padding-left: 35px;
+}
+
+.SEARCH-ICON{
+    position: relative;
+    width: 20px;
+    text-align: center;
 }
 
 .SEARCH-RESLUT-DIV{
@@ -982,6 +1000,9 @@ height: 140px;
         right: 10%
     }
 
+    .SEARCH-ICON-DIV{
+        padding-left: 30px;
+    }
 }
 
 /* Iphone */
@@ -1026,4 +1047,8 @@ height: 140px;
         right: 2.5%;
     }
 
+    
+    .SEARCH-ICON-DIV{
+        padding-left: 12px;
+    }
 }
