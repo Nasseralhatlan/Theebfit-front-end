@@ -16,6 +16,7 @@
     width: 40%;
     left: 30%;
     right: 30%;
+    transition: 0.3s;
 }
 
 
@@ -74,6 +75,80 @@
     text-align: center;
     color: rgb(210, 210, 210);
 }
+
+
+.WEIGHT-WEEK-DAYS-LIST{
+    position: relative;
+    width: 40%;
+    left: 30%;
+    right: 30%;    
+    transition: 0.3s;
+}
+
+.WEIGHT-WEEK-DAYS-LIST ul{
+    position: relative;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 700px;
+}
+
+.WEIGHT-WEEK-DAYS-LIST ul li{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.WEIGHT-DAY-ODD{
+    background-color: rgb(25,25,25);
+}
+
+.WEIGHT-DAY-EVEN{
+    background-color: rgb(35,35,35);
+}
+
+.WEIGHT-DAY-LEFT{
+    position: relative;
+    width: 40%;
+    height: 100px;
+    margin: 0px !important;
+    float: left;
+    font-size: 20px;
+    color: #7d2cd3;
+    text-align: center;
+    padding-top: 32px;
+}
+
+
+.WEIGHT-DAY-RIGHT{
+    position: relative;
+    width: 60%;
+    height: 100px;
+    margin: 0px !important;
+    float: left;
+}
+
+.WEIGHT-DAY-RIGHT input{
+       width: 90%;
+       left: 8%;
+       right: 2%;
+       background-color: rgb(20,20,20);
+       height: 50px;
+       margin-top: 25px;
+       margin-bottom: 25px;
+       border:0px;
+       color: white;
+}
+
+.WEIGHT-DAY-RIGHT input:focus{
+    background-color: rgb(30,30,30);
+
+}
 /*Ultra wide*/
 @media (min-width:1950px){
     .WEIGHT-WEEKS-LIST{
@@ -82,6 +157,11 @@
         right: 35%;
     }
 
+    .WEIGHT-WEEK-DAYS-LIST{
+        width: 30%;
+        left: 35%;
+        right: 35%;
+    }
 }
 
 /* Ipad */
@@ -92,7 +172,11 @@
         right: 10%;
     }
 
-
+    .WEIGHT-WEEK-DAYS-LIST{
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
 
 }
 
@@ -100,6 +184,12 @@
 @media (max-width:720px) and (min-width:320px){
 
     .WEIGHT-WEEKS-LIST{
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
+
+    .WEIGHT-WEEK-DAYS-LIST{
         width: 95%;
         left: 2.5%;
         right: 2.5%;
