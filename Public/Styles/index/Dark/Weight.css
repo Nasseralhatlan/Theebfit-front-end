@@ -23,7 +23,7 @@
 .WEIGHT-WEEK-DIV{
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 120px;
     transition: 0.3s;
 }
 
@@ -46,8 +46,8 @@
 .WEIGHT-WEEK-LEFT-TOP{
     position: relative;
     width: 100%;
-    height: 70px;
-    padding-top: 20px;
+    height: 80px;
+    padding-top: 30px;
     font-size: 25px;
     color: #7d2cd3;
     float: left;
@@ -58,7 +58,7 @@
 .WEIGHT-WEEK-LEFT-BOTTOM{
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 40px;
     font-size: 10px;
     color: rgb(210,210, 210);
     float: left;
