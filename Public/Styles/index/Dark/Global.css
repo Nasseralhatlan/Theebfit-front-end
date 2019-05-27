@@ -159,11 +159,23 @@ height: 50%;
     margin-left: 5px;
 }
 
-
+.COMINGSOON{
+    position: relative;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    margin-top: 6%;
+}
 /*Ultra wide*/
 @media (min-width:1950px){
 
-
+    .COMINGSOON{
+        position: relative;
+        width: 25%;
+        left: 37.5%;
+        left: 37.5%;
+        margin-top: 6%;
+    }
 }
 
 /* Ipad */
@@ -171,6 +183,14 @@ height: 50%;
     
 
 
+
+    .COMINGSOON{
+        position: relative;
+        width: 50%;
+        left: 25%;
+        left: 25%;
+        margin-top: 25%;
+    }
 
 }
 
@@ -186,5 +206,13 @@ height: 50%;
         transform: translateX(0px);
     }
 
+
+    .COMINGSOON{
+        position: relative;
+        width: 95%;
+        left: 2.5%;
+        left: 2.5%;
+        margin-top: 25%;
+    }
 
 }
