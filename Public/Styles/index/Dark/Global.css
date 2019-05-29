@@ -116,7 +116,8 @@ height: 50%;
     position: relative;
     width: 10%;
     height: auto;
-    float: right;
+    float: left;
+    margin-right: 12px;
 }
 
 
@@ -164,7 +165,7 @@ height: 50%;
     width: 40%;
     left: 30%;
     right: 30%;
-    margin-top: 6%;
+    margin-top: 3%;
 }
 /*Ultra wide*/
 @media (min-width:1950px){
@@ -174,7 +175,7 @@ height: 50%;
         width: 25%;
         left: 37.5%;
         left: 37.5%;
-        margin-top: 6%;
+        margin-top: 3%;
     }
 }
 
@@ -189,7 +190,7 @@ height: 50%;
         width: 50%;
         left: 25%;
         left: 25%;
-        margin-top: 25%;
+        margin-top: 15%;
     }
 
 }
@@ -212,7 +213,7 @@ height: 50%;
         width: 95%;
         left: 2.5%;
         left: 2.5%;
-        margin-top: 25%;
+        margin-top: 10%;
     }
 
 }
