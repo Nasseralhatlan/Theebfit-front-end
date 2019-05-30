@@ -20,74 +20,24 @@
       href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Permanent+Marker"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../Styles/Sign/Sign.css" />
+    <link rel="stylesheet" href="../Styles/Dark/Sign/Sign.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
     <title>T H E E B</title>
   </head>
+
+
+
   <body ontouchstart="" onmouseover="">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <p class="BRAND">Theeb fit</p>
-    <div id="SIGNIN_DIV" class="SIGNIN_DIV SHADOW">
-      <form id="SIGNIN_FORM" class="FORM" action="index.html" method="GET">
-        <h1 class="TITLE">Sign in</h1>
-
-        <input
-          type="text"
-          class="form-control IN_INPUT SHADOW"
-          placeholder="email or username"
-        />
-
-        <input
-          type="password"
-          class="form-control IN_INPUT SHADOW"
-          placeholder="password"
-        />
-
-
-        <button type="submit" class="btn IN_BTN SHADOW">Sign in</button>
-
-        <h5 class="NOA">
-          if you dont have an account
-          <div id="SIGNUP" class="SIGNUP_LINK btn SHADOW">Sing up</div>
-        </h5>
-      </form>
-    </div>
 
 
 
-    <div id="SIGNUP_DIV" class="SIGNUP_DIV SHADOW">
-      <form id="SIGNUP_FORM" class="FORM" action="index.html" method="GET">
-        <h1 class="TITLE">Sign up</h1>
-
-        <input
-          type="text"
-          class="form-control UP_INPUT SHADOW"
-          placeholder="username"
-        />
-
-        <input
-          type="email"
-          class="form-control UP_INPUT SHADOW"
-          placeholder="email"
-        />
-
-        <input
-          type="password"
-          class="form-control UP_INPUT SHADOW"
-          placeholder="password"
-        />
+            <img src="../Img/dark/brand.png" alt="" class="BRAND-PIC">
 
 
-        <button type="submit" class="btn UP_BTN SHADOW">Sign up</button>
 
-        <h5 class="NOA">
-          if you have an account
-          <div id="SIGNIN" class="SIGNUP_LINK btn SHADOW">Sing in</div>
-        </h5>
-      </form>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -107,51 +57,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#SIGNUP_DIV").hide();
 
-        $("#SIGNUP").click(function() {
-          $("#SIGNIN_DIV").hide();
-          $("#SIGNUP_DIV").show();
-        });
-
-        $("#SIGNIN").click(function() {
-          $("#SIGNUP_DIV").hide();
-          $("#SIGNIN_DIV").show();
-        });
-      });
-
-
-      const $_GET = {};
-    const args = location.search.substr(1).split(/&/);
-
-    for (let i=0; i<args.length; ++i) {
-        const tmp = args[i].split(/=/);
-
-        if (tmp[0] != "") {
-            $_GET[decodeURIComponent(tmp[0])] = decodeURIComponent(tmp.slice(1).join("").replace("+", " "));
-        }//::END if
-    }//::END for
-
-
-
-    if($_GET['dev']=="app"){
-
-$("#SIGNIN_DIV").attr("style","margin-top:25px");
-$("#SIGNUP_DIV").attr("style","margin-top:25px");
-
-$("#SIGNUP_FORM").append('<input id="devapp1" type="hidden" name="dev" value="app" />');
-$("#SIGNIN_FORM").append('<input id="devapp2" type="hidden" name="dev" value="app" />');
-
-}else{
-  $("#SIGNIN_DIV").removeAttr("style");
-  $("#SIGNUP_DIV").removeAttr("style");
-
-  $("#devapp1").remove();
-  $("#devapp2").remove();
-}
-
-    </script>
   </body>
 </html>
