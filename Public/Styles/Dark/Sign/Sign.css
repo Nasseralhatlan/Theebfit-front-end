@@ -21,8 +21,8 @@ body,html{
 
     .SIGNIN-CARD{
         position: relative;
-        left: 55%;
-        width: 35%;
+        left: 60%;
+        width: 30%;
         right: 10%;
         margin-top: 10%;
         height: auto;
@@ -40,20 +40,50 @@ body,html{
         height: auto;
     }
 
-    .SIGIN-FORM h4{
+    .SIGIN-FORM h1{
         position: relative;
         width: 100%;
         height: 70px;
         padding-top: 20px;
         text-align: center;
+        margin-bottom: 50px;
         color: rgb(201, 210, 210);
-        color: #702bbc;
     }
 
-    .SIGIN-FORM input{
+
+    .SIGNIN-INPUT-DIV{
+        position: relative;
+        width: 100%;
+        height: 70px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+    .SIGNIN-INPUT-DIV-ICON{
+        position: relative;
+        width: 10%;
+        height: 70px;
+        float: left;
+        padding-top: 23px;
+    }
+    
+    .SIGNIN-INPUT-DIV-ICON img{
+        position: relative;
+        width: 35px;
+    }
+    .SIGNIN-INPUT-DIV-INPUT{
+        position: relative;
+        width: 90%;
+        float: right;
+    }
+
+
+    .SIGNIN-INPUT-DIV-INPUT input{
         position: relative;
         width: 100%;
         height: 50px;
+        padding: 10px;
         background-color: rgb(35, 35, 35);
         border: 0px;
         border-bottom: 2px solid rgb(20, 20, 20); 
@@ -63,19 +93,51 @@ body,html{
         transition: 0.3s;
     }
     
-    .SIGIN-FORM input:focus {
+    .SIGNIN-INPUT-DIV-INPUT input:focus {
         background-color: rgb(35, 35, 35);
         outline: none !important;
         border-bottom: 2px solid rgb(100, 100, 100); 
 
     }
     
+
+    .SIGNIN-BTN{
+       position: relative;
+       width: 100%;
+       height: 60px;
+       margin-bottom: 20px;
+       margin-top: 15px;
+       background-color:  #702bbc;
+       color: white;
+       border-radius: 30px;
+       transition: 0.3s;
+    }
+
+
+    .SIGNIN-BTN:hover {
+
+        background-color: #4c207a;
+        color: white;
+    }
+
+
 /*Ultra wide*/
 
 @media (min-width:1950px){
 
    
     
+    .SIGNIN-CARD{
+        position: relative;
+        left: 70%;
+        width: 20%;
+        right: 10%;
+        margin-top: 10%;
+        height: auto;
+        background-color: rgb(35, 35, 35);
+        color: white;
+        border-radius: 10px;
+    }
 }
 /* Ipad */
 @media (max-width:1024px) and (min-width:720px){
