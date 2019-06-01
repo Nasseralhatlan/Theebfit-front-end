@@ -91,18 +91,18 @@ body,html{
        color: white;
        border-radius: 30px;
        transition: 0.5s;
-       -webkit-box-shadow: 0px 0px 89px -10px rgba(86,0,199,1);
-       -moz-box-shadow: 0px 0px 89px -10px rgba(86,0,199,1);
-       box-shadow: 0px 0px 89px -10px rgba(86,0,199,1);
+       -webkit-box-shadow: 0px 0px 154px -22px rgba(86,0,199,1);
+       -moz-box-shadow: 0px 0px 154px -22px rgba(86,0,199,1);
+       box-shadow: 0px 0px 154px -22px rgba(86,0,199,1);
     }
 
 
     .SIGNIN-BTN:hover {
         background-color: #4c207a;
         color: white;
-        -webkit-box-shadow: 0px 0px 89px -10px rgb(59, 2, 133);
-        -moz-box-shadow: 0px 0px 89px -10px rgba(59, 2, 133,1);
-        box-shadow: 0px 0px 89px -10px rgba(59, 2, 133,1);
+        -webkit-box-shadow: 0px 0px 154px -22px rgba(86,0,199,1);
+       -moz-box-shadow: 0px 0px 154px -22px rgba(86,0,199,1);
+       box-shadow: 0px 0px 154px -22px rgba(86,0,199,1);
     }
 
 
