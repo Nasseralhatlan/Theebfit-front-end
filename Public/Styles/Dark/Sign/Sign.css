@@ -26,6 +26,62 @@ body,html{
     }
     
 
+    .SING-IN-UP-OPT-DIV{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        height: auto;
+        padding-top: 10px;
+    }
+
+
+    
+
+    .SING-IN-UP-OPT-DIV ul{
+           position: relative;
+           width: 100%;
+           list-style: none;
+           height: 60px;
+           border-radius: 30px;
+           margin: 0px;
+           padding: 0px;
+           margin-top: 20px;
+           margin-bottom: 20px;
+    }
+
+    .SIGN-IN-OP{
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px; 
+    }
+
+    .SIGN-UP-OP{
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px; 
+    }
+
+    .SING-IN-UP-OPT-DIV ul li{
+        position: relative;
+        width: 50%;
+        height: 60px;
+        text-align: center;
+        float: left;
+        background-color: rgb(25, 25, 25);
+        color: rgb(210, 210, 210);
+        font-size: 25px;
+        padding-top: 10px;
+        transition: 0.3s;
+     }
+
+
+     .SING-IN-UP-OPT-DIV ul li:hover{
+         cursor: pointer;
+     }
+
+
+     .ACTIVE{
+        background-color: #702bbc !important;
+    }
     .SIGIN-FORM{
         position: relative;
         width: 80%;
