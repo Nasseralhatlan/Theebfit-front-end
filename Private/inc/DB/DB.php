@@ -1,7 +1,7 @@
 <?php 
 
+require "../../Private/config/DB.php";
 
-echo "Test";
-
+$conn = mysqli_connect($host,$username,$DBpassword,$DBname);
 
 ?>
