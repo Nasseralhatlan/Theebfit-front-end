@@ -6,6 +6,7 @@ include_once '../../DB/DB.php';
 $data = json_decode(file_get_contents('php://input'), true);
 
 
+
 $name = mysqli_escape_string($conn,$data['n']);
 $email = mysqli_escape_string($conn,$data['e']);
 $password = mysqli_escape_string($conn,$data['p']);
