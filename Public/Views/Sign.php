@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<?php
+include_once "../../Private/DB/DB.php";
+?>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -42,7 +47,7 @@
                         </div>
 
 
-                       <form id="SIGNIN-FORM" action="" class="SIGIN-FORM">
+                       <form id="SIGNIN-FORM" action=""  class="SIGIN-FORM">
 
                                  <h1> Sign in </h1>
                                  
@@ -75,7 +80,11 @@
 
 
 
-                       <form id="SIGNUP-FORM" action="" class="SIGIN-FORM">
+
+
+
+
+                       <form id="SIGNUP-FORM" action="../../Private/API/AUTH/Signup.php" method="POST" class="SIGIN-FORM">
 
                         <h1> Sign up </h1>
                         
@@ -84,7 +93,7 @@
 
                            <div class="SIGNIN-INPUT-DIV-INPUT">
                               <label >Name</label>
-                                 <input type="text" placeholder="ex Nasser">
+                                 <input name="n" type="text" placeholder="ex Nasser">
                            </div>
                         </div>
                        
@@ -93,7 +102,7 @@
 
                           <div class="SIGNIN-INPUT-DIV-INPUT">
                               <label >Eamil</label>
-                                <input type="text" placeholder="ex x@x.x">
+                                <input name="e" type="text" placeholder="ex x@x.x">
                           </div>
                        </div>
 
@@ -103,7 +112,7 @@
 
                          <div class="SIGNIN-INPUT-DIV-INPUT">
                             <label >Password</label>
-                               <input type="password" placeholder="Password" >
+                               <input name="p" type="password" placeholder="Password" >
                          </div>
                       </div>
                     
@@ -114,7 +123,7 @@
 
                         <div class="SIGNIN-INPUT-DIV-INPUT">
                             <label >Re enter password</label>
-                              <input type="password" placeholder="Re enter password" >
+                              <input name="pv" type="password" placeholder="Re enter password" >
                         </div>
                      </div>
 
@@ -125,8 +134,8 @@
                       <label >First day of the week</label>
                       <div class="SIGNIN-INPUT-DIV-INPUT">
 
-                      <select id="FIRST-DAY" class="custom-select SELECT" id="inputGroupSelect01" aria-placeholder="First day of the week">
-                        <option Wvalue="1">Sunday</option>
+                      <select name="fdow" id="FIRST-DAY" class="custom-select SELECT" id="inputGroupSelect01" aria-placeholder="First day of the week">
+                        <option value="1">Sunday</option>
                         <option value="2">Monday</option>
                         <option value="3">Tuesday</option>
                         <option value="4">Wednesday</option>
@@ -144,13 +153,22 @@
                         <div class="SIGNIN-INPUT-DIV-INPUT">
                             <label >Country</label>
 
-                        <select id="COUNTRY" class="custom-select SELECT" id="inputGroupSelect01" aria-placeholder="Country">
-                          <option Wvalue="1">Saudi arabi</option>
-                          <option value="2">United kingdome</option>
-                          <option value="3">USA</option>
-                          <option value="4">Emiarts</option>
-                          <option value="5">Bahren</option>    
-                          <option value="6">Eygpt</option>                     
+                        <select name="c" id="COUNTRY" class="custom-select SELECT" id="inputGroupSelect01" aria-placeholder="Country">
+                          <?php
+                          $sql = "SELECT nicename , id  FROM `countries` ";
+                          $res = mysqli_query($conn,$sql);
+                          $num = mysqli_num_rows($res);
+              
+             
+                          if($num > 0 ){
+             
+                             while($row = mysqli_fetch_assoc($res) ){
+                                 echo  "<option value='".$row['id']."'>".$row['nicename']."</option>";
+                             }
+                          }
+
+
+                          ?>                 
                          </select>  
   
                         </div>
@@ -158,7 +176,7 @@
   
 
 
-                     <a href="index.html"><button  type="button" class="btn SIGNIN-BTN">Sign up</button></a>
+                     <button id="SIGNUP-BTN" type="submit" class="btn SIGNIN-BTN">Sign up</button></a>
 
 
                    
