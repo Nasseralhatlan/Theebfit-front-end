@@ -21,10 +21,13 @@ $fk_cid = mysqli_escape_string($conn,$data['c']);
     
    }else{
 
-    
+     
+
+
      $json = array(
  
-        'error' => 'passwords do not match'
+      
+        
      );
 
      echo json_encode($json);
